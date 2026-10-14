@@ -169,25 +169,7 @@ export class HF26Stage3D {
     const studioEnvScene = this._createProceduralStudioEnvScene();
     this.proceduralEnvMap = this.pmremGenerator.fromScene(studioEnvScene, 0.035).texture;
     this.scene.environment = this.proceduralEnvMap;
-    this.scene.environmentIntensity = 0.58;
-
-    // Load studio_atelier.hdr asynchronously
-    const hdrLoader = new HDRLoader();
-    hdrLoader.load(
-      './assets/textures/studio_atelier.hdr',
-      (hdrTex) => {
-        hdrTex.mapping = THREE.EquirectangularReflectionMapping;
-        const envMap = this.pmremGenerator.fromEquirectangular(hdrTex).texture;
-        this.hdrEnvMap = envMap;
-        this.scene.environment = envMap;
-        this.scene.environmentIntensity = 0.48;
-        hdrTex.dispose();
-      },
-      undefined,
-      () => {
-        // Keep procedural studio env map if HDR fails
-      }
-    );
+    this.scene.environmentIntensity = 0.56;
 
     // Main overhead key light with high-res soft shadows
     this.keyLight = new THREE.DirectionalLight(0xf6f9ff, 1.35);
@@ -216,26 +198,26 @@ export class HF26Stage3D {
     this.scene.add(this.rimLight2);
 
     // Dedicated cockpit & footwell interior spotlight so open footwell + pedals are crystal clear
-    this.cockpitLight = new THREE.SpotLight(0xffffff, 0.95, 4.5, Math.PI * 0.34, 0.5, 1.0);
+    this.cockpitLight = new THREE.SpotLight(0xffffff, 0.52, 4.5, Math.PI * 0.38, 0.78, 1.0);
     this.cockpitLight.position.set(0.0, 2.1, 0.35);
     this.cockpitLight.target.position.set(0.0, 0.28, 0.65);
     this.scene.add(this.cockpitLight);
     this.scene.add(this.cockpitLight.target);
 
     // Dedicated V6 engine bay spotlight
-    this.engineBayLight = new THREE.SpotLight(0xfff4e8, 0.90, 4.5, Math.PI * 0.38, 0.45, 1.0);
+    this.engineBayLight = new THREE.SpotLight(0xfff4e8, 0.58, 4.5, Math.PI * 0.42, 0.72, 1.0);
     this.engineBayLight.position.set(0.85, 2.25, -0.65);
     this.engineBayLight.target.position.set(0.0, 0.45, -0.65);
     this.scene.add(this.engineBayLight);
     this.scene.add(this.engineBayLight.target);
 
     // Wheel & brake macro fill light
-    this.wheelLight = new THREE.PointLight(0xeef6ff, 0.65, 3.5);
+    this.wheelLight = new THREE.PointLight(0xeef6ff, 0.42, 3.8);
     this.wheelLight.position.set(-1.75, 0.52, 1.95);
     this.scene.add(this.wheelLight);
 
     // Ambient hemisphere light
-    this.hemiLight = new THREE.HemisphereLight(0xdce8ff, 0x18202c, 0.38);
+    this.hemiLight = new THREE.HemisphereLight(0xdce8ff, 0x141a24, 0.44);
     this.scene.add(this.hemiLight);
 
     // Car root container
@@ -525,16 +507,16 @@ export class HF26Stage3D {
     // Specialized PBR upgrades per material tag
     if (matTag === 'MAT_CARBON_TWILL' || matTag === 'MAT_LIVERY_CARBON_GLOSS' || matTag === 'MAT_CARBON_MATTE') {
       mat.normalMap = this.textures.carbon_normal;
-      mat.normalScale = new THREE.Vector2(0.45, 0.45);
+      mat.normalScale = new THREE.Vector2(0.42, 0.42);
       mat.roughnessMap = this.textures.carbon_roughness;
       if (matTag !== 'MAT_CARBON_MATTE') {
-        mat.clearcoat = 1.0;
-        mat.clearcoatRoughness = 0.04;
+        mat.clearcoat = 0.92;
+        mat.clearcoatRoughness = 0.075;
         mat.anisotropy = 0.55;
       }
     } else if (matTag === 'MAT_TITANIUM_BRUSHED' || matTag === 'MAT_ALUMINUM_CNC') {
       mat.normalMap = this.textures.cnc_normal;
-      mat.normalScale = new THREE.Vector2(0.22, 0.22);
+      mat.normalScale = new THREE.Vector2(0.20, 0.20);
       mat.anisotropy = 0.65;
     } else if (matTag === 'MAT_GOLD_FOIL') {
       mat.color.setHex(0xf8b624);
@@ -597,13 +579,13 @@ export class HF26Stage3D {
     this.scene.add(this.envGroups.windtunnel);
     this.scene.add(this.envGroups.pitlane);
 
-    // Real-time planar floor mirror shared under semi-transparent floors
+    // Real-time planar floor mirror shared under semi-transparent floors (subtle, museum-grade satin reflection)
     const reflectorGeo = new THREE.CircleGeometry(11.5, 64);
     this.floorReflector = new Reflector(reflectorGeo, {
       clipBias: 0.003,
       textureWidth: Math.floor(window.innerWidth * 0.75),
       textureHeight: Math.floor(window.innerHeight * 0.75),
-      color: 0x1b222c,
+      color: 0x0e1116,
     });
     this.floorReflector.rotation.x = -Math.PI / 2;
     this.floorReflector.position.y = -0.004;
@@ -617,101 +599,78 @@ export class HF26Stage3D {
   }
 
   _buildAtelierEnvironment(group) {
-    // 1. Wet-polished dark basalt inspection platform (semi-transparent so Reflector shines through)
-    const platformGeo = new THREE.CylinderGeometry(6.8, 7.1, 0.04, 72);
+    // 1. Museum-grade satin dark basalt podium (Polestar / Porsche showcase look — no noisy grid lines or white floor glare)
+    const platformGeo = new THREE.CylinderGeometry(8.5, 8.8, 0.04, 96);
     const platformMat = new THREE.MeshPhysicalMaterial({
-      color: 0x0c1017,
-      metalness: 0.25,
-      roughness: 0.14,
-      clearcoat: 1.0,
-      clearcoatRoughness: 0.04,
-      normalMap: this.textures.carbon_normal,
-      normalScale: new THREE.Vector2(0.08, 0.08),
+      color: 0x07090d,
+      metalness: 0.12,
+      roughness: 0.52,
+      clearcoat: 0.06,
+      clearcoatRoughness: 0.38,
+      envMapIntensity: 0.12,
       transparent: true,
-      opacity: 0.74,
+      opacity: 0.88,
     });
     const platform = new THREE.Mesh(platformGeo, platformMat);
     platform.position.y = -0.021;
     platform.receiveShadow = true;
     group.add(platform);
 
-    // 2. Outer dark architectural studio floor skirt
+    // 2. Soft grounding ambient-occlusion contact shadow directly under the car wheelbase
+    const aoCanvas = document.createElement('canvas');
+    aoCanvas.width = 512;
+    aoCanvas.height = 512;
+    const actx = aoCanvas.getContext('2d');
+    const grad = actx.createRadialGradient(256, 256, 20, 256, 256, 245);
+    grad.addColorStop(0.0, 'rgba(0, 0, 0, 0.90)');
+    grad.addColorStop(0.55, 'rgba(0, 0, 0, 0.62)');
+    grad.addColorStop(0.82, 'rgba(0, 0, 0, 0.20)');
+    grad.addColorStop(1.0, 'rgba(0, 0, 0, 0.0)');
+    actx.fillStyle = grad;
+    actx.fillRect(0, 0, 512, 512);
+    const aoTex = new THREE.CanvasTexture(aoCanvas);
+    const aoShadowPlane = new THREE.Mesh(
+      new THREE.PlaneGeometry(2.65, 6.35),
+      new THREE.MeshBasicMaterial({
+        map: aoTex,
+        transparent: true,
+        depthWrite: false,
+      })
+    );
+    aoShadowPlane.rotation.x = -Math.PI / 2;
+    aoShadowPlane.position.y = 0.0012;
+    group.add(aoShadowPlane);
+
+    // 3. Outer dark architectural studio floor skirt
     const outerFloor = new THREE.Mesh(
-      new THREE.RingGeometry(6.8, 22.0, 72),
-      new THREE.MeshStandardMaterial({ color: 0x07090d, roughness: 0.45, metalness: 0.2 })
+      new THREE.RingGeometry(8.5, 24.0, 96),
+      new THREE.MeshStandardMaterial({ color: 0x05070a, roughness: 0.65, metalness: 0.1, envMapIntensity: 0.1 })
     );
     outerFloor.rotation.x = -Math.PI / 2;
     outerFloor.position.y = -0.002;
     outerFloor.receiveShadow = true;
     group.add(outerFloor);
 
-    // 3. Recessed LED perimeter rings & FIA laser inspection grid
-    const limeLedMat = new THREE.MeshBasicMaterial({ color: new THREE.Color(0.75, 1.05, 0.08) });
-    const cyanLedMat = new THREE.MeshBasicMaterial({ color: new THREE.Color(0.08, 0.85, 1.15) });
-    const whiteLedMat = new THREE.MeshBasicMaterial({ color: new THREE.Color(1.25, 1.35, 1.55) });
-
-    const innerRing = new THREE.Mesh(new THREE.RingGeometry(3.55, 3.60, 96), limeLedMat);
+    // 4. Ultra-subtle hairline turntable rim ring (whisper-quiet graphite/white, zero neon glare)
+    const subtleRingMat = new THREE.MeshBasicMaterial({
+      color: 0xffffff,
+      transparent: true,
+      opacity: 0.11,
+    });
+    const innerRing = new THREE.Mesh(new THREE.RingGeometry(3.85, 3.862, 128), subtleRingMat);
     innerRing.rotation.x = -Math.PI / 2;
-    innerRing.position.y = 0.001;
+    innerRing.position.y = 0.0015;
     group.add(innerRing);
 
-    const outerRing = new THREE.Mesh(new THREE.RingGeometry(6.72, 6.78, 96), cyanLedMat);
-    outerRing.rotation.x = -Math.PI / 2;
-    outerRing.position.y = 0.001;
-    group.add(outerRing);
-
-    // FIA Track & Wheelbase laser datum lines on floor
-    const gridMat = new THREE.MeshBasicMaterial({
-      color: 0x2c425e,
-      transparent: true,
-      opacity: 0.55,
-    });
-    for (const xTrack of [-0.815, 0.0, 0.815]) {
-      const strip = new THREE.Mesh(new THREE.PlaneGeometry(0.012, 6.6), gridMat);
-      strip.rotation.x = -Math.PI / 2;
-      strip.position.set(xTrack, 0.0015, 0);
-      group.add(strip);
-    }
-    for (const zAxle of [-1.80, 0.0, 1.80]) {
-      const strip = new THREE.Mesh(new THREE.PlaneGeometry(4.4, 0.012), gridMat);
-      strip.rotation.x = -Math.PI / 2;
-      strip.position.set(0, 0.0015, zAxle);
-      group.add(strip);
-    }
-
-    // 4. Overhead 3D Carbon-Truss Light Gantry with Glowing Softboxes
-    const gantryGroup = new THREE.Group();
-    gantryGroup.position.y = 2.95;
-    const trussMat = new THREE.MeshStandardMaterial({ color: 0x161c26, metalness: 0.85, roughness: 0.25 });
-
-    // Longitudinal gantry rails
-    for (const xPos of [-1.45, 1.45]) {
-      const rail = new THREE.Mesh(new THREE.BoxGeometry(0.08, 0.12, 6.8), trussMat);
-      rail.position.set(xPos, 0, 0);
-      gantryGroup.add(rail);
-    }
-    // 4 Transverse glowing softbox banks
-    for (const zPos of [-2.1, -0.7, 0.7, 2.1]) {
-      const frame = new THREE.Mesh(new THREE.BoxGeometry(2.8, 0.07, 0.52), trussMat);
-      frame.position.set(0, 0, zPos);
-      gantryGroup.add(frame);
-
-      const panel = new THREE.Mesh(new THREE.PlaneGeometry(2.68, 0.44), whiteLedMat);
-      panel.rotation.x = Math.PI / 2;
-      panel.position.set(0, -0.038, zPos);
-      gantryGroup.add(panel);
-    }
-    group.add(gantryGroup);
-
-    // 5. Curved Studio Cyclorama Dome mapped with env_atelier_bg.jpg
-    const cycGeo = new THREE.CylinderGeometry(16.5, 16.5, 9.5, 64, 1, true);
+    // 5. Curved Studio Cyclorama Dome mapped with env_atelier_bg.jpg (darkened so car silhouette pops)
+    const cycGeo = new THREE.CylinderGeometry(17.5, 17.5, 10.0, 64, 1, true);
     const cycMat = new THREE.MeshBasicMaterial({
       map: this.textures.env_atelier_bg,
-      color: 0x455266,
+      color: 0x1c222c,
       side: THREE.BackSide,
     });
     const cyc = new THREE.Mesh(cycGeo, cycMat);
-    cyc.position.y = 4.2;
+    cyc.position.y = 4.4;
     group.add(cyc);
   }
 
@@ -982,9 +941,9 @@ export class HF26Stage3D {
     for (const p of paths) {
       const worldPts = p.pts.map(([bx, by, bz]) => this.b2t(bx, by, bz));
       const curve = new THREE.CatmullRomCurve3(worldPts);
-      const tubularSegments = 56;
+      const tubularSegments = 64;
       const radialSegments = 6;
-      const geom = new THREE.TubeGeometry(curve, tubularSegments, p.radius, radialSegments, false);
+      const geom = new THREE.TubeGeometry(curve, tubularSegments, p.radius * 0.46, radialSegments, false);
 
       // Assign vertex colors along the tube length based on local velocity array
       const posAttr = geom.attributes.position;
@@ -998,9 +957,9 @@ export class HF26Stage3D {
         const f = vIdx - i0;
         const vNorm = p.vels[i0] * (1 - f) + p.vels[i1] * f;
         const col = this._velocityToCfdColor(vNorm);
-        colors[i * 3] = col.r * 1.45;
-        colors[i * 3 + 1] = col.g * 1.45;
-        colors[i * 3 + 2] = col.b * 1.45;
+        colors[i * 3] = col.r * 1.15;
+        colors[i * 3 + 1] = col.g * 1.15;
+        colors[i * 3 + 2] = col.b * 1.15;
       }
       geom.setAttribute('color', new THREE.BufferAttribute(colors, 3));
 
@@ -1008,7 +967,7 @@ export class HF26Stage3D {
         vertexColors: true,
         map: this.cfdPulseTex,
         transparent: true,
-        opacity: 0.86,
+        opacity: 0.62,
         blending: THREE.AdditiveBlending,
         depthWrite: false,
       });
@@ -1181,7 +1140,7 @@ export class HF26Stage3D {
   }
 
   _updateSparks(dt) {
-    const active = this.mode === 'dyno' || this.environmentName === 'pitlane' || this.rpm > 9500;
+    const active = this.mode === 'dyno' || this.environmentName === 'pitlane';
     this.sparkLines.visible = active && this.rpm > 6500;
     if (!this.sparkLines.visible) return;
 
@@ -1345,7 +1304,25 @@ export class HF26Stage3D {
     const overallBox = new THREE.Box3();
 
     for (const srcMesh of rawMeshes) {
-      const { assemblyId, subpart, matTag } = this._parseMeshIdentity(srcMesh);
+      let { assemblyId, subpart, matTag } = this._parseMeshIdentity(srcMesh);
+      const spLower = subpart.toLowerCase();
+
+      // Skip blocky low-poly rectangular patch decals & duplicate sidepod mirror stalks
+      if (
+        spLower.includes('livery_chevron_') ||
+        spLower.includes('driver_number_') ||
+        spLower.includes('shark_fin_number_panel') ||
+        spLower.includes('monocoque_livery_orange_slash') ||
+        ((assemblyId === 'sidepod_left' || assemblyId === 'sidepod_right') && spLower.includes('mirror_'))
+      ) {
+        continue;
+      }
+
+      // Keep Halo aero winglets & stripes in sculpted carbon weave so there are no bright patches on the Halo curve
+      if (assemblyId === 'halo' && (spLower.includes('winglet') || spLower.includes('livery_stripe'))) {
+        matTag = 'MAT_CARBON_TWILL';
+      }
+
       const geom = srcMesh.geometry.clone();
       geom.applyMatrix4(srcMesh.matrixWorld);
       geom.computeVertexNormals();
@@ -1627,6 +1604,13 @@ export class HF26Stage3D {
     } else if (clean === 'dyno') {
       this.setEnvironment('pitlane');
       if (this.targetRpm < 13500) this.setRPM(14800);
+    } else {
+      if (this.environmentName !== 'atelier') {
+        this.setEnvironment('atelier');
+      }
+      if (this.targetRpm > 4500) {
+        this.setRPM(3800);
+      }
     }
 
     if (this.cfdStreamlinesGroup) {
@@ -1958,10 +1942,10 @@ export class HF26Stage3D {
 
       entry.group.position.copy(explodeVec3);
 
-      // Update CAD datum line when exploded
+      // Update CAD datum line ONLY when Explode slider is active (> 2%)
       if (entry.datumLine) {
         const distSq = explodeVec3.lengthSq();
-        entry.datumLine.visible = distSq > 0.002 && entry.group.visible;
+        entry.datumLine.visible = this.explodeAmount > 0.02 && distSq > 0.002 && entry.group.visible;
         if (entry.datumLine.visible) {
           const posAttr = entry.datumLine.geometry.attributes.position;
           posAttr.setXYZ(0, entry.baseCenter.x, entry.baseCenter.y, entry.baseCenter.z);
@@ -2039,6 +2023,57 @@ export class HF26Stage3D {
 
     // 6. Render via EffectComposer (ACES Filmic + UnrealBloom)
     this.composer.render();
+  }
+
+  getHotspotScreenPositions(hotspotDefs) {
+    if (!this.ready || !hotspotDefs) return [];
+    const w = window.innerWidth;
+    const h = window.innerHeight;
+    const out = [];
+    const tmp = new THREE.Vector3();
+
+    for (const def of hotspotDefs) {
+      const entry = this.assemblyGroups.get(def.assemblyId);
+      if (def.anchorB2T && entry) {
+        tmp.copy(this.b2t(def.anchorB2T[0], def.anchorB2T[1], def.anchorB2T[2])).add(entry.group.position);
+      } else if (entry) {
+        tmp.copy(entry.baseCenter).add(entry.group.position);
+        if (def.offset) {
+          tmp.add(this.b2t(def.offset[0], def.offset[1], def.offset[2]));
+        }
+      } else if (def.pos) {
+        tmp.copy(this.b2t(def.pos[0], def.pos[1], def.pos[2]));
+      } else {
+        continue;
+      }
+
+      tmp.project(this.camera);
+      const inFront = tmp.z > -1.0 && tmp.z < 1.0;
+      const sx = (tmp.x * 0.5 + 0.5) * w;
+      const sy = (-tmp.y * 0.5 + 0.5) * h;
+      const onScreen = inFront && sx > 70 && sx < w - 70 && sy > 75 && sy < h - 90;
+
+      // Filter pins on close-up macro presets so background pins don't float over foreground parts
+      let allowedOnPreset = true;
+      if (this.currentCameraPreset === 'wheel_macro') {
+        allowedOnPreset = def.assemblyId === 'brakes_fl' || def.assemblyId === 'front_wing';
+      } else if (this.currentCameraPreset === 'cockpit') {
+        allowedOnPreset = def.assemblyId === 'steering_wheel' || def.assemblyId === 'front_wing';
+      } else if (this.currentCameraPreset === 'engine') {
+        allowedOnPreset =
+          def.assemblyId === 'radiators_cooling' ||
+          def.assemblyId === 'power_unit_v6' ||
+          def.assemblyId === 'exhaust_inconel';
+      }
+
+      out.push({
+        ...def,
+        x: sx,
+        y: sy,
+        visible: onScreen && allowedOnPreset && (!this.isolated || this.selectedAssemblyId === def.assemblyId),
+      });
+    }
+    return out;
   }
 
   getStats() {
