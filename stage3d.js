@@ -1699,19 +1699,21 @@ export class HF26Stage3D {
     this._updateSelectionHighlight();
   }
 
-  setExplode(value) {
+  setExplode(value, immediate = false) {
     let v = Number(value) || 0;
     if (v > 1.0) v = v / 100.0;
     this.targetExplodeAmount = Math.max(0, Math.min(1, v));
+    if (immediate) this.explodeAmount = this.targetExplodeAmount;
     if (this.callbacks.onStateChange) this.callbacks.onStateChange();
   }
 
-  setCoverOff(flag) {
+  setCoverOff(flag, immediate = false) {
     this.coverOff = Boolean(flag);
+    if (immediate) this.coverOffFactor = this.coverOff ? 1.0 : 0.0;
     if (this.callbacks.onStateChange) this.callbacks.onStateChange();
   }
 
-  setDRS(flag) {
+  setDRS(flag, immediate = false) {
     const next = Boolean(flag);
     if (next !== this.drsOpen) {
       this.drsOpen = next;
@@ -1719,11 +1721,13 @@ export class HF26Stage3D {
         this._rebuildCfdStreamlines();
       }
     }
+    if (immediate) this.drsFactor = this.drsOpen ? 1.0 : 0.0;
     if (this.callbacks.onStateChange) this.callbacks.onStateChange();
   }
 
-  setSteering(deg) {
+  setSteering(deg, immediate = false) {
     this.targetSteeringDeg = Math.max(-22, Math.min(22, Number(deg) || 0));
+    if (immediate) this.steeringDeg = this.targetSteeringDeg;
     if (this.callbacks.onStateChange) this.callbacks.onStateChange();
   }
 
@@ -1850,8 +1854,11 @@ export class HF26Stage3D {
     if (this.callbacks.onStateChange) this.callbacks.onStateChange();
   }
 
-  setOrbitCamera(azRad, elRad, dist, targetArr = [0, 0.38, 0]) {
+  setOrbitCamera(azRad, elRad, dist, targetArr = [0, 0.38, 0], presetTag = null) {
     this.camLerp.active = false;
+    if (presetTag) {
+      this.currentCameraPreset = presetTag;
+    }
     const tx = targetArr[0] || 0;
     const ty = targetArr[1] || 0.38;
     const tz = targetArr[2] || 0;
@@ -1862,6 +1869,27 @@ export class HF26Stage3D {
       ty + Math.sin(elRad) * dist,
       tz + Math.cos(azRad) * cosEl * dist
     );
+    this.controls.update();
+  }
+
+  setOrbitBlender(azRad, elRad, dist, blenderTarget = [0, 0.0, 0.40], fov = 36, presetTag = null) {
+    this.camLerp.active = false;
+    if (presetTag) {
+      this.currentCameraPreset = presetTag;
+    }
+    const tgt = this.b2t(blenderTarget[0], blenderTarget[1], blenderTarget[2]);
+    this.controls.target.copy(tgt);
+    const cosEl = Math.cos(elRad);
+    // In Three.js after b2t: +Z is front (by < 0), -Z is rear (by > 0), +X is right, +Y is up
+    this.camera.position.set(
+      tgt.x + Math.sin(azRad) * cosEl * dist,
+      tgt.y + Math.sin(elRad) * dist,
+      tgt.z + Math.cos(azRad) * cosEl * dist
+    );
+    if (this.camera.fov !== fov) {
+      this.camera.fov = fov;
+      this.camera.updateProjectionMatrix();
+    }
     this.controls.update();
   }
 
@@ -2031,6 +2059,7 @@ export class HF26Stage3D {
     const h = window.innerHeight;
     const out = [];
     const tmp = new THREE.Vector3();
+    const camDist = this.camera.position.distanceTo(this.controls.target);
 
     for (const def of hotspotDefs) {
       const entry = this.assemblyGroups.get(def.assemblyId);
@@ -2046,6 +2075,9 @@ export class HF26Stage3D {
       } else {
         continue;
       }
+
+      const distToTarget = tmp.distanceTo(this.controls.target);
+      const allowedByZoom = camDist >= 2.85 || distToTarget < 1.38 || this.selectedAssemblyId === def.assemblyId;
 
       tmp.project(this.camera);
       const inFront = tmp.z > -1.0 && tmp.z < 1.0;
@@ -2070,7 +2102,12 @@ export class HF26Stage3D {
         ...def,
         x: sx,
         y: sy,
-        visible: onScreen && allowedOnPreset && (!this.isolated || this.selectedAssemblyId === def.assemblyId),
+        visible:
+          onScreen &&
+          allowedByZoom &&
+          allowedOnPreset &&
+          (this.explodeAmount < 0.35 || !this.selectedAssemblyId || this.selectedAssemblyId === def.assemblyId) &&
+          (!this.isolated || this.selectedAssemblyId === def.assemblyId),
       });
     }
     return out;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
@@ -33,7 +33,7 @@
       <div class="loader-eyebrow">HIGGSFIELD RACING FACTORY · #01</div>
       <div class="loader-title">HF-26 APEX</div>
       <div class="loader-track"><div id="loader-fill" class="loader-fill"></div></div>
-      <div id="loader-sub" class="loader-sub">Инициализация 3D-шасси и PBR-шейдеров…</div>
+      <div id="loader-sub" class="loader-sub">Initializing 3D chassis & PBR shaders…</div>
     </div>
   </div>
 
@@ -45,35 +45,35 @@
         <span class="car-num">01</span>
         <div class="brand-titles">
           <span class="brand-name">HF-26 APEX</span>
-          <span id="live-pill" class="live-pill">3 800 ОБ/МИН · 98 КМ/Ч · C5 SOFT</span>
+          <span id="live-pill" class="live-pill">3,800 RPM · 102 KM/H · C5 SOFT</span>
         </div>
       </div>
 
       <!-- Center Experience Switcher -->
       <nav class="mode-capsule" aria-label="Showroom Modes">
-        <button class="mode-btn active" data-exp="studio" id="exp-studio">Студия</button>
-        <button class="mode-btn" data-exp="engine_open" id="exp-engine">Мотор V6</button>
-        <button class="mode-btn" data-exp="cfd" id="exp-cfd">Аэропоток CFD</button>
-        <button class="mode-btn" data-exp="dyno" id="exp-dyno">Дино 15 000</button>
-        <button class="mode-btn" data-exp="xray" id="exp-xray">Рентген CAD</button>
-        <button class="mode-btn" data-exp="thermal" id="exp-thermal">Тепловизор</button>
+        <button class="mode-btn active" data-exp="studio" id="exp-studio">Studio</button>
+        <button class="mode-btn" data-exp="engine_open" id="exp-engine">V6 Bay</button>
+        <button class="mode-btn" data-exp="cfd" id="exp-cfd">CFD Aero</button>
+        <button class="mode-btn" data-exp="dyno" id="exp-dyno">Dyno 15K</button>
+        <button class="mode-btn" data-exp="xray" id="exp-xray">X-Ray CAD</button>
+        <button class="mode-btn" data-exp="thermal" id="exp-thermal">Thermal</button>
       </nav>
 
       <!-- Right Utility Actions -->
       <div class="utility-cluster">
-        <button id="btn-hotspots-toggle" class="util-btn active" title="Показать 3D-точки узлов">
+        <button id="btn-hotspots-toggle" class="util-btn active" title="Toggle 3D Spatial Pins">
           <span class="dot-indicator"></span>
-          <span id="lbl-hotspots">Точки</span>
+          <span id="lbl-hotspots">Pins</span>
         </button>
         <button id="btn-catalog-drawer" class="util-btn">
-          <span id="lbl-all-parts">Все узлы (32)</span>
+          <span id="lbl-all-parts">All Parts (32)</span>
         </button>
-        <button id="btn-audio" class="util-btn audio-btn" title="Звук гибридного V6">
+        <button id="btn-audio" class="util-btn audio-btn" title="1.6L V6 Hybrid Sound">
           <span class="eq-bars" aria-hidden="true"><i></i><i></i><i></i></span>
-          <span id="lbl-audio">Звук V6</span>
+          <span id="lbl-audio">V6 Sound</span>
         </button>
-        <button id="btn-lang" class="util-btn lang-btn" title="Switch Language">RU</button>
-        <button id="btn-info" class="util-btn icon-circle" title="О модели FIA 2026">ⓘ</button>
+        <button id="btn-lang" class="util-btn lang-btn" title="Switch Language">EN</button>
+        <button id="btn-info" class="util-btn icon-circle" title="FIA 2026 Architecture">ⓘ</button>
       </div>
     </header>
 
@@ -81,52 +81,52 @@
     <aside id="dossier-card" class="dossier-card hidden" aria-live="polite">
       <div class="dossier-top">
         <div class="dossier-tags">
-          <span id="dossier-cat" class="dossier-cat">СИЛОВАЯ УСТАНОВКА</span>
+          <span id="dossier-cat" class="dossier-cat">POWERTRAIN V6</span>
           <span id="dossier-fia" class="dossier-fia">Art. 5.1</span>
         </div>
-        <button id="btn-close-dossier" class="icon-close" title="Закрыть">×</button>
+        <button id="btn-close-dossier" class="icon-close" title="Close">×</button>
       </div>
-      <h2 id="dossier-title" class="dossier-title">1.6L 90° V6 ДВС</h2>
+      <h2 id="dossier-title" class="dossier-title">1.6L 90° V6 Internal Combustion Engine</h2>
       <p id="dossier-desc" class="dossier-desc"></p>
       <div class="dossier-metrics">
         <div class="metric-cell">
-          <span id="lbl-m-mass" class="metric-label">Масса</span>
-          <strong id="val-m-mass" class="metric-val">102.0 кг</strong>
+          <span id="lbl-m-mass" class="metric-label">Mass</span>
+          <strong id="val-m-mass" class="metric-val">102.0 kg</strong>
         </div>
         <div class="metric-cell">
-          <span id="lbl-m-temp" class="metric-label">Температура</span>
+          <span id="lbl-m-temp" class="metric-label">Operating Temp</span>
           <strong id="val-m-temp" class="metric-val">112 °C</strong>
         </div>
         <div class="metric-cell wide">
-          <span id="lbl-m-mat" class="metric-label">Конструкционный материал</span>
+          <span id="lbl-m-mat" class="metric-label">Material Specification</span>
           <strong id="val-m-mat" class="metric-val">Carbon / Ti-6Al-4V</strong>
         </div>
       </div>
       <div class="dossier-actions">
-        <button id="btn-isolate-part" class="action-pill">Изолировать деталь</button>
-        <button id="btn-reset-view" class="action-pill ghost">Общий план</button>
+        <button id="btn-isolate-part" class="action-pill">Isolate Assembly</button>
+        <button id="btn-reset-view" class="action-pill ghost">Reset View</button>
       </div>
     </aside>
 
     <!-- Slide-over 32 Assemblies Drawer (CLOSED by default; opens only on click) -->
-    <aside id="parts-drawer" class="parts-drawer hidden" aria-label="Каталог 32 инженерных узлов">
+    <aside id="parts-drawer" class="parts-drawer hidden" aria-label="32 Engineering Assemblies Catalog">
       <div class="drawer-header">
         <div>
-          <div id="drawer-eyebrow" class="drawer-eyebrow">СПЕЦИФИКАЦИЯ FIA 2026</div>
-          <h3 id="drawer-title" class="drawer-title">32 инженерных узла</h3>
+          <div id="drawer-eyebrow" class="drawer-eyebrow">FIA 2026 SPECIFICATION</div>
+          <h3 id="drawer-title" class="drawer-title">32 Engineering Assemblies</h3>
         </div>
         <button id="btn-close-drawer" class="icon-close">×</button>
       </div>
       <div class="drawer-search-wrap">
-        <input id="part-search" type="search" class="drawer-search" placeholder="Найти узел (V6, Inconel, руль, днище…)" autocomplete="off" />
+        <input id="part-search" type="search" class="drawer-search" placeholder="Search assembly (V6, Inconel, steering, floor…)" autocomplete="off" />
       </div>
       <div id="cat-pills" class="cat-pills">
-        <button class="cat-pill active" data-cat="all">Все</button>
-        <button class="cat-pill" data-cat="aero">Аэро</button>
-        <button class="cat-pill" data-cat="chassis">Шасси</button>
-        <button class="cat-pill" data-cat="powertrain">Мотор V6</button>
-        <button class="cat-pill" data-cat="suspension">Подвеска</button>
-        <button class="cat-pill" data-cat="wheels">Колёса</button>
+        <button class="cat-pill active" data-cat="all">All</button>
+        <button class="cat-pill" data-cat="aero">Aero</button>
+        <button class="cat-pill" data-cat="chassis">Chassis</button>
+        <button class="cat-pill" data-cat="powertrain">V6 Unit</button>
+        <button class="cat-pill" data-cat="suspension">Suspension</button>
+        <button class="cat-pill" data-cat="wheels">Wheels</button>
       </div>
       <div id="parts-list" class="parts-list"></div>
     </aside>
@@ -137,18 +137,18 @@
         <div class="info-header">
           <div>
             <div class="drawer-eyebrow">HIGGSFIELD RACING FACTORY · #01</div>
-            <h3 id="info-title" class="drawer-title">HF-26 APEX ULTRA — Архитектура болида</h3>
+            <h3 id="info-title" class="drawer-title">HF-26 APEX ULTRA — Vehicle Architecture</h3>
           </div>
           <button id="btn-close-info" class="icon-close">×</button>
         </div>
         <p id="info-body" class="info-body">
-          Процедурная инженерная 3D-модель болида Формулы-1 (292 268 треугольников, 681 деталь в 32 независимых сборочных узлах). Открытая карбоновая ванна кокпита со сквозным педальным туннелем, съёмный кожух двигателя 1.6L 90° V6, сплит-турбина MGU-H, гидроформованный выхлоп Inconel 625 со сварными швами TIG, 800-вольтовая батарея ERS в золотой фольге Kapton, наклонные радиаторы в понтонах и перфорированные карбон-керамические тормоза.
+          Procedural engineering 3D Formula 1 model (292,268 triangles, 681 parts across 32 independent assemblies). Open-cavity carbon monocoque with through-footwell pedal tunnel, removable 1.6L 90° V6 engine cover, split-axle MGU-H turbo, hydroformed Inconel 625 exhaust with TIG weld collars, 800V Kapton-foiled ERS battery pack, canted sidepod radiators, and cross-drilled carbon-ceramic brakes.
         </p>
         <div class="info-grid">
-          <div class="info-stat"><span>Полигонаж</span><strong>292 268 tris</strong></div>
-          <div class="info-stat"><span>Сборочных узлов</span><strong>32 узла / 681 меш</strong></div>
-          <div class="info-stat"><span>Силовая установка</span><strong>1.6L V6 + MGU-K/H (15 000 RPM)</strong></div>
-          <div class="info-stat"><span>Горячие клавиши</span><strong>Space (Кожух) · E (Разбор) · D (DRS) · R (Сброс)</strong></div>
+          <div class="info-stat"><span>Geometry</span><strong>292,268 tris</strong></div>
+          <div class="info-stat"><span>Assemblies</span><strong>32 assemblies / 681 meshes</strong></div>
+          <div class="info-stat"><span>Powertrain</span><strong>1.6L V6 + MGU-K/H (15,000 RPM)</strong></div>
+          <div class="info-stat"><span>Shortcuts</span><strong>Space (Cover) · E (Explode) · D (DRS) · R (Reset)</strong></div>
         </div>
       </div>
     </div>
@@ -158,19 +158,19 @@
       <div class="bottom-dock">
         <!-- Camera Presets -->
         <div class="dock-section cam-group" id="cam-presets">
-          <button class="cam-pill active" data-cam="hero">3/4</button>
-          <button class="cam-pill" data-cam="cockpit">Кокпит</button>
-          <button class="cam-pill" data-cam="engine">Мотор V6</button>
-          <button class="cam-pill" data-cam="wheel_macro">Тормоза</button>
-          <button class="cam-pill" data-cam="rear_quarter">Диффузор</button>
-          <button class="cam-pill" data-cam="top_down">Сверху</button>
+          <button class="cam-pill active" data-cam="hero">3/4 View</button>
+          <button class="cam-pill" data-cam="cockpit">Cockpit</button>
+          <button class="cam-pill" data-cam="engine">V6 Engine</button>
+          <button class="cam-pill" data-cam="wheel_macro">Brakes</button>
+          <button class="cam-pill" data-cam="rear_quarter">Diffuser</button>
+          <button class="cam-pill" data-cam="top_down">Top View</button>
         </div>
 
         <div class="dock-divider"></div>
 
         <!-- Inline Explode Scrubber -->
         <div class="dock-section explode-control">
-          <label for="slider-explode" id="lbl-explode" class="dock-label">Разбор</label>
+          <label for="slider-explode" id="lbl-explode" class="dock-label">Explode</label>
           <input id="slider-explode" type="range" min="0" max="100" value="0" class="dock-slider" />
           <span id="val-explode" class="dock-val">0%</span>
         </div>
@@ -179,7 +179,7 @@
 
         <!-- Quick Mechanical Actions -->
         <div class="dock-section mech-group">
-          <button id="btn-cover-toggle" class="mech-pill">Снять кожух</button>
+          <button id="btn-cover-toggle" class="mech-pill">Open Engine Bay</button>
           <button id="btn-drs-toggle" class="mech-pill">DRS</button>
         </div>
 
@@ -187,13 +187,13 @@
 
         <!-- Livery & Pirelli Compound Swatches -->
         <div class="dock-section swatch-group">
-          <div id="livery-dots" class="dots-row" title="Ливрея кузова">
+          <div id="livery-dots" class="dots-row" title="Livery">
             <button class="swatch-dot active" data-livery="factory" style="--c1:#f2f5fa; --c2:#ccff00;" title="Higgsfield Factory #01"></button>
             <button class="swatch-dot" data-livery="stealth" style="--c1:#181c22; --c2:#ccff00;" title="Stealth Carbon"></button>
             <button class="swatch-dot" data-livery="papaya" style="--c1:#ff6a00; --c2:#00c2ff;" title="Apex Papaya"></button>
             <button class="swatch-dot" data-livery="silver" style="--c1:#d0d8e2; --c2:#00f2c3;" title="Silver Titanium"></button>
           </div>
-          <div id="tire-dots" class="tire-row" title="Состав шин Pirelli">
+          <div id="tire-dots" class="tire-row" title="Pirelli Tire Compound">
             <button class="tire-pill active" data-tire="soft"><i style="background:#ff2222"></i>C5</button>
             <button class="tire-pill" data-tire="medium"><i style="background:#ffd600"></i>C3</button>
             <button class="tire-pill" data-tire="hard"><i style="background:#f2f5fa"></i>C1</button>

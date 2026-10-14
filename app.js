@@ -193,7 +193,7 @@ const UI_STRINGS = {
 
 class HF26ShowroomApp {
   constructor() {
-    this.lang = 'ru';
+    this.lang = 'en';
     this.searchQuery = '';
     this.hotspotsVisible = true;
     this.drawerOpen = false;
@@ -213,7 +213,7 @@ class HF26ShowroomApp {
     this._buildHotspotsDOM();
     this._bindEvents();
     this._renderPartsDrawerList();
-    this._applyLanguage('ru');
+    this._applyLanguage('en');
     this._exposeAutomationHooks();
     this._startLoop();
   }
@@ -505,7 +505,13 @@ class HF26ShowroomApp {
   }
 
   _onAssemblySelected(spec) {
-    if (spec && INTERNAL_ASSEMBLIES.has(spec.id) && !this.stage.coverOff && this.stage.mode === 'studio') {
+    if (
+      spec &&
+      INTERNAL_ASSEMBLIES.has(spec.id) &&
+      !this.stage.coverOff &&
+      this.stage.mode === 'studio' &&
+      this.stage.targetExplodeAmount < 0.15
+    ) {
       this.stage.setCoverOff(true);
     }
     this._renderDossier(spec);
@@ -609,7 +615,8 @@ class HF26ShowroomApp {
     const tireMap = { soft: 'C5 SOFT', medium: 'C3 MED', hard: 'C1 HARD' };
     const tireTxt = tireMap[this.stage.tireCompound] || 'C5 SOFT';
     const drsTxt = this.stage.drsOpen ? ' · DRS OPEN' : '';
-    pill.textContent = `${rpm.toLocaleString('ru-RU')} ${s.rpmUnit} · ${speed} ${s.speedUnit} · ${tireTxt}${drsTxt}`;
+    const loc = this.lang === 'en' ? 'en-US' : 'ru-RU';
+    pill.textContent = `${rpm.toLocaleString(loc)} ${s.rpmUnit} · ${speed} ${s.speedUnit} · ${tireTxt}${drsTxt}`;
   }
 
   _syncUI() {
@@ -735,23 +742,23 @@ class HF26ShowroomApp {
     this._syncUI();
   }
 
-  setExplode(val) {
-    this.stage.setExplode(val);
+  setExplode(val, immediate = false) {
+    this.stage.setExplode(val, immediate);
     this._syncUI();
   }
 
-  setCoverOff(flag) {
-    this.stage.setCoverOff(flag);
+  setCoverOff(flag, immediate = false) {
+    this.stage.setCoverOff(flag, immediate);
     this._syncUI();
   }
 
-  setDRS(flag) {
-    this.stage.setDRS(flag);
+  setDRS(flag, immediate = false) {
+    this.stage.setDRS(flag, immediate);
     this._syncUI();
   }
 
-  setSteering(deg) {
-    this.stage.setSteering(deg);
+  setSteering(deg, immediate = false) {
+    this.stage.setSteering(deg, immediate);
     this._syncUI();
   }
 
@@ -795,20 +802,28 @@ class HF26ShowroomApp {
       getStats: () => this.stage.getStats(),
       setMode: (m) => this.setMode(m),
       setEnvironment: (e) => this.setEnvironment(e),
-      setExplode: (v) => this.setExplode(v),
-      setCoverOff: (f) => this.setCoverOff(f),
-      setDRS: (f) => this.setDRS(f),
-      setSteering: (d) => this.setSteering(d),
+      setExplode: (v, imm = false) => this.setExplode(v, imm),
+      setCoverOff: (f, imm = false) => this.setCoverOff(f, imm),
+      setDRS: (f, imm = false) => this.setDRS(f, imm),
+      setSteering: (d, imm = false) => this.setSteering(d, imm),
       setRPM: (r) => this.setRPM(r),
       setLivery: (l) => this.setLivery(l),
       setTireCompound: (c) => this.setTireCompound(c),
       selectAssembly: (id) => this.selectAssembly(id),
       isolateSelected: (f) => this.isolateSelected(f),
       setCameraPreset: (p, imm = false) => this.setCameraPreset(p, imm),
-      setOrbitCamera: (az, el, dist, tgt) => this.stage?.setOrbitCamera(az, el, dist, tgt),
+      setOrbitCamera: (az, el, dist, tgt, presetTag = null) => {
+        this.stage?.setOrbitCamera(az, el, dist, tgt, presetTag);
+        this._syncUI();
+      },
+      setOrbitBlender: (az, el, dist, bTgt, fov = 36, presetTag = null) => {
+        this.stage?.setOrbitBlender(az, el, dist, bTgt, fov, presetTag);
+        this._syncUI();
+      },
       stepFrame: (dt) => {
         this.stage?.stepFrame(dt);
         this._updateHotspotsProjection();
+        this._updateLiveHeaderPill();
       },
       setLanguage: (l) => this.setLanguage(l),
     };
