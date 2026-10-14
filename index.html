@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HF-26 APEX ULTRA — 2026 FIA Formula 1® Telemetry & CAD Atelier</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23080b10'/><path d='M6 22L14 10H26L18 22H6Z' fill='%23ccff00'/></svg>" />
+  <link rel="stylesheet" href="./style.css" />
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "./three/build/three.module.js",
+        "three/addons/": "./three/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <!-- Fullscreen 3D WebGL Viewport -->
+  <canvas id="stage-canvas"></canvas>
+
+  <!-- Perimeter Mission-Control HUD Overlay (pointer-events: none on container, auto on panels) -->
+  <div id="hud-root">
+
+    <!-- TOP BAR: Brand Identity, 5 Vision Modes, 3 Architectural Environments, Audio & Language -->
+    <header class="hud-panel top-bar">
+      <div class="brand-block">
+        <div class="brand-badge">01</div>
+        <div class="brand-text">
+          <div class="brand-title">
+            <span>HF-26</span>
+            <span class="accent-lime">APEX ULTRA</span>
+            <span class="spec-pill">FIA 2026 SPEC</span>
+          </div>
+          <div class="brand-subtitle" data-i18n="brandSubtitle">2026 FIA FORMULA 1® TELEMETRY &amp; CAD ATELIER</div>
+        </div>
+      </div>
+
+      <!-- 5 Interactive Vision Modes -->
+      <nav class="seg-group" id="mode-tabs" aria-label="Render Modes">
+        <button class="seg-btn active" data-mode="studio" data-i18n="mode_studio">STUDIO</button>
+        <button class="seg-btn" data-mode="cfd" data-i18n="mode_cfd">CFD AERO</button>
+        <button class="seg-btn" data-mode="dyno" data-i18n="mode_dyno">DYNO 15K</button>
+        <button class="seg-btn" data-mode="xray" data-i18n="mode_xray">X-RAY CAD</button>
+        <button class="seg-btn" data-mode="thermal" data-i18n="mode_thermal">THERMAL FLIR</button>
+      </nav>
+
+      <!-- 3 Switchable 3D Architectural Environments -->
+      <nav class="seg-group env-group" id="env-tabs" aria-label="3D Environments">
+        <button class="seg-btn active" data-env="atelier" data-i18n="env_atelier">ATELIER</button>
+        <button class="seg-btn" data-env="windtunnel" data-i18n="env_windtunnel">WIND TUNNEL</button>
+        <button class="seg-btn" data-env="pitlane" data-i18n="env_pitlane">NIGHT PIT</button>
+      </nav>
+
+      <!-- Right Utilities: WebAudio V6 Synth & EN/RU Switch -->
+      <div class="top-actions">
+        <button id="btn-audio" class="action-chip" data-i18n="audioBtnMute">V6 SYNTH: OFF</button>
+        <div class="lang-switch" id="lang-tabs">
+          <button class="lang-btn active" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="ru">RU</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- LEFT RAIL: 32 Engineering Assemblies Explorer & Category Filter -->
+    <aside class="hud-panel left-rail">
+      <div class="panel-header">
+        <span class="panel-title" data-i18n="assembliesTitle">32 ENGINEERING ASSEMBLIES</span>
+        <span class="mesh-counter" id="mesh-counter-badge">32 / 32</span>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="category-pills" id="category-tabs">
+        <button class="cat-pill active" data-cat="all" data-i18n="cat_all">ALL (32)</button>
+        <button class="cat-pill" data-cat="aero" data-i18n="cat_aero">AERO</button>
+        <button class="cat-pill" data-cat="chassis" data-i18n="cat_chassis">CHASSIS</button>
+        <button class="cat-pill" data-cat="powertrain" data-i18n="cat_powertrain">POWERTRAIN</button>
+        <button class="cat-pill" data-cat="suspension" data-i18n="cat_suspension">SUSPENSION</button>
+        <button class="cat-pill" data-cat="wheels" data-i18n="cat_wheels">WHEELS</button>
+      </div>
+
+      <!-- Search Filter -->
+      <div class="search-wrap">
+        <input type="text" id="assembly-search" placeholder="Filter assembly or FIA art..." data-i18n-placeholder="searchPlaceholder" />
+      </div>
+
+      <!-- Scrollable 32 Assemblies List -->
+      <div class="assembly-list" id="assembly-list"></div>
+    </aside>
+
+    <!-- RIGHT RAIL: Mechanical Actuators, Livery/Compound & Selected Assembly Engineering Dossier -->
+    <aside class="hud-panel right-rail">
+      <!-- Mechanical Actuators & Sliders -->
+      <section class="control-section">
+        <div class="slider-row">
+          <div class="slider-header">
+            <span data-i18n="explodeLabel">CAD EXPLODE</span>
+            <span class="mono-val" id="val-explode">0%</span>
+          </div>
+          <input type="range" id="slider-explode" min="0" max="100" step="1" value="0" />
+        </div>
+
+        <div class="slider-row">
+          <div class="slider-header">
+            <span data-i18n="steeringLabel">STEERING ANGLE</span>
+            <span class="mono-val" id="val-steering">0.0°</span>
+          </div>
+          <input type="range" id="slider-steering" min="-20" max="20" step="0.5" value="0" />
+        </div>
+
+        <div class="slider-row">
+          <div class="slider-header">
+            <span data-i18n="rpmLabel">ICE ENGINE RPM</span>
+            <span class="mono-val accent-orange" id="val-rpm">3,800 RPM</span>
+          </div>
+          <input type="range" id="slider-rpm" min="3500" max="15000" step="100" value="3800" />
+        </div>
+
+        <!-- Quick Mechanical Toggle Buttons -->
+        <div class="toggle-grid">
+          <button id="btn-cover-off" class="mech-btn" data-i18n="coverOffBtn">COVER OFF (V6 BAY)</button>
+          <button id="btn-drs" class="mech-btn" data-i18n="drsBtn">DRS REAR FLAP</button>
+          <button id="btn-isolate" class="mech-btn" data-i18n="isolateBtn">ISOLATE PART</button>
+          <button id="btn-reset" class="mech-btn secondary" data-i18n="resetViewBtn">RESET STAGE</button>
+        </div>
+      </section>
+
+      <!-- Livery & Pirelli Tire Compound Selector -->
+      <section class="control-section">
+        <div class="section-label" data-i18n="liveryTitle">LIVERY &amp; COMPOUND</div>
+        <div class="livery-row" id="livery-tabs">
+          <button class="livery-swatch active" data-livery="factory" title="Higgsfield Factory #01">
+            <span style="background:#0b0d10"></span><span style="background:#f2f5fa"></span><span style="background:#ccff00"></span>
+          </button>
+          <button class="livery-swatch" data-livery="stealth" title="Stealth Pre-Season Carbon">
+            <span style="background:#07080a"></span><span style="background:#16191f"></span><span style="background:#ccff00"></span>
+          </button>
+          <button class="livery-swatch" data-livery="papaya" title="Apex Papaya Heritage">
+            <span style="background:#ff6800"></span><span style="background:#f4f6fa"></span><span style="background:#00c2ff"></span>
+          </button>
+          <button class="livery-swatch" data-livery="silver" title="Silver Arrow Titanium">
+            <span style="background:#c9d2dc"></span><span style="background:#00f2c3"></span><span style="background:#0c0f14"></span>
+          </button>
+        </div>
+
+        <div class="tire-row" id="tire-tabs">
+          <button class="tire-btn soft active" data-tire="soft">
+            <span class="tire-dot"></span><span data-i18n="tireSoft">C5 SOFT</span>
+          </button>
+          <button class="tire-btn medium" data-tire="medium">
+            <span class="tire-dot"></span><span data-i18n="tireMedium">C3 MED</span>
+          </button>
+          <button class="tire-btn hard" data-tire="hard">
+            <span class="tire-dot"></span><span data-i18n="tireHard">C1 HARD</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Engineering Dossier Inspector -->
+      <section class="dossier-section" id="dossier-card">
+        <div class="dossier-header">
+          <span class="section-label" data-i18n="dossierTitle">ENGINEERING DOSSIER</span>
+          <span class="dossier-cat-tag" id="dossier-cat">POWERTRAIN</span>
+        </div>
+        <h2 class="dossier-name" id="dossier-name">1.6L 90° V6 Internal Combustion Engine (ICE)</h2>
+        <p class="dossier-desc" id="dossier-desc">
+          Fully stressed 1600cc 90-degree V6 engine with pneumatic valve springs, 500-bar direct fuel injection, carbon airbox plenum, and six variable-length intake trumpets.
+        </p>
+
+        <div class="dossier-specs">
+          <div class="spec-item">
+            <span class="spec-key" data-i18n="specMaterial">COMPOSITE / ALLOY SPEC</span>
+            <span class="spec-val" id="dossier-mat">Sand-Cast AlSi7Mg Block / DLC Coated Valvetrain</span>
+          </div>
+          <div class="spec-grid-2">
+            <div class="spec-item">
+              <span class="spec-key" data-i18n="specWeight">ASSEMBLY MASS</span>
+              <span class="spec-val mono" id="dossier-weight">102.0 kg</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-key" data-i18n="specTemp">OPERATING TEMP</span>
+              <span class="spec-val mono" id="dossier-temp">112 °C</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-key" data-i18n="specAeroLoad">PEAK AERO LOAD</span>
+              <span class="spec-val mono" id="dossier-aero">0 N</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-key" data-i18n="specFiaReg">FIA HOMOLOGATION</span>
+              <span class="spec-val mono accent-cyan" id="dossier-fia">Art. 5.1</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </aside>
+
+    <!-- BOTTOM BAR: Live F1 Pit-Wall Telemetry Strip & Camera Director Presets -->
+    <footer class="hud-panel bottom-bar">
+      <!-- Live Telemetry Counters -->
+      <div class="telemetry-strip">
+        <div class="tel-cell">
+          <span class="tel-label" data-i18n="telSpeed">VELOCITY</span>
+          <span class="tel-value" id="tel-speed">98 <small>KM/H</small></span>
+        </div>
+        <div class="tel-cell">
+          <span class="tel-label" data-i18n="telGear">GEAR</span>
+          <span class="tel-value accent-lime" id="tel-gear">2</span>
+        </div>
+        <div class="tel-cell">
+          <span class="tel-label" data-i18n="telRpm">ICE RPM</span>
+          <span class="tel-value" id="tel-rpm">3,800</span>
+        </div>
+        <div class="tel-cell">
+          <span class="tel-label" data-i18n="telDownforce">DOWNFORCE</span>
+          <span class="tel-value accent-cyan" id="tel-downforce">4,120 <small>N</small></span>
+        </div>
+        <div class="tel-cell">
+          <span class="tel-label" data-i18n="telBrakeTemp">BRAKE DISC TEMP</span>
+          <span class="tel-value accent-orange" id="tel-braketemp">340 <small>°C</small></span>
+        </div>
+        <div class="tel-cell">
+          <span class="tel-label" data-i18n="telExhaustTemp">INCONEL HEADER</span>
+          <span class="tel-value accent-orange" id="tel-exhtemp">510 <small>°C</small></span>
+        </div>
+      </div>
+
+      <!-- Camera Director Preset Bar -->
+      <div class="camera-director" id="camera-tabs"></div>
+
+      <!-- Status & Keyboard Hint Strip -->
+      <div class="status-strip">
+        <span class="status-dot"></span>
+        <span id="status-text" data-i18n="allSystemsNominal">ALL 32 ASSEMBLIES VERIFIED • ZERO-GAP MONOCOQUE</span>
+      </div>
+    </footer>
+
+  </div>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
