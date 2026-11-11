@@ -1,0 +1,5237 @@
+{
+  "model_name": "HIGGSFIELD HF-26 APEX ULTRA",
+  "season": "2026 Formula 1 Factory Prototype",
+  "total_objects": 681,
+  "total_assemblies": 32,
+  "total_triangles": 292268,
+  "total_vertices": 153940,
+  "dimensions_m": {
+    "length": 5.62,
+    "width": 2.0,
+    "height": 0.95,
+    "wheelbase": 3.6,
+    "front_track": 1.63,
+    "rear_track": 1.59,
+    "wheel_center_z": 0.36,
+    "front_axle_y": -1.8,
+    "rear_axle_y": 1.8
+  },
+  "mechanical_pivots_blender": {
+    "wheel_fl": [
+      -0.815,
+      -1.8,
+      0.36
+    ],
+    "wheel_fr": [
+      0.815,
+      -1.8,
+      0.36
+    ],
+    "wheel_rl": [
+      -0.795,
+      1.8,
+      0.36
+    ],
+    "wheel_rr": [
+      0.795,
+      1.8,
+      0.36
+    ],
+    "brakes_fl": [
+      -0.72,
+      -1.8,
+      0.36
+    ],
+    "brakes_fr": [
+      0.72,
+      -1.8,
+      0.36
+    ],
+    "steering_wheel": [
+      0.0,
+      -0.52,
+      0.55
+    ],
+    "drs_flap": [
+      0.0,
+      2.48,
+      0.85
+    ]
+  },
+  "assemblies": {
+    "nosecone": {
+      "id": "nosecone",
+      "category": "aero",
+      "name_en": "Nosecone & Impact Structure",
+      "name_ru": "Носовой обтекатель и краш-бокс",
+      "explode_vec": [
+        0.0,
+        -1.35,
+        0.12
+      ],
+      "removable_cover": true,
+      "material_spec": "Toray T1100G Carbon / Nomex Honeycomb Core",
+      "weight_kg": 7.4,
+      "operating_temp_c": 42,
+      "aero_load_n": 1850,
+      "fia_reg": "Art. 15.4.3 Frontal Impact",
+      "desc_en": "Hollowed carbon-honeycomb frontal impact structure with integrated Pitot static array, S-duct exit slot, and dual FOM optical telemetry pods.",
+      "desc_ru": "Карбон-сотовый носовой обтекатель с интегрированной трубкой Пито, выходным каналом S-duct и оптическими камерами телеметрии.",
+      "subpart_count": 23,
+      "triangles": 11732,
+      "vertices": 5912,
+      "subparts": [
+        {
+          "name": "nosecone__nose_main_body__MAT_CARBON_TWILL",
+          "subpart": "nose_main_body",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 7040
+        },
+        {
+          "name": "nosecone__nose_livery_white_panel__MAT_LIVERY_WHITE",
+          "subpart": "nose_livery_white_panel",
+          "mat_tag": "MAT_LIVERY_WHITE",
+          "triangles": 1340
+        },
+        {
+          "name": "nosecone__nose_pinstripe_lime_left__MAT_LIVERY_LIME",
+          "subpart": "nose_pinstripe_lime_left",
+          "mat_tag": "MAT_LIVERY_LIME",
+          "triangles": 496
+        },
+        {
+          "name": "nosecone__nose_pinstripe_lime_right__MAT_LIVERY_LIME",
+          "subpart": "nose_pinstripe_lime_right",
+          "mat_tag": "MAT_LIVERY_LIME",
+          "triangles": 496
+        },
+        {
+          "name": "nosecone__nose_number_plate_shield__MAT_LIVERY_CARBON_GLOSS",
+          "subpart": "nose_number_plate_shield",
+          "mat_tag": "MAT_LIVERY_CARBON_GLOSS",
+          "triangles": 320
+        },
+        {
+          "name": "nosecone__nose_tip_impact_cap__MAT_LIVERY_ORANGE",
+          "subpart": "nose_tip_impact_cap",
+          "mat_tag": "MAT_LIVERY_ORANGE",
+          "triangles": 108
+        },
+        {
+          "name": "nosecone__s_duct_exit_hood__MAT_CARBON_MATTE",
+          "subpart": "s_duct_exit_hood",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 132
+        },
+        {
+          "name": "nosecone__s_duct_splitter_vane__MAT_TITANIUM_BRUSHED",
+          "subpart": "s_duct_splitter_vane",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 108
+        },
+        {
+          "name": "nosecone__pitot_mast_strut__MAT_TITANIUM_BRUSHED",
+          "subpart": "pitot_mast_strut",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 92
+        },
+        {
+          "name": "nosecone__pitot_sensor_array_head__MAT_TITANIUM_BRUSHED",
+          "subpart": "pitot_sensor_array_head",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 60
+        },
+        {
+          "name": "nosecone__pitot_kiel_probe_0__MAT_TITANIUM_BRUSHED",
+          "subpart": "pitot_kiel_probe_0",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 52
+        },
+        {
+          "name": "nosecone__pitot_kiel_probe_1__MAT_TITANIUM_BRUSHED",
+          "subpart": "pitot_kiel_probe_1",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 52
+        },
+        {
+          "name": "nosecone__pitot_kiel_probe_2__MAT_TITANIUM_BRUSHED",
+          "subpart": "pitot_kiel_probe_2",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 52
+        },
+        {
+          "name": "nosecone__fom_camera_pod_left__MAT_CARBON_MATTE",
+          "subpart": "fom_camera_pod_left",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 132
+        },
+        {
+          "name": "nosecone__fom_camera_lens_left__MAT_OLED_SCREEN",
+          "subpart": "fom_camera_lens_left",
+          "mat_tag": "MAT_OLED_SCREEN",
+          "triangles": 76
+        },
+        {
+          "name": "nosecone__fom_camera_pod_right__MAT_CARBON_MATTE",
+          "subpart": "fom_camera_pod_right",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 132
+        },
+        {
+          "name": "nosecone__fom_camera_lens_right__MAT_OLED_SCREEN",
+          "subpart": "fom_camera_lens_right",
+          "mat_tag": "MAT_OLED_SCREEN",
+          "triangles": 76
+        },
+        {
+          "name": "nosecone__front_tow_hook_ring__MAT_LIVERY_ORANGE",
+          "subpart": "front_tow_hook_ring",
+          "mat_tag": "MAT_LIVERY_ORANGE",
+          "triangles": 556
+        },
+        {
+          "name": "nosecone__nose_bulkhead_flange__MAT_ALUMINUM_CNC",
+          "subpart": "nose_bulkhead_flange",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "nosecone__nose_qr_titanium_pin_upper_left__MAT_TITANIUM_BRUSHED",
+          "subpart": "nose_qr_titanium_pin_upper_left",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 76
+        },
+        {
+          "name": "nosecone__nose_qr_titanium_pin_upper_right__MAT_TITANIUM_BRUSHED",
+          "subpart": "nose_qr_titanium_pin_upper_right",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 76
+        },
+        {
+          "name": "nosecone__nose_qr_titanium_pin_lower_left__MAT_TITANIUM_BRUSHED",
+          "subpart": "nose_qr_titanium_pin_lower_left",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 76
+        },
+        {
+          "name": "nosecone__nose_qr_titanium_pin_lower_right__MAT_TITANIUM_BRUSHED",
+          "subpart": "nose_qr_titanium_pin_lower_right",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 76
+        }
+      ],
+      "bbox_min": [
+        -0.268,
+        -2.7939,
+        0.1202
+      ],
+      "bbox_max": [
+        0.268,
+        -1.145,
+        0.6182
+      ]
+    },
+    "front_wing": {
+      "id": "front_wing",
+      "category": "aero",
+      "name_en": "Front Wing 4-Element Cascade",
+      "name_ru": "Переднее антикрыло (4-элементный каскад)",
+      "explode_vec": [
+        0.0,
+        -1.75,
+        -0.18
+      ],
+      "removable_cover": false,
+      "material_spec": "High-Modulus Prepreg Carbon + Ti-6Al-4V Adjusters",
+      "weight_kg": 11.2,
+      "operating_temp_c": 38,
+      "aero_load_n": 4620,
+      "fia_reg": "Art. 3.9 Front Wing Bodywork",
+      "desc_en": "Full-span mainplane with three slotted outwash flaps, billet titanium flap-angle adjusters, carbon slot-gap separators, and vortex-sealing endplates.",
+      "desc_ru": "Четырёхэлементный каскад профилей с эффектом outwash, титановыми регуляторами угла атаки, межщелевыми сепараторами и торцевыми пластинами.",
+      "subpart_count": 33,
+      "triangles": 9424,
+      "vertices": 4778,
+      "subparts": [
+        {
+          "name": "front_wing__fw_mainplane_spoon__MAT_CARBON_TWILL",
+          "subpart": "fw_mainplane_spoon",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 2184
+        },
+        {
+          "name": "front_wing__fw_flap1_left__MAT_CARBON_TWILL",
+          "subpart": "fw_flap1_left",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 284
+        },
+        {
+          "name": "front_wing__fw_flap2_white_left__MAT_LIVERY_WHITE",
+          "subpart": "fw_flap2_white_left",
+          "mat_tag": "MAT_LIVERY_WHITE",
+          "triangles": 284
+        },
+        {
+          "name": "front_wing__fw_flap3_upper_left__MAT_LIVERY_WHITE",
+          "subpart": "fw_flap3_upper_left",
+          "mat_tag": "MAT_LIVERY_WHITE",
+          "triangles": 284
+        },
+        {
+          "name": "front_wing__fw_flap3_lime_gurney_left__MAT_LIVERY_LIME",
+          "subpart": "fw_flap3_lime_gurney_left",
+          "mat_tag": "MAT_LIVERY_LIME",
+          "triangles": 188
+        },
+        {
+          "name": "front_wing__fw_flap1_right__MAT_CARBON_TWILL",
+          "subpart": "fw_flap1_right",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 284
+        },
+        {
+          "name": "front_wing__fw_flap2_white_right__MAT_LIVERY_WHITE",
+          "subpart": "fw_flap2_white_right",
+          "mat_tag": "MAT_LIVERY_WHITE",
+          "triangles": 284
+        },
+        {
+          "name": "front_wing__fw_flap3_upper_right__MAT_LIVERY_WHITE",
+          "subpart": "fw_flap3_upper_right",
+          "mat_tag": "MAT_LIVERY_WHITE",
+          "triangles": 284
+        },
+        {
+          "name": "front_wing__fw_flap3_lime_gurney_right__MAT_LIVERY_LIME",
+          "subpart": "fw_flap3_lime_gurney_right",
+          "mat_tag": "MAT_LIVERY_LIME",
+          "triangles": 188
+        },
+        {
+          "name": "front_wing__fw_nose_pylon_left__MAT_CARBON_TWILL",
+          "subpart": "fw_nose_pylon_left",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 528
+        },
+        {
+          "name": "front_wing__fw_nose_pylon_right__MAT_CARBON_TWILL",
+          "subpart": "fw_nose_pylon_right",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 528
+        },
+        {
+          "name": "front_wing__fw_titanium_slot_bracket_1__MAT_TITANIUM_BRUSHED",
+          "subpart": "fw_titanium_slot_bracket_1",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 108
+        },
+        {
+          "name": "front_wing__fw_titanium_slot_bracket_2__MAT_TITANIUM_BRUSHED",
+          "subpart": "fw_titanium_slot_bracket_2",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 108
+        },
+        {
+          "name": "front_wing__fw_titanium_slot_bracket_3__MAT_TITANIUM_BRUSHED",
+          "subpart": "fw_titanium_slot_bracket_3",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 108
+        },
+        {
+          "name": "front_wing__fw_titanium_slot_bracket_4__MAT_TITANIUM_BRUSHED",
+          "subpart": "fw_titanium_slot_bracket_4",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 108
+        },
+        {
+          "name": "front_wing__fw_titanium_slot_bracket_5__MAT_TITANIUM_BRUSHED",
+          "subpart": "fw_titanium_slot_bracket_5",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 108
+        },
+        {
+          "name": "front_wing__fw_titanium_slot_bracket_6__MAT_TITANIUM_BRUSHED",
+          "subpart": "fw_titanium_slot_bracket_6",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 108
+        },
+        {
+          "name": "front_wing__fw_titanium_slot_bracket_7__MAT_TITANIUM_BRUSHED",
+          "subpart": "fw_titanium_slot_bracket_7",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 108
+        },
+        {
+          "name": "front_wing__fw_titanium_slot_bracket_8__MAT_TITANIUM_BRUSHED",
+          "subpart": "fw_titanium_slot_bracket_8",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 108
+        },
+        {
+          "name": "front_wing__fw_endplate_left__MAT_CARBON_TWILL",
+          "subpart": "fw_endplate_left",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 968
+        },
+        {
+          "name": "front_wing__fw_endplate_livery_left__MAT_LIVERY_ORANGE",
+          "subpart": "fw_endplate_livery_left",
+          "mat_tag": "MAT_LIVERY_ORANGE",
+          "triangles": 108
+        },
+        {
+          "name": "front_wing__fw_diveplane_canard_left__MAT_CARBON_TWILL",
+          "subpart": "fw_diveplane_canard_left",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 116
+        },
+        {
+          "name": "front_wing__fw_footplate_left__MAT_CARBON_MATTE",
+          "subpart": "fw_footplate_left",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 104
+        },
+        {
+          "name": "front_wing__fw_under_strake_left_1__MAT_CARBON_MATTE",
+          "subpart": "fw_under_strake_left_1",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 108
+        },
+        {
+          "name": "front_wing__fw_under_strake_left_2__MAT_CARBON_MATTE",
+          "subpart": "fw_under_strake_left_2",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 108
+        },
+        {
+          "name": "front_wing__fw_titanium_skid_block_left__MAT_TITANIUM_BRUSHED",
+          "subpart": "fw_titanium_skid_block_left",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 108
+        },
+        {
+          "name": "front_wing__fw_endplate_right__MAT_CARBON_TWILL",
+          "subpart": "fw_endplate_right",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 968
+        },
+        {
+          "name": "front_wing__fw_endplate_livery_right__MAT_LIVERY_ORANGE",
+          "subpart": "fw_endplate_livery_right",
+          "mat_tag": "MAT_LIVERY_ORANGE",
+          "triangles": 108
+        },
+        {
+          "name": "front_wing__fw_diveplane_canard_right__MAT_CARBON_TWILL",
+          "subpart": "fw_diveplane_canard_right",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 116
+        },
+        {
+          "name": "front_wing__fw_footplate_right__MAT_CARBON_MATTE",
+          "subpart": "fw_footplate_right",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 104
+        },
+        {
+          "name": "front_wing__fw_under_strake_right_1__MAT_CARBON_MATTE",
+          "subpart": "fw_under_strake_right_1",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 108
+        },
+        {
+          "name": "front_wing__fw_under_strake_right_2__MAT_CARBON_MATTE",
+          "subpart": "fw_under_strake_right_2",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 108
+        },
+        {
+          "name": "front_wing__fw_titanium_skid_block_right__MAT_TITANIUM_BRUSHED",
+          "subpart": "fw_titanium_skid_block_right",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 108
+        }
+      ],
+      "bbox_min": [
+        -1.047,
+        -2.85,
+        0.0242
+      ],
+      "bbox_max": [
+        1.047,
+        -2.0821,
+        0.34
+      ]
+    },
+    "monocoque": {
+      "id": "monocoque",
+      "category": "chassis",
+      "name_en": "Carbon Survival Cell (Monocoque)",
+      "name_ru": "Монокок (капсула безопасности)",
+      "explode_vec": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "removable_cover": false,
+      "material_spec": "T1100G Carbon / Zylon Anti-Intrusion Panels + Gold Foil",
+      "weight_kg": 54.0,
+      "operating_temp_c": 55,
+      "aero_load_n": 3100,
+      "fia_reg": "Art. 12.1 Survival Cell & Zylon",
+      "desc_en": "Open-cavity carbon-Zylon monocoque with full footwell tunnel to the front bulkhead, roll-hoop intake, headrest padding, and gold Kapton thermal firewall.",
+      "desc_ru": "Открытая карбон-зайлоновая капсула безопасности со сквозным туннелем до педального узла, верхним воздухозаборником и золотым тепловым экраном.",
+      "subpart_count": 31,
+      "triangles": 13992,
+      "vertices": 7058,
+      "subparts": [
+        {
+          "name": "monocoque__monocoque_forward_footwell_tunnel__MAT_CARBON_TWILL",
+          "subpart": "monocoque_forward_footwell_tunnel",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 2544
+        },
+        {
+          "name": "monocoque__monocoque_open_cockpit_tub__MAT_CARBON_TWILL",
+          "subpart": "monocoque_open_cockpit_tub",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 3632
+        },
+        {
+          "name": "monocoque__cockpit_windscreen_deflector_lip__MAT_LIVERY_CARBON_GLOSS",
+          "subpart": "cockpit_windscreen_deflector_lip",
+          "mat_tag": "MAT_LIVERY_CARBON_GLOSS",
+          "triangles": 100
+        },
+        {
+          "name": "monocoque__fia_cockpit_headrest_pad__MAT_ALCANTARA_BLACK",
+          "subpart": "fia_cockpit_headrest_pad",
+          "mat_tag": "MAT_ALCANTARA_BLACK",
+          "triangles": 1344
+        },
+        {
+          "name": "monocoque__fia_headrest_carbon_collar__MAT_LIVERY_CARBON_GLOSS",
+          "subpart": "fia_headrest_carbon_collar",
+          "mat_tag": "MAT_LIVERY_CARBON_GLOSS",
+          "triangles": 304
+        },
+        {
+          "name": "monocoque__monocoque_zylon_panel_left__MAT_CARBON_MATTE",
+          "subpart": "monocoque_zylon_panel_left",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 236
+        },
+        {
+          "name": "monocoque__monocoque_livery_white_left__MAT_LIVERY_WHITE",
+          "subpart": "monocoque_livery_white_left",
+          "mat_tag": "MAT_LIVERY_WHITE",
+          "triangles": 284
+        },
+        {
+          "name": "monocoque__monocoque_livery_lime_stripe_left__MAT_LIVERY_LIME",
+          "subpart": "monocoque_livery_lime_stripe_left",
+          "mat_tag": "MAT_LIVERY_LIME",
+          "triangles": 188
+        },
+        {
+          "name": "monocoque__monocoque_livery_orange_slash_left__MAT_LIVERY_ORANGE",
+          "subpart": "monocoque_livery_orange_slash_left",
+          "mat_tag": "MAT_LIVERY_ORANGE",
+          "triangles": 156
+        },
+        {
+          "name": "monocoque__cockpit_mirror_stalk_left__MAT_CARBON_TWILL",
+          "subpart": "cockpit_mirror_stalk_left",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 92
+        },
+        {
+          "name": "monocoque__cockpit_mirror_housing_left__MAT_LIVERY_CARBON_GLOSS",
+          "subpart": "cockpit_mirror_housing_left",
+          "mat_tag": "MAT_LIVERY_CARBON_GLOSS",
+          "triangles": 768
+        },
+        {
+          "name": "monocoque__cockpit_mirror_glass_left__MAT_CHROME_POLISHED",
+          "subpart": "cockpit_mirror_glass_left",
+          "mat_tag": "MAT_CHROME_POLISHED",
+          "triangles": 12
+        },
+        {
+          "name": "monocoque__monocoque_zylon_panel_right__MAT_CARBON_MATTE",
+          "subpart": "monocoque_zylon_panel_right",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 236
+        },
+        {
+          "name": "monocoque__monocoque_livery_white_right__MAT_LIVERY_WHITE",
+          "subpart": "monocoque_livery_white_right",
+          "mat_tag": "MAT_LIVERY_WHITE",
+          "triangles": 284
+        },
+        {
+          "name": "monocoque__monocoque_livery_lime_stripe_right__MAT_LIVERY_LIME",
+          "subpart": "monocoque_livery_lime_stripe_right",
+          "mat_tag": "MAT_LIVERY_LIME",
+          "triangles": 188
+        },
+        {
+          "name": "monocoque__monocoque_livery_orange_slash_right__MAT_LIVERY_ORANGE",
+          "subpart": "monocoque_livery_orange_slash_right",
+          "mat_tag": "MAT_LIVERY_ORANGE",
+          "triangles": 156
+        },
+        {
+          "name": "monocoque__cockpit_mirror_stalk_right__MAT_CARBON_TWILL",
+          "subpart": "cockpit_mirror_stalk_right",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 92
+        },
+        {
+          "name": "monocoque__cockpit_mirror_housing_right__MAT_LIVERY_CARBON_GLOSS",
+          "subpart": "cockpit_mirror_housing_right",
+          "mat_tag": "MAT_LIVERY_CARBON_GLOSS",
+          "triangles": 768
+        },
+        {
+          "name": "monocoque__cockpit_mirror_glass_right__MAT_CHROME_POLISHED",
+          "subpart": "cockpit_mirror_glass_right",
+          "mat_tag": "MAT_CHROME_POLISHED",
+          "triangles": 12
+        },
+        {
+          "name": "monocoque__roll_hoop_airbox_cowling__MAT_CARBON_TWILL",
+          "subpart": "roll_hoop_airbox_cowling",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 1232
+        },
+        {
+          "name": "monocoque__roll_hoop_intake_throat__MAT_CARBON_MATTE",
+          "subpart": "roll_hoop_intake_throat",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 92
+        },
+        {
+          "name": "monocoque__roll_hoop_central_splitter_blade__MAT_TITANIUM_BRUSHED",
+          "subpart": "roll_hoop_central_splitter_blade",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 108
+        },
+        {
+          "name": "monocoque__roll_hoop_tcam_mast__MAT_CARBON_MATTE",
+          "subpart": "roll_hoop_tcam_mast",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 108
+        },
+        {
+          "name": "monocoque__roll_hoop_tcam_crossbar_lime__MAT_LIVERY_LIME",
+          "subpart": "roll_hoop_tcam_crossbar_lime",
+          "mat_tag": "MAT_LIVERY_LIME",
+          "triangles": 108
+        },
+        {
+          "name": "monocoque__tcam_optical_lens_left__MAT_OLED_SCREEN",
+          "subpart": "tcam_optical_lens_left",
+          "mat_tag": "MAT_OLED_SCREEN",
+          "triangles": 68
+        },
+        {
+          "name": "monocoque__tcam_optical_lens_right__MAT_OLED_SCREEN",
+          "subpart": "tcam_optical_lens_right",
+          "mat_tag": "MAT_OLED_SCREEN",
+          "triangles": 68
+        },
+        {
+          "name": "monocoque__monocoque_susp_mounting_boss_fl_upper__MAT_TITANIUM_BRUSHED",
+          "subpart": "monocoque_susp_mounting_boss_fl_upper",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 76
+        },
+        {
+          "name": "monocoque__monocoque_susp_mounting_boss_fr_upper__MAT_TITANIUM_BRUSHED",
+          "subpart": "monocoque_susp_mounting_boss_fr_upper",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 76
+        },
+        {
+          "name": "monocoque__monocoque_susp_mounting_boss_fl_lower__MAT_TITANIUM_BRUSHED",
+          "subpart": "monocoque_susp_mounting_boss_fl_lower",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 76
+        },
+        {
+          "name": "monocoque__monocoque_susp_mounting_boss_fr_lower__MAT_TITANIUM_BRUSHED",
+          "subpart": "monocoque_susp_mounting_boss_fr_lower",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 76
+        },
+        {
+          "name": "monocoque__monocoque_rear_gold_foil_firewall__MAT_GOLD_FOIL",
+          "subpart": "monocoque_rear_gold_foil_firewall",
+          "mat_tag": "MAT_GOLD_FOIL",
+          "triangles": 508
+        }
+      ],
+      "bbox_min": [
+        -0.6481,
+        -1.244,
+        0.044
+      ],
+      "bbox_max": [
+        0.6481,
+        0.25,
+        0.993
+      ]
+    },
+    "halo": {
+      "id": "halo",
+      "category": "chassis",
+      "name_en": "Grade-5 Titanium Halo & Aero Fairing",
+      "name_ru": "Титановая дуга безопасности Halo",
+      "explode_vec": [
+        0.0,
+        -0.15,
+        0.95
+      ],
+      "removable_cover": false,
+      "material_spec": "Ti-6Al-4V Grade 5 Forged Titanium + Carbon Fairing",
+      "weight_kg": 7.0,
+      "operating_temp_c": 40,
+      "aero_load_n": 420,
+      "fia_reg": "Art. 15.2 Secondary Roll Structure",
+      "desc_en": "FIA-homologated Grade 5 titanium protective structure rated for 125 kN static load, wrapped in a flow-conditioning carbon aerodynamic fairing.",
+      "desc_ru": "Титановая защита кокпита из сплава Ti-6Al-4V (выдерживает нагрузку 125 кН) в профилированном карбоновом обтекателе с бортовой камерой.",
+      "subpart_count": 17,
+      "triangles": 5152,
+      "vertices": 2610,
+      "subparts": [
+        {
+          "name": "halo__halo_front_v_pillar_titanium__MAT_TITANIUM_BRUSHED",
+          "subpart": "halo_front_v_pillar_titanium",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 236
+        },
+        {
+          "name": "halo__halo_front_pillar_carbon_fairing__MAT_CARBON_TWILL",
+          "subpart": "halo_front_pillar_carbon_fairing",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 216
+        },
+        {
+          "name": "halo__halo_front_mounting_plinth__MAT_LIVERY_CARBON_GLOSS",
+          "subpart": "halo_front_mounting_plinth",
+          "mat_tag": "MAT_LIVERY_CARBON_GLOSS",
+          "triangles": 92
+        },
+        {
+          "name": "halo__halo_titanium_hoop_arm_left__MAT_TITANIUM_BRUSHED",
+          "subpart": "halo_titanium_hoop_arm_left",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 860
+        },
+        {
+          "name": "halo__halo_carbon_aero_fairing_left__MAT_CARBON_TWILL",
+          "subpart": "halo_carbon_aero_fairing_left",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 716
+        },
+        {
+          "name": "halo__halo_livery_stripe_white_left__MAT_LIVERY_WHITE",
+          "subpart": "halo_livery_stripe_white_left",
+          "mat_tag": "MAT_LIVERY_WHITE",
+          "triangles": 360
+        },
+        {
+          "name": "halo__halo_rear_titanium_clevis_left__MAT_TITANIUM_BRUSHED",
+          "subpart": "halo_rear_titanium_clevis_left",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 108
+        },
+        {
+          "name": "halo__halo_rear_clevis_pin_left__MAT_ALUMINUM_CNC",
+          "subpart": "halo_rear_clevis_pin_left",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 68
+        },
+        {
+          "name": "halo__halo_upper_flow_winglet_left__MAT_LIVERY_LIME",
+          "subpart": "halo_upper_flow_winglet_left",
+          "mat_tag": "MAT_LIVERY_LIME",
+          "triangles": 104
+        },
+        {
+          "name": "halo__halo_titanium_hoop_arm_right__MAT_TITANIUM_BRUSHED",
+          "subpart": "halo_titanium_hoop_arm_right",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 860
+        },
+        {
+          "name": "halo__halo_carbon_aero_fairing_right__MAT_CARBON_TWILL",
+          "subpart": "halo_carbon_aero_fairing_right",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 716
+        },
+        {
+          "name": "halo__halo_livery_stripe_white_right__MAT_LIVERY_WHITE",
+          "subpart": "halo_livery_stripe_white_right",
+          "mat_tag": "MAT_LIVERY_WHITE",
+          "triangles": 360
+        },
+        {
+          "name": "halo__halo_rear_titanium_clevis_right__MAT_TITANIUM_BRUSHED",
+          "subpart": "halo_rear_titanium_clevis_right",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 108
+        },
+        {
+          "name": "halo__halo_rear_clevis_pin_right__MAT_ALUMINUM_CNC",
+          "subpart": "halo_rear_clevis_pin_right",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 68
+        },
+        {
+          "name": "halo__halo_upper_flow_winglet_right__MAT_LIVERY_LIME",
+          "subpart": "halo_upper_flow_winglet_right",
+          "mat_tag": "MAT_LIVERY_LIME",
+          "triangles": 104
+        },
+        {
+          "name": "halo__halo_driver_facing_camera_pod__MAT_CARBON_MATTE",
+          "subpart": "halo_driver_facing_camera_pod",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 108
+        },
+        {
+          "name": "halo__halo_driver_camera_lens__MAT_OLED_SCREEN",
+          "subpart": "halo_driver_camera_lens",
+          "mat_tag": "MAT_OLED_SCREEN",
+          "triangles": 68
+        }
+      ],
+      "bbox_min": [
+        -0.332,
+        -0.6595,
+        0.5615
+      ],
+      "bbox_max": [
+        0.332,
+        0.1342,
+        0.7993
+      ]
+    },
+    "cockpit_seat": {
+      "id": "cockpit_seat",
+      "category": "chassis",
+      "name_en": "Custom Molded Carbon Seat & 6-Point Harness",
+      "name_ru": "Анатомический ложемент и 6-точечные ремни",
+      "explode_vec": [
+        0.0,
+        -0.1,
+        0.72
+      ],
+      "removable_cover": false,
+      "material_spec": "3D-Scanned Carbon Shell / Alcantara Pads / FIA 8853-2016 Webbing",
+      "weight_kg": 3.1,
+      "operating_temp_c": 45,
+      "aero_load_n": 0,
+      "fia_reg": "Art. 14.5 Cockpit & Seat Extraction",
+      "desc_en": "Driver-molded ultra-thin carbon bucket shell with Alcantara lumbar/thigh cushions and FIA 6-point Kevlar-polyamide harness with CNC rotary cam-lock.",
+      "desc_ru": "Отформованный по фигуре пилота карбоновый ковш с подушками из алькантары, 6-точечным ремнём безопасности и фрезерованным замком.",
+      "subpart_count": 19,
+      "triangles": 7016,
+      "vertices": 3546,
+      "subparts": [
+        {
+          "name": "cockpit_seat__carbon_bucket_seat_shell__MAT_CARBON_TWILL",
+          "subpart": "carbon_bucket_seat_shell",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 1520
+        },
+        {
+          "name": "cockpit_seat__seat_pad_pelvis_pan__MAT_ALCANTARA_BLACK",
+          "subpart": "seat_pad_pelvis_pan",
+          "mat_tag": "MAT_ALCANTARA_BLACK",
+          "triangles": 768
+        },
+        {
+          "name": "cockpit_seat__seat_pad_lumbar_quilted__MAT_ALCANTARA_BLACK",
+          "subpart": "seat_pad_lumbar_quilted",
+          "mat_tag": "MAT_ALCANTARA_BLACK",
+          "triangles": 768
+        },
+        {
+          "name": "cockpit_seat__seat_pad_shoulder_left__MAT_ALCANTARA_BLACK",
+          "subpart": "seat_pad_shoulder_left",
+          "mat_tag": "MAT_ALCANTARA_BLACK",
+          "triangles": 768
+        },
+        {
+          "name": "cockpit_seat__seat_pad_shoulder_right__MAT_ALCANTARA_BLACK",
+          "subpart": "seat_pad_shoulder_right",
+          "mat_tag": "MAT_ALCANTARA_BLACK",
+          "triangles": 768
+        },
+        {
+          "name": "cockpit_seat__seat_pad_thigh_left__MAT_ALCANTARA_BLACK",
+          "subpart": "seat_pad_thigh_left",
+          "mat_tag": "MAT_ALCANTARA_BLACK",
+          "triangles": 768
+        },
+        {
+          "name": "cockpit_seat__seat_pad_thigh_right__MAT_ALCANTARA_BLACK",
+          "subpart": "seat_pad_thigh_right",
+          "mat_tag": "MAT_ALCANTARA_BLACK",
+          "triangles": 768
+        },
+        {
+          "name": "cockpit_seat__harness_cnc_rotary_buckle_hub__MAT_ALUMINUM_CNC",
+          "subpart": "harness_cnc_rotary_buckle_hub",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "cockpit_seat__harness_rotary_release_star_anodized__MAT_ANODIZED_RED",
+          "subpart": "harness_rotary_release_star_anodized",
+          "mat_tag": "MAT_ANODIZED_RED",
+          "triangles": 108
+        },
+        {
+          "name": "cockpit_seat__harness_shoulder_strap_left__MAT_HARNESS_RED",
+          "subpart": "harness_shoulder_strap_left",
+          "mat_tag": "MAT_HARNESS_RED",
+          "triangles": 56
+        },
+        {
+          "name": "cockpit_seat__harness_titanium_adjuster_shoulder_left__MAT_TITANIUM_BRUSHED",
+          "subpart": "harness_titanium_adjuster_shoulder_left",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 108
+        },
+        {
+          "name": "cockpit_seat__harness_lap_strap_left__MAT_HARNESS_RED",
+          "subpart": "harness_lap_strap_left",
+          "mat_tag": "MAT_HARNESS_RED",
+          "triangles": 44
+        },
+        {
+          "name": "cockpit_seat__harness_titanium_adjuster_lap_left__MAT_TITANIUM_BRUSHED",
+          "subpart": "harness_titanium_adjuster_lap_left",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 108
+        },
+        {
+          "name": "cockpit_seat__harness_crotch_strap_left__MAT_HARNESS_RED",
+          "subpart": "harness_crotch_strap_left",
+          "mat_tag": "MAT_HARNESS_RED",
+          "triangles": 20
+        },
+        {
+          "name": "cockpit_seat__harness_shoulder_strap_right__MAT_HARNESS_RED",
+          "subpart": "harness_shoulder_strap_right",
+          "mat_tag": "MAT_HARNESS_RED",
+          "triangles": 56
+        },
+        {
+          "name": "cockpit_seat__harness_titanium_adjuster_shoulder_right__MAT_TITANIUM_BRUSHED",
+          "subpart": "harness_titanium_adjuster_shoulder_right",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 108
+        },
+        {
+          "name": "cockpit_seat__harness_lap_strap_right__MAT_HARNESS_RED",
+          "subpart": "harness_lap_strap_right",
+          "mat_tag": "MAT_HARNESS_RED",
+          "triangles": 44
+        },
+        {
+          "name": "cockpit_seat__harness_titanium_adjuster_lap_right__MAT_TITANIUM_BRUSHED",
+          "subpart": "harness_titanium_adjuster_lap_right",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 108
+        },
+        {
+          "name": "cockpit_seat__harness_crotch_strap_right__MAT_HARNESS_RED",
+          "subpart": "harness_crotch_strap_right",
+          "mat_tag": "MAT_HARNESS_RED",
+          "triangles": 20
+        }
+      ],
+      "bbox_min": [
+        -0.242,
+        -0.4681,
+        0.0896
+      ],
+      "bbox_max": [
+        0.242,
+        0.126,
+        0.66
+      ]
+    },
+    "steering_wheel": {
+      "id": "steering_wheel",
+      "category": "chassis",
+      "name_en": "Telemetry Steering Wheel & Quick Release",
+      "name_ru": "Рулевой штурвал с телеметрией и быстросъёмом",
+      "explode_vec": [
+        0.0,
+        -0.55,
+        0.58
+      ],
+      "removable_cover": false,
+      "material_spec": "Carbon Plate / Titanium Quick-Release / 4.3\" PCU-8D OLED",
+      "weight_kg": 1.35,
+      "operating_temp_c": 48,
+      "aero_load_n": 0,
+      "fia_reg": "Art. 8.6 Driver Controls & PCU-8D",
+      "desc_en": "Butterfly carbon steering wheel featuring a high-brightness PCU-8D telemetry display, 15 LED shift lights, 9 rotary thumb/face encoders, and magnetic shift/clutch paddles.",
+      "desc_ru": "Карбоновый штурвал с OLED-дисплеем телеметрии PCU-8D, 15 светодиодами отсечки, 9 роторными переключателями дифференциала и магнитными лепестками.",
+      "subpart_count": 47,
+      "triangles": 5284,
+      "vertices": 2736,
+      "subparts": [
+        {
+          "name": "steering_wheel__sw_butterfly_carbon_plate__MAT_CARBON_TWILL",
+          "subpart": "sw_butterfly_carbon_plate",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 572
+        },
+        {
+          "name": "steering_wheel__sw_rear_electronics_pod__MAT_CARBON_MATTE",
+          "subpart": "sw_rear_electronics_pod",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 108
+        },
+        {
+          "name": "steering_wheel__sw_alcantara_grip_left__MAT_ALCANTARA_BLACK",
+          "subpart": "sw_alcantara_grip_left",
+          "mat_tag": "MAT_ALCANTARA_BLACK",
+          "triangles": 880
+        },
+        {
+          "name": "steering_wheel__sw_alcantara_grip_right__MAT_ALCANTARA_BLACK",
+          "subpart": "sw_alcantara_grip_right",
+          "mat_tag": "MAT_ALCANTARA_BLACK",
+          "triangles": 880
+        },
+        {
+          "name": "steering_wheel__sw_pcu8d_oled_bezel__MAT_LIVERY_CARBON_GLOSS",
+          "subpart": "sw_pcu8d_oled_bezel",
+          "mat_tag": "MAT_LIVERY_CARBON_GLOSS",
+          "triangles": 108
+        },
+        {
+          "name": "steering_wheel__sw_pcu8d_oled_screen__MAT_OLED_SCREEN",
+          "subpart": "sw_pcu8d_oled_screen",
+          "mat_tag": "MAT_OLED_SCREEN",
+          "triangles": 12
+        },
+        {
+          "name": "steering_wheel__sw_shift_led_01__MAT_LED_EMISSIVE_GREEN",
+          "subpart": "sw_shift_led_01",
+          "mat_tag": "MAT_LED_EMISSIVE_GREEN",
+          "triangles": 44
+        },
+        {
+          "name": "steering_wheel__sw_shift_led_02__MAT_LED_EMISSIVE_GREEN",
+          "subpart": "sw_shift_led_02",
+          "mat_tag": "MAT_LED_EMISSIVE_GREEN",
+          "triangles": 44
+        },
+        {
+          "name": "steering_wheel__sw_shift_led_03__MAT_LED_EMISSIVE_GREEN",
+          "subpart": "sw_shift_led_03",
+          "mat_tag": "MAT_LED_EMISSIVE_GREEN",
+          "triangles": 44
+        },
+        {
+          "name": "steering_wheel__sw_shift_led_04__MAT_LED_EMISSIVE_GREEN",
+          "subpart": "sw_shift_led_04",
+          "mat_tag": "MAT_LED_EMISSIVE_GREEN",
+          "triangles": 44
+        },
+        {
+          "name": "steering_wheel__sw_shift_led_05__MAT_LED_EMISSIVE_GREEN",
+          "subpart": "sw_shift_led_05",
+          "mat_tag": "MAT_LED_EMISSIVE_GREEN",
+          "triangles": 44
+        },
+        {
+          "name": "steering_wheel__sw_shift_led_06__MAT_LED_EMISSIVE_GREEN",
+          "subpart": "sw_shift_led_06",
+          "mat_tag": "MAT_LED_EMISSIVE_GREEN",
+          "triangles": 44
+        },
+        {
+          "name": "steering_wheel__sw_shift_led_07__MAT_LED_EMISSIVE_RED",
+          "subpart": "sw_shift_led_07",
+          "mat_tag": "MAT_LED_EMISSIVE_RED",
+          "triangles": 44
+        },
+        {
+          "name": "steering_wheel__sw_shift_led_08__MAT_LED_EMISSIVE_RED",
+          "subpart": "sw_shift_led_08",
+          "mat_tag": "MAT_LED_EMISSIVE_RED",
+          "triangles": 44
+        },
+        {
+          "name": "steering_wheel__sw_shift_led_09__MAT_LED_EMISSIVE_RED",
+          "subpart": "sw_shift_led_09",
+          "mat_tag": "MAT_LED_EMISSIVE_RED",
+          "triangles": 44
+        },
+        {
+          "name": "steering_wheel__sw_shift_led_10__MAT_LED_EMISSIVE_RED",
+          "subpart": "sw_shift_led_10",
+          "mat_tag": "MAT_LED_EMISSIVE_RED",
+          "triangles": 44
+        },
+        {
+          "name": "steering_wheel__sw_shift_led_11__MAT_LED_EMISSIVE_RED",
+          "subpart": "sw_shift_led_11",
+          "mat_tag": "MAT_LED_EMISSIVE_RED",
+          "triangles": 44
+        },
+        {
+          "name": "steering_wheel__sw_shift_led_12__MAT_LED_EMISSIVE_RED",
+          "subpart": "sw_shift_led_12",
+          "mat_tag": "MAT_LED_EMISSIVE_RED",
+          "triangles": 44
+        },
+        {
+          "name": "steering_wheel__sw_shift_led_13__MAT_LED_EMISSIVE_RED",
+          "subpart": "sw_shift_led_13",
+          "mat_tag": "MAT_LED_EMISSIVE_RED",
+          "triangles": 44
+        },
+        {
+          "name": "steering_wheel__sw_shift_led_14__MAT_LED_EMISSIVE_RED",
+          "subpart": "sw_shift_led_14",
+          "mat_tag": "MAT_LED_EMISSIVE_RED",
+          "triangles": 44
+        },
+        {
+          "name": "steering_wheel__sw_shift_led_15__MAT_LED_EMISSIVE_RED",
+          "subpart": "sw_shift_led_15",
+          "mat_tag": "MAT_LED_EMISSIVE_RED",
+          "triangles": 44
+        },
+        {
+          "name": "steering_wheel__sw_rotary_diff_entry__MAT_ANODIZED_BLUE",
+          "subpart": "sw_rotary_diff_entry",
+          "mat_tag": "MAT_ANODIZED_BLUE",
+          "triangles": 76
+        },
+        {
+          "name": "steering_wheel__sw_rotary_diff_mid__MAT_ANODIZED_RED",
+          "subpart": "sw_rotary_diff_mid",
+          "mat_tag": "MAT_ANODIZED_RED",
+          "triangles": 76
+        },
+        {
+          "name": "steering_wheel__sw_rotary_ers_deploy__MAT_LIVERY_LIME",
+          "subpart": "sw_rotary_ers_deploy",
+          "mat_tag": "MAT_LIVERY_LIME",
+          "triangles": 76
+        },
+        {
+          "name": "steering_wheel__sw_rotary_engine_mode__MAT_ALUMINUM_CNC",
+          "subpart": "sw_rotary_engine_mode",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 76
+        },
+        {
+          "name": "steering_wheel__sw_rotary_brake_migration__MAT_LIVERY_ORANGE",
+          "subpart": "sw_rotary_brake_migration",
+          "mat_tag": "MAT_LIVERY_ORANGE",
+          "triangles": 76
+        },
+        {
+          "name": "steering_wheel__sw_rotary_clutch_map__MAT_ANODIZED_RED",
+          "subpart": "sw_rotary_clutch_map",
+          "mat_tag": "MAT_ANODIZED_RED",
+          "triangles": 76
+        },
+        {
+          "name": "steering_wheel__sw_thumb_encoder_upper_left__MAT_ANODIZED_RED",
+          "subpart": "sw_thumb_encoder_upper_left",
+          "mat_tag": "MAT_ANODIZED_RED",
+          "triangles": 76
+        },
+        {
+          "name": "steering_wheel__sw_thumb_encoder_lower_left__MAT_ALUMINUM_CNC",
+          "subpart": "sw_thumb_encoder_lower_left",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 76
+        },
+        {
+          "name": "steering_wheel__sw_thumb_encoder_upper_right__MAT_ANODIZED_BLUE",
+          "subpart": "sw_thumb_encoder_upper_right",
+          "mat_tag": "MAT_ANODIZED_BLUE",
+          "triangles": 76
+        },
+        {
+          "name": "steering_wheel__sw_thumb_encoder_lower_right__MAT_ALUMINUM_CNC",
+          "subpart": "sw_thumb_encoder_lower_right",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 76
+        },
+        {
+          "name": "steering_wheel__sw_btn_drs__MAT_LIVERY_LIME",
+          "subpart": "sw_btn_drs",
+          "mat_tag": "MAT_LIVERY_LIME",
+          "triangles": 60
+        },
+        {
+          "name": "steering_wheel__sw_btn_overtake__MAT_ANODIZED_RED",
+          "subpart": "sw_btn_overtake",
+          "mat_tag": "MAT_ANODIZED_RED",
+          "triangles": 60
+        },
+        {
+          "name": "steering_wheel__sw_btn_pit_limiter__MAT_ANODIZED_BLUE",
+          "subpart": "sw_btn_pit_limiter",
+          "mat_tag": "MAT_ANODIZED_BLUE",
+          "triangles": 60
+        },
+        {
+          "name": "steering_wheel__sw_btn_radio__MAT_LIVERY_WHITE",
+          "subpart": "sw_btn_radio",
+          "mat_tag": "MAT_LIVERY_WHITE",
+          "triangles": 60
+        },
+        {
+          "name": "steering_wheel__sw_btn_neutral__MAT_LIVERY_ORANGE",
+          "subpart": "sw_btn_neutral",
+          "mat_tag": "MAT_LIVERY_ORANGE",
+          "triangles": 60
+        },
+        {
+          "name": "steering_wheel__sw_btn_drink__MAT_ANODIZED_BLUE",
+          "subpart": "sw_btn_drink",
+          "mat_tag": "MAT_ANODIZED_BLUE",
+          "triangles": 60
+        },
+        {
+          "name": "steering_wheel__sw_btn_plus10__MAT_ALUMINUM_CNC",
+          "subpart": "sw_btn_plus10",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 60
+        },
+        {
+          "name": "steering_wheel__sw_btn_plus1__MAT_ALUMINUM_CNC",
+          "subpart": "sw_btn_plus1",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 60
+        },
+        {
+          "name": "steering_wheel__sw_magnetic_shift_paddle_left__MAT_CARBON_TWILL",
+          "subpart": "sw_magnetic_shift_paddle_left",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 108
+        },
+        {
+          "name": "steering_wheel__sw_dual_clutch_paddle_left__MAT_TITANIUM_BRUSHED",
+          "subpart": "sw_dual_clutch_paddle_left",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 108
+        },
+        {
+          "name": "steering_wheel__sw_magnetic_shift_paddle_right__MAT_CARBON_TWILL",
+          "subpart": "sw_magnetic_shift_paddle_right",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 108
+        },
+        {
+          "name": "steering_wheel__sw_dual_clutch_paddle_right__MAT_TITANIUM_BRUSHED",
+          "subpart": "sw_dual_clutch_paddle_right",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 108
+        },
+        {
+          "name": "steering_wheel__sw_quick_release_gold_collar__MAT_GOLD_FOIL",
+          "subpart": "sw_quick_release_gold_collar",
+          "mat_tag": "MAT_GOLD_FOIL",
+          "triangles": 108
+        },
+        {
+          "name": "steering_wheel__sw_quick_release_titanium_hub__MAT_TITANIUM_BRUSHED",
+          "subpart": "sw_quick_release_titanium_hub",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 92
+        },
+        {
+          "name": "steering_wheel__steering_column_carbon_shaft__MAT_CARBON_TWILL",
+          "subpart": "steering_column_carbon_shaft",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 116
+        },
+        {
+          "name": "steering_wheel__steering_column_titanium_ujoint__MAT_TITANIUM_BRUSHED",
+          "subpart": "steering_column_titanium_ujoint",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 76
+        }
+      ],
+      "bbox_min": [
+        -0.1607,
+        -1.1555,
+        0.3
+      ],
+      "bbox_max": [
+        0.1607,
+        -0.4726,
+        0.6348
+      ]
+    },
+    "pedal_box": {
+      "id": "pedal_box",
+      "category": "chassis",
+      "name_en": "Billet CNC Pedal Box & Master Cylinders",
+      "name_ru": "Педальный узел и главные тормозные цилиндры",
+      "explode_vec": [
+        0.0,
+        -0.85,
+        0.42
+      ],
+      "removable_cover": false,
+      "material_spec": "7075-T6 Billet Aluminum / Molded Carbon Brake Pedal",
+      "weight_kg": 2.8,
+      "operating_temp_c": 65,
+      "aero_load_n": 0,
+      "fia_reg": "Art. 11.1 Dual-Circuit Braking",
+      "desc_en": "Footwell-mounted CNC pedal assembly with carbon heel cups, rotary Hall-effect throttle sensor, and dual AP Racing titanium master cylinders with brake-by-wire lines.",
+      "desc_ru": "Педальный узел из фрезерованного алюминия 7075-T6 с карбоновыми упорами для пяток, датчиком Холла и двумя титановыми цилиндрами AP Racing.",
+      "subpart_count": 17,
+      "triangles": 1556,
+      "vertices": 812,
+      "subparts": [
+        {
+          "name": "pedal_box__pedal_box_carbon_floor_tray__MAT_CARBON_TWILL",
+          "subpart": "pedal_box_carbon_floor_tray",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 108
+        },
+        {
+          "name": "pedal_box__pedal_carbon_heel_cup_left__MAT_CARBON_TWILL",
+          "subpart": "pedal_carbon_heel_cup_left",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 140
+        },
+        {
+          "name": "pedal_box__pedal_carbon_heel_cup_right__MAT_CARBON_TWILL",
+          "subpart": "pedal_carbon_heel_cup_right",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 140
+        },
+        {
+          "name": "pedal_box__throttle_pedal_cnc_arm__MAT_ALUMINUM_CNC",
+          "subpart": "throttle_pedal_cnc_arm",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "pedal_box__throttle_pedal_curved_footplate__MAT_ALUMINUM_CNC",
+          "subpart": "throttle_pedal_curved_footplate",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "pedal_box__throttle_titanium_return_damper__MAT_TITANIUM_BRUSHED",
+          "subpart": "throttle_titanium_return_damper",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 68
+        },
+        {
+          "name": "pedal_box__throttle_rotary_hall_sensor__MAT_ANODIZED_BLUE",
+          "subpart": "throttle_rotary_hall_sensor",
+          "mat_tag": "MAT_ANODIZED_BLUE",
+          "triangles": 76
+        },
+        {
+          "name": "pedal_box__brake_pedal_carbon_beam__MAT_CARBON_TWILL",
+          "subpart": "brake_pedal_carbon_beam",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 108
+        },
+        {
+          "name": "pedal_box__brake_pedal_molded_faceplate__MAT_CARBON_TWILL",
+          "subpart": "brake_pedal_molded_faceplate",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 108
+        },
+        {
+          "name": "pedal_box__brake_pedal_antislip_grip_bar__MAT_TITANIUM_BRUSHED",
+          "subpart": "brake_pedal_antislip_grip_bar",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 60
+        },
+        {
+          "name": "pedal_box__pedal_brake_balance_bias_bar__MAT_TITANIUM_BRUSHED",
+          "subpart": "pedal_brake_balance_bias_bar",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 76
+        },
+        {
+          "name": "pedal_box__ap_racing_master_cylinder_front_circuit__MAT_TITANIUM_BRUSHED",
+          "subpart": "ap_racing_master_cylinder_front_circuit",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 84
+        },
+        {
+          "name": "pedal_box__brake_fluid_reservoir_front_circuit__MAT_ANODIZED_RED",
+          "subpart": "brake_fluid_reservoir_front_circuit",
+          "mat_tag": "MAT_ANODIZED_RED",
+          "triangles": 76
+        },
+        {
+          "name": "pedal_box__braided_hydraulic_line_front_circuit__MAT_CHROME_POLISHED",
+          "subpart": "braided_hydraulic_line_front_circuit",
+          "mat_tag": "MAT_CHROME_POLISHED",
+          "triangles": 68
+        },
+        {
+          "name": "pedal_box__ap_racing_master_cylinder_rear_circuit__MAT_TITANIUM_BRUSHED",
+          "subpart": "ap_racing_master_cylinder_rear_circuit",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 84
+        },
+        {
+          "name": "pedal_box__brake_fluid_reservoir_rear_circuit__MAT_ANODIZED_BLUE",
+          "subpart": "brake_fluid_reservoir_rear_circuit",
+          "mat_tag": "MAT_ANODIZED_BLUE",
+          "triangles": 76
+        },
+        {
+          "name": "pedal_box__braided_hydraulic_line_rear_circuit__MAT_CHROME_POLISHED",
+          "subpart": "braided_hydraulic_line_rear_circuit",
+          "mat_tag": "MAT_CHROME_POLISHED",
+          "triangles": 68
+        }
+      ],
+      "bbox_min": [
+        -0.1751,
+        -1.24,
+        0.118
+      ],
+      "bbox_max": [
+        0.175,
+        -0.92,
+        0.3253
+      ]
+    },
+    "sidepod_left": {
+      "id": "sidepod_left",
+      "category": "aero",
+      "name_en": "Left Undercut Sidepod Shell",
+      "name_ru": "Левый понтон с глубоким подрезом",
+      "explode_vec": [
+        -0.95,
+        0.05,
+        0.25
+      ],
+      "removable_cover": true,
+      "material_spec": "Autoclave Twill Carbon + Nomex Core",
+      "weight_kg": 5.8,
+      "operating_temp_c": 72,
+      "aero_load_n": 1420,
+      "fia_reg": "Art. 3.5 Sidepod Bodywork",
+      "desc_en": "Aggressive high-inlet undercut sidepod with water-slide upper downwash channel and precision cooling gills.",
+      "desc_ru": "Аэродинамический левый понтон с высоким воздухозаборником, глубоким нижним подрезом, верхним желобом downwash и жабрами охлаждения.",
+      "subpart_count": 24,
+      "triangles": 6996,
+      "vertices": 3546,
+      "subparts": [
+        {
+          "name": "sidepod_left__main_undercut_shell_l__MAT_CARBON_TWILL",
+          "subpart": "main_undercut_shell_l",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 4480
+        },
+        {
+          "name": "sidepod_left__overbite_inlet_cowl_l__MAT_LIVERY_CARBON_GLOSS",
+          "subpart": "overbite_inlet_cowl_l",
+          "mat_tag": "MAT_LIVERY_CARBON_GLOSS",
+          "triangles": 380
+        },
+        {
+          "name": "sidepod_left__inlet_cavity_baffle_l__MAT_CARBON_MATTE",
+          "subpart": "inlet_cavity_baffle_l",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 12
+        },
+        {
+          "name": "sidepod_left__inlet_splitter_vane_l__MAT_LIVERY_LIME",
+          "subpart": "inlet_splitter_vane_l",
+          "mat_tag": "MAT_LIVERY_LIME",
+          "triangles": 60
+        },
+        {
+          "name": "sidepod_left__waterslide_downwash_trough_l__MAT_CARBON_MATTE",
+          "subpart": "waterslide_downwash_trough_l",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 556
+        },
+        {
+          "name": "sidepod_left__cooling_louver_gill_01_l__MAT_CARBON_MATTE",
+          "subpart": "cooling_louver_gill_01_l",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 44
+        },
+        {
+          "name": "sidepod_left__cooling_louver_gill_02_l__MAT_CARBON_MATTE",
+          "subpart": "cooling_louver_gill_02_l",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 44
+        },
+        {
+          "name": "sidepod_left__cooling_louver_gill_03_l__MAT_CARBON_MATTE",
+          "subpart": "cooling_louver_gill_03_l",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 44
+        },
+        {
+          "name": "sidepod_left__cooling_louver_gill_04_l__MAT_CARBON_MATTE",
+          "subpart": "cooling_louver_gill_04_l",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 44
+        },
+        {
+          "name": "sidepod_left__cooling_louver_gill_05_l__MAT_CARBON_MATTE",
+          "subpart": "cooling_louver_gill_05_l",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 44
+        },
+        {
+          "name": "sidepod_left__cooling_louver_gill_06_l__MAT_CARBON_MATTE",
+          "subpart": "cooling_louver_gill_06_l",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 44
+        },
+        {
+          "name": "sidepod_left__cooling_louver_gill_07_l__MAT_CARBON_MATTE",
+          "subpart": "cooling_louver_gill_07_l",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 44
+        },
+        {
+          "name": "sidepod_left__cooling_louver_gill_08_l__MAT_CARBON_MATTE",
+          "subpart": "cooling_louver_gill_08_l",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 44
+        },
+        {
+          "name": "sidepod_left__cooling_louver_gill_09_l__MAT_CARBON_MATTE",
+          "subpart": "cooling_louver_gill_09_l",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 44
+        },
+        {
+          "name": "sidepod_left__cooling_louver_gill_10_l__MAT_CARBON_MATTE",
+          "subpart": "cooling_louver_gill_10_l",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 44
+        },
+        {
+          "name": "sidepod_left__sips_upper_spar_wing_l__MAT_LIVERY_CARBON_GLOSS",
+          "subpart": "sips_upper_spar_wing_l",
+          "mat_tag": "MAT_LIVERY_CARBON_GLOSS",
+          "triangles": 92
+        },
+        {
+          "name": "sidepod_left__mirror_aero_housing_l__MAT_LIVERY_CARBON_GLOSS",
+          "subpart": "mirror_aero_housing_l",
+          "mat_tag": "MAT_LIVERY_CARBON_GLOSS",
+          "triangles": 196
+        },
+        {
+          "name": "sidepod_left__mirror_reflective_glass_l__MAT_CHROME_POLISHED",
+          "subpart": "mirror_reflective_glass_l",
+          "mat_tag": "MAT_CHROME_POLISHED",
+          "triangles": 108
+        },
+        {
+          "name": "sidepod_left__mirror_stalk_inboard_l__MAT_CARBON_TWILL",
+          "subpart": "mirror_stalk_inboard_l",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 80
+        },
+        {
+          "name": "sidepod_left__mirror_stalk_vertical_l__MAT_CARBON_TWILL",
+          "subpart": "mirror_stalk_vertical_l",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 80
+        },
+        {
+          "name": "sidepod_left__livery_white_flank_band_l__MAT_LIVERY_WHITE",
+          "subpart": "livery_white_flank_band_l",
+          "mat_tag": "MAT_LIVERY_WHITE",
+          "triangles": 284
+        },
+        {
+          "name": "sidepod_left__livery_chevron_lime_front_l__MAT_LIVERY_LIME",
+          "subpart": "livery_chevron_lime_front_l",
+          "mat_tag": "MAT_LIVERY_LIME",
+          "triangles": 76
+        },
+        {
+          "name": "sidepod_left__livery_chevron_orange_mid_l__MAT_LIVERY_ORANGE",
+          "subpart": "livery_chevron_orange_mid_l",
+          "mat_tag": "MAT_LIVERY_ORANGE",
+          "triangles": 76
+        },
+        {
+          "name": "sidepod_left__livery_chevron_lime_rear_l__MAT_LIVERY_LIME",
+          "subpart": "livery_chevron_lime_rear_l",
+          "mat_tag": "MAT_LIVERY_LIME",
+          "triangles": 76
+        }
+      ],
+      "bbox_min": [
+        -0.6855,
+        -0.5568,
+        0.1675
+      ],
+      "bbox_max": [
+        -0.188,
+        1.62,
+        0.67
+      ]
+    },
+    "sidepod_right": {
+      "id": "sidepod_right",
+      "category": "aero",
+      "name_en": "Right Undercut Sidepod Shell",
+      "name_ru": "Правый понтон с глубоким подрезом",
+      "explode_vec": [
+        0.95,
+        0.05,
+        0.25
+      ],
+      "removable_cover": true,
+      "material_spec": "Autoclave Twill Carbon + Nomex Core",
+      "weight_kg": 5.8,
+      "operating_temp_c": 72,
+      "aero_load_n": 1420,
+      "fia_reg": "Art. 3.5 Sidepod Bodywork",
+      "desc_en": "Right-hand aerodynamic sidepod shell channeling high-energy airflow into the Coke-bottle rear floor region.",
+      "desc_ru": "Правый понтон с профилем «бутылочного горлышка», направляющий высокоэнергетический поток к верхней плоскости диффузора.",
+      "subpart_count": 24,
+      "triangles": 6996,
+      "vertices": 3546,
+      "subparts": [
+        {
+          "name": "sidepod_right__main_undercut_shell_r__MAT_CARBON_TWILL",
+          "subpart": "main_undercut_shell_r",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 4480
+        },
+        {
+          "name": "sidepod_right__overbite_inlet_cowl_r__MAT_LIVERY_CARBON_GLOSS",
+          "subpart": "overbite_inlet_cowl_r",
+          "mat_tag": "MAT_LIVERY_CARBON_GLOSS",
+          "triangles": 380
+        },
+        {
+          "name": "sidepod_right__inlet_cavity_baffle_r__MAT_CARBON_MATTE",
+          "subpart": "inlet_cavity_baffle_r",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 12
+        },
+        {
+          "name": "sidepod_right__inlet_splitter_vane_r__MAT_LIVERY_LIME",
+          "subpart": "inlet_splitter_vane_r",
+          "mat_tag": "MAT_LIVERY_LIME",
+          "triangles": 60
+        },
+        {
+          "name": "sidepod_right__waterslide_downwash_trough_r__MAT_CARBON_MATTE",
+          "subpart": "waterslide_downwash_trough_r",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 556
+        },
+        {
+          "name": "sidepod_right__cooling_louver_gill_01_r__MAT_CARBON_MATTE",
+          "subpart": "cooling_louver_gill_01_r",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 44
+        },
+        {
+          "name": "sidepod_right__cooling_louver_gill_02_r__MAT_CARBON_MATTE",
+          "subpart": "cooling_louver_gill_02_r",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 44
+        },
+        {
+          "name": "sidepod_right__cooling_louver_gill_03_r__MAT_CARBON_MATTE",
+          "subpart": "cooling_louver_gill_03_r",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 44
+        },
+        {
+          "name": "sidepod_right__cooling_louver_gill_04_r__MAT_CARBON_MATTE",
+          "subpart": "cooling_louver_gill_04_r",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 44
+        },
+        {
+          "name": "sidepod_right__cooling_louver_gill_05_r__MAT_CARBON_MATTE",
+          "subpart": "cooling_louver_gill_05_r",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 44
+        },
+        {
+          "name": "sidepod_right__cooling_louver_gill_06_r__MAT_CARBON_MATTE",
+          "subpart": "cooling_louver_gill_06_r",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 44
+        },
+        {
+          "name": "sidepod_right__cooling_louver_gill_07_r__MAT_CARBON_MATTE",
+          "subpart": "cooling_louver_gill_07_r",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 44
+        },
+        {
+          "name": "sidepod_right__cooling_louver_gill_08_r__MAT_CARBON_MATTE",
+          "subpart": "cooling_louver_gill_08_r",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 44
+        },
+        {
+          "name": "sidepod_right__cooling_louver_gill_09_r__MAT_CARBON_MATTE",
+          "subpart": "cooling_louver_gill_09_r",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 44
+        },
+        {
+          "name": "sidepod_right__cooling_louver_gill_10_r__MAT_CARBON_MATTE",
+          "subpart": "cooling_louver_gill_10_r",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 44
+        },
+        {
+          "name": "sidepod_right__sips_upper_spar_wing_r__MAT_LIVERY_CARBON_GLOSS",
+          "subpart": "sips_upper_spar_wing_r",
+          "mat_tag": "MAT_LIVERY_CARBON_GLOSS",
+          "triangles": 92
+        },
+        {
+          "name": "sidepod_right__mirror_aero_housing_r__MAT_LIVERY_CARBON_GLOSS",
+          "subpart": "mirror_aero_housing_r",
+          "mat_tag": "MAT_LIVERY_CARBON_GLOSS",
+          "triangles": 196
+        },
+        {
+          "name": "sidepod_right__mirror_reflective_glass_r__MAT_CHROME_POLISHED",
+          "subpart": "mirror_reflective_glass_r",
+          "mat_tag": "MAT_CHROME_POLISHED",
+          "triangles": 108
+        },
+        {
+          "name": "sidepod_right__mirror_stalk_inboard_r__MAT_CARBON_TWILL",
+          "subpart": "mirror_stalk_inboard_r",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 80
+        },
+        {
+          "name": "sidepod_right__mirror_stalk_vertical_r__MAT_CARBON_TWILL",
+          "subpart": "mirror_stalk_vertical_r",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 80
+        },
+        {
+          "name": "sidepod_right__livery_white_flank_band_r__MAT_LIVERY_WHITE",
+          "subpart": "livery_white_flank_band_r",
+          "mat_tag": "MAT_LIVERY_WHITE",
+          "triangles": 284
+        },
+        {
+          "name": "sidepod_right__livery_chevron_lime_front_r__MAT_LIVERY_LIME",
+          "subpart": "livery_chevron_lime_front_r",
+          "mat_tag": "MAT_LIVERY_LIME",
+          "triangles": 76
+        },
+        {
+          "name": "sidepod_right__livery_chevron_orange_mid_r__MAT_LIVERY_ORANGE",
+          "subpart": "livery_chevron_orange_mid_r",
+          "mat_tag": "MAT_LIVERY_ORANGE",
+          "triangles": 76
+        },
+        {
+          "name": "sidepod_right__livery_chevron_lime_rear_r__MAT_LIVERY_LIME",
+          "subpart": "livery_chevron_lime_rear_r",
+          "mat_tag": "MAT_LIVERY_LIME",
+          "triangles": 76
+        }
+      ],
+      "bbox_min": [
+        0.188,
+        -0.5568,
+        0.1675
+      ],
+      "bbox_max": [
+        0.6855,
+        1.62,
+        0.67
+      ]
+    },
+    "engine_cover": {
+      "id": "engine_cover",
+      "category": "aero",
+      "name_en": "Shark-Fin Engine Cover & Cannon Exit",
+      "name_ru": "Кожух двигателя с «акульим плавником»",
+      "explode_vec": [
+        0.0,
+        0.35,
+        1.15
+      ],
+      "removable_cover": true,
+      "material_spec": "Ultra-Thin 2x2 Twill Carbon + Ceramic Inner Barrier",
+      "weight_kg": 6.9,
+      "operating_temp_c": 115,
+      "aero_load_n": 1680,
+      "fia_reg": "Art. 3.5.5 Engine Cover & Fin",
+      "desc_en": "One-piece quick-release carbon engine cover featuring a yaw-stabilizing dorsal shark fin and twin rear hot-air cooling cannons.",
+      "desc_ru": "Быстросъёмный карбоновый кожух силовой установки со стабилизирующим плавником и задними пушечными соплами отвода горячего воздуха.",
+      "subpart_count": 24,
+      "triangles": 4964,
+      "vertices": 2574,
+      "subparts": [
+        {
+          "name": "engine_cover__main_canopy_shell__MAT_CARBON_TWILL",
+          "subpart": "main_canopy_shell",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 3456
+        },
+        {
+          "name": "engine_cover__airbox_rollhoop_intake__MAT_LIVERY_CARBON_GLOSS",
+          "subpart": "airbox_rollhoop_intake",
+          "mat_tag": "MAT_LIVERY_CARBON_GLOSS",
+          "triangles": 380
+        },
+        {
+          "name": "engine_cover__airbox_intake_cavity__MAT_CARBON_MATTE",
+          "subpart": "airbox_intake_cavity",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 76
+        },
+        {
+          "name": "engine_cover__fom_tcam_pylon__MAT_CARBON_MATTE",
+          "subpart": "fom_tcam_pylon",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 108
+        },
+        {
+          "name": "engine_cover__fom_tcam_housing_bar__MAT_LIVERY_LIME",
+          "subpart": "fom_tcam_housing_bar",
+          "mat_tag": "MAT_LIVERY_LIME",
+          "triangles": 80
+        },
+        {
+          "name": "engine_cover__dorsal_shark_fin_blade__MAT_LIVERY_CARBON_GLOSS",
+          "subpart": "dorsal_shark_fin_blade",
+          "mat_tag": "MAT_LIVERY_CARBON_GLOSS",
+          "triangles": 184
+        },
+        {
+          "name": "engine_cover__shark_fin_top_trim_lime__MAT_LIVERY_LIME",
+          "subpart": "shark_fin_top_trim_lime",
+          "mat_tag": "MAT_LIVERY_LIME",
+          "triangles": 20
+        },
+        {
+          "name": "engine_cover__shark_fin_number_panel_white__MAT_LIVERY_WHITE",
+          "subpart": "shark_fin_number_panel_white",
+          "mat_tag": "MAT_LIVERY_WHITE",
+          "triangles": 12
+        },
+        {
+          "name": "engine_cover__driver_number_0_badge__MAT_LIVERY_ORANGE",
+          "subpart": "driver_number_0_badge",
+          "mat_tag": "MAT_LIVERY_ORANGE",
+          "triangles": 12
+        },
+        {
+          "name": "engine_cover__driver_number_1_badge__MAT_LIVERY_LIME",
+          "subpart": "driver_number_1_badge",
+          "mat_tag": "MAT_LIVERY_LIME",
+          "triangles": 12
+        },
+        {
+          "name": "engine_cover__hot_air_cannon_outlet_left__MAT_TITANIUM_BRUSHED",
+          "subpart": "hot_air_cannon_outlet_left",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 48
+        },
+        {
+          "name": "engine_cover__hot_air_cannon_outlet_right__MAT_TITANIUM_BRUSHED",
+          "subpart": "hot_air_cannon_outlet_right",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 48
+        },
+        {
+          "name": "engine_cover__dzus_quick_release_01__MAT_TITANIUM_BRUSHED",
+          "subpart": "dzus_quick_release_01",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 44
+        },
+        {
+          "name": "engine_cover__dzus_quick_release_02__MAT_TITANIUM_BRUSHED",
+          "subpart": "dzus_quick_release_02",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 44
+        },
+        {
+          "name": "engine_cover__dzus_quick_release_03__MAT_TITANIUM_BRUSHED",
+          "subpart": "dzus_quick_release_03",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 44
+        },
+        {
+          "name": "engine_cover__dzus_quick_release_04__MAT_TITANIUM_BRUSHED",
+          "subpart": "dzus_quick_release_04",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 44
+        },
+        {
+          "name": "engine_cover__dzus_quick_release_05__MAT_TITANIUM_BRUSHED",
+          "subpart": "dzus_quick_release_05",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 44
+        },
+        {
+          "name": "engine_cover__dzus_quick_release_06__MAT_TITANIUM_BRUSHED",
+          "subpart": "dzus_quick_release_06",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 44
+        },
+        {
+          "name": "engine_cover__dzus_quick_release_07__MAT_TITANIUM_BRUSHED",
+          "subpart": "dzus_quick_release_07",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 44
+        },
+        {
+          "name": "engine_cover__dzus_quick_release_08__MAT_TITANIUM_BRUSHED",
+          "subpart": "dzus_quick_release_08",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 44
+        },
+        {
+          "name": "engine_cover__dzus_quick_release_09__MAT_TITANIUM_BRUSHED",
+          "subpart": "dzus_quick_release_09",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 44
+        },
+        {
+          "name": "engine_cover__dzus_quick_release_10__MAT_TITANIUM_BRUSHED",
+          "subpart": "dzus_quick_release_10",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 44
+        },
+        {
+          "name": "engine_cover__dzus_quick_release_11__MAT_TITANIUM_BRUSHED",
+          "subpart": "dzus_quick_release_11",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 44
+        },
+        {
+          "name": "engine_cover__dzus_quick_release_12__MAT_TITANIUM_BRUSHED",
+          "subpart": "dzus_quick_release_12",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 44
+        }
+      ],
+      "bbox_min": [
+        -0.3228,
+        0.158,
+        0.48
+      ],
+      "bbox_max": [
+        0.3228,
+        1.8252,
+        1.0017
+      ]
+    },
+    "radiators_cooling": {
+      "id": "radiators_cooling",
+      "category": "powertrain",
+      "name_en": "Multi-Core Radiators & Charge-Air Intercoolers",
+      "name_ru": "Радиаторы охлаждения и интеркулеры",
+      "explode_vec": [
+        0.0,
+        0.0,
+        0.62
+      ],
+      "removable_cover": false,
+      "material_spec": "Micro-Tube Brazed Aluminum 3003 + Carbon Ducting",
+      "weight_kg": 14.5,
+      "operating_temp_c": 118,
+      "aero_load_n": 310,
+      "fia_reg": "Art. 5.18 Cooling Systems",
+      "desc_en": "Twin inclined V-pack heat exchangers: water radiator, ERS battery chiller, hydraulic oil cooler, and air-to-air turbo charge intercooler with braided Aeroquip lines.",
+      "desc_ru": "Наклонные теплообменники в обоих понтонах: водяной радиатор, контур охлаждения батареи ERS, масляный радиатор КПП и интеркулер наддува.",
+      "subpart_count": 26,
+      "triangles": 3168,
+      "vertices": 1680,
+      "subparts": [
+        {
+          "name": "radiators_cooling__primary_water_radiator_core_l__MAT_COPPER_RADIATOR",
+          "subpart": "primary_water_radiator_core_l",
+          "mat_tag": "MAT_COPPER_RADIATOR",
+          "triangles": 108
+        },
+        {
+          "name": "radiators_cooling__charge_air_intercooler_core_l__MAT_ALUMINUM_CNC",
+          "subpart": "charge_air_intercooler_core_l",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "radiators_cooling__radiator_louver_fin_ribs_l__MAT_ALUMINUM_CNC",
+          "subpart": "radiator_louver_fin_ribs_l",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 144
+        },
+        {
+          "name": "radiators_cooling__header_tank_upper_l__MAT_ALUMINUM_CNC",
+          "subpart": "header_tank_upper_l",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "radiators_cooling__header_tank_lower_l__MAT_ALUMINUM_CNC",
+          "subpart": "header_tank_lower_l",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "radiators_cooling__carbon_intake_duct_l__MAT_CARBON_MATTE",
+          "subpart": "carbon_intake_duct_l",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 156
+        },
+        {
+          "name": "radiators_cooling__carbon_oil_reservoir_l__MAT_CARBON_TWILL",
+          "subpart": "carbon_oil_reservoir_l",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 76
+        },
+        {
+          "name": "radiators_cooling__ers_chiller_gold_module_l__MAT_GOLD_FOIL",
+          "subpart": "ers_chiller_gold_module_l",
+          "mat_tag": "MAT_GOLD_FOIL",
+          "triangles": 108
+        },
+        {
+          "name": "radiators_cooling__braided_coolant_feed_pipe_l__MAT_TITANIUM_BRUSHED",
+          "subpart": "braided_coolant_feed_pipe_l",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 108
+        },
+        {
+          "name": "radiators_cooling__braided_coolant_return_pipe_l__MAT_TITANIUM_BRUSHED",
+          "subpart": "braided_coolant_return_pipe_l",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 108
+        },
+        {
+          "name": "radiators_cooling__turbo_charge_intercooler_pipe_l__MAT_CARBON_TWILL",
+          "subpart": "turbo_charge_intercooler_pipe_l",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 124
+        },
+        {
+          "name": "radiators_cooling__aeroquip_an16_fitting_red_l__MAT_ANODIZED_RED",
+          "subpart": "aeroquip_an16_fitting_red_l",
+          "mat_tag": "MAT_ANODIZED_RED",
+          "triangles": 164
+        },
+        {
+          "name": "radiators_cooling__aeroquip_an16_fitting_blue_l__MAT_ANODIZED_BLUE",
+          "subpart": "aeroquip_an16_fitting_blue_l",
+          "mat_tag": "MAT_ANODIZED_BLUE",
+          "triangles": 164
+        },
+        {
+          "name": "radiators_cooling__primary_water_radiator_core_r__MAT_COPPER_RADIATOR",
+          "subpart": "primary_water_radiator_core_r",
+          "mat_tag": "MAT_COPPER_RADIATOR",
+          "triangles": 108
+        },
+        {
+          "name": "radiators_cooling__charge_air_intercooler_core_r__MAT_ALUMINUM_CNC",
+          "subpart": "charge_air_intercooler_core_r",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "radiators_cooling__radiator_louver_fin_ribs_r__MAT_ALUMINUM_CNC",
+          "subpart": "radiator_louver_fin_ribs_r",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 144
+        },
+        {
+          "name": "radiators_cooling__header_tank_upper_r__MAT_ALUMINUM_CNC",
+          "subpart": "header_tank_upper_r",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "radiators_cooling__header_tank_lower_r__MAT_ALUMINUM_CNC",
+          "subpart": "header_tank_lower_r",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "radiators_cooling__carbon_intake_duct_r__MAT_CARBON_MATTE",
+          "subpart": "carbon_intake_duct_r",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 156
+        },
+        {
+          "name": "radiators_cooling__carbon_oil_reservoir_r__MAT_CARBON_TWILL",
+          "subpart": "carbon_oil_reservoir_r",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 76
+        },
+        {
+          "name": "radiators_cooling__ers_chiller_gold_module_r__MAT_GOLD_FOIL",
+          "subpart": "ers_chiller_gold_module_r",
+          "mat_tag": "MAT_GOLD_FOIL",
+          "triangles": 108
+        },
+        {
+          "name": "radiators_cooling__braided_coolant_feed_pipe_r__MAT_TITANIUM_BRUSHED",
+          "subpart": "braided_coolant_feed_pipe_r",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 108
+        },
+        {
+          "name": "radiators_cooling__braided_coolant_return_pipe_r__MAT_TITANIUM_BRUSHED",
+          "subpart": "braided_coolant_return_pipe_r",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 108
+        },
+        {
+          "name": "radiators_cooling__turbo_charge_intercooler_pipe_r__MAT_CARBON_TWILL",
+          "subpart": "turbo_charge_intercooler_pipe_r",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 124
+        },
+        {
+          "name": "radiators_cooling__aeroquip_an16_fitting_red_r__MAT_ANODIZED_RED",
+          "subpart": "aeroquip_an16_fitting_red_r",
+          "mat_tag": "MAT_ANODIZED_RED",
+          "triangles": 164
+        },
+        {
+          "name": "radiators_cooling__aeroquip_an16_fitting_blue_r__MAT_ANODIZED_BLUE",
+          "subpart": "aeroquip_an16_fitting_blue_r",
+          "mat_tag": "MAT_ANODIZED_BLUE",
+          "triangles": 164
+        }
+      ],
+      "bbox_min": [
+        -0.6351,
+        -0.38,
+        0.1532
+      ],
+      "bbox_max": [
+        0.6351,
+        0.6977,
+        0.6327
+      ]
+    },
+    "underfloor_venturi": {
+      "id": "underfloor_venturi",
+      "category": "aero",
+      "name_en": "Ground-Effect Venturi Floor & Edge Wing",
+      "name_ru": "Днище с туннелями Вентури и краевым крылом",
+      "explode_vec": [
+        0.0,
+        0.0,
+        -0.58
+      ],
+      "removable_cover": false,
+      "material_spec": "Stiffened Carbon-Kevlar Sandwich + Titanium Stays",
+      "weight_kg": 24.5,
+      "operating_temp_c": 60,
+      "aero_load_n": 11400,
+      "fia_reg": "Art. 3.4 Floor & Venturi Tunnels",
+      "desc_en": "Primary downforce generator producing over 60% of total grip via four sculpted forward floor fences, twin underbody Venturi tunnels, and slotted edge wings.",
+      "desc_ru": "Главный генератор прижимной силы (более 60% общего прижима): четыре входные направляющие перегородки, профилированные туннели Вентури и щелевые кромки.",
+      "subpart_count": 30,
+      "triangles": 5296,
+      "vertices": 2708,
+      "subparts": [
+        {
+          "name": "underfloor_venturi__forward_bib_teatray__MAT_CARBON_TWILL",
+          "subpart": "forward_bib_teatray",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 412
+        },
+        {
+          "name": "underfloor_venturi__titanium_bib_stay_rod__MAT_TITANIUM_BRUSHED",
+          "subpart": "titanium_bib_stay_rod",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 60
+        },
+        {
+          "name": "underfloor_venturi__bib_stay_damper_clevis__MAT_ALUMINUM_CNC",
+          "subpart": "bib_stay_damper_clevis",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 44
+        },
+        {
+          "name": "underfloor_venturi__ground_effect_venturi_deck__MAT_CARBON_TWILL",
+          "subpart": "ground_effect_venturi_deck",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 836
+        },
+        {
+          "name": "underfloor_venturi__venturi_tunnel_vault_left__MAT_CARBON_MATTE",
+          "subpart": "venturi_tunnel_vault_left",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 320
+        },
+        {
+          "name": "underfloor_venturi__venturi_tunnel_vault_right__MAT_CARBON_MATTE",
+          "subpart": "venturi_tunnel_vault_right",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 320
+        },
+        {
+          "name": "underfloor_venturi__inlet_vortex_fence_l1__MAT_CARBON_MATTE",
+          "subpart": "inlet_vortex_fence_l1",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 228
+        },
+        {
+          "name": "underfloor_venturi__inlet_vortex_fence_l2__MAT_CARBON_MATTE",
+          "subpart": "inlet_vortex_fence_l2",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 228
+        },
+        {
+          "name": "underfloor_venturi__inlet_vortex_fence_l3__MAT_CARBON_MATTE",
+          "subpart": "inlet_vortex_fence_l3",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 228
+        },
+        {
+          "name": "underfloor_venturi__inlet_vortex_fence_l4__MAT_CARBON_MATTE",
+          "subpart": "inlet_vortex_fence_l4",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 228
+        },
+        {
+          "name": "underfloor_venturi__inlet_vortex_fence_r1__MAT_CARBON_MATTE",
+          "subpart": "inlet_vortex_fence_r1",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 228
+        },
+        {
+          "name": "underfloor_venturi__inlet_vortex_fence_r2__MAT_CARBON_MATTE",
+          "subpart": "inlet_vortex_fence_r2",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 228
+        },
+        {
+          "name": "underfloor_venturi__inlet_vortex_fence_r3__MAT_CARBON_MATTE",
+          "subpart": "inlet_vortex_fence_r3",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 228
+        },
+        {
+          "name": "underfloor_venturi__inlet_vortex_fence_r4__MAT_CARBON_MATTE",
+          "subpart": "inlet_vortex_fence_r4",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 228
+        },
+        {
+          "name": "underfloor_venturi__outer_edge_wing_scroll_left__MAT_LIVERY_CARBON_GLOSS",
+          "subpart": "outer_edge_wing_scroll_left",
+          "mat_tag": "MAT_LIVERY_CARBON_GLOSS",
+          "triangles": 80
+        },
+        {
+          "name": "underfloor_venturi__edge_wing_lime_stripe_left__MAT_LIVERY_LIME",
+          "subpart": "edge_wing_lime_stripe_left",
+          "mat_tag": "MAT_LIVERY_LIME",
+          "triangles": 76
+        },
+        {
+          "name": "underfloor_venturi__edge_vortex_slot_vane_left_1__MAT_ALUMINUM_CNC",
+          "subpart": "edge_vortex_slot_vane_left_1",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "underfloor_venturi__edge_vortex_slot_vane_left_2__MAT_ALUMINUM_CNC",
+          "subpart": "edge_vortex_slot_vane_left_2",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "underfloor_venturi__edge_vortex_slot_vane_left_3__MAT_ALUMINUM_CNC",
+          "subpart": "edge_vortex_slot_vane_left_3",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "underfloor_venturi__edge_vortex_slot_vane_left_4__MAT_ALUMINUM_CNC",
+          "subpart": "edge_vortex_slot_vane_left_4",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "underfloor_venturi__edge_vortex_slot_vane_left_5__MAT_ALUMINUM_CNC",
+          "subpart": "edge_vortex_slot_vane_left_5",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "underfloor_venturi__rear_floor_tension_stay_left__MAT_TITANIUM_BRUSHED",
+          "subpart": "rear_floor_tension_stay_left",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 44
+        },
+        {
+          "name": "underfloor_venturi__outer_edge_wing_scroll_right__MAT_LIVERY_CARBON_GLOSS",
+          "subpart": "outer_edge_wing_scroll_right",
+          "mat_tag": "MAT_LIVERY_CARBON_GLOSS",
+          "triangles": 80
+        },
+        {
+          "name": "underfloor_venturi__edge_wing_lime_stripe_right__MAT_LIVERY_LIME",
+          "subpart": "edge_wing_lime_stripe_right",
+          "mat_tag": "MAT_LIVERY_LIME",
+          "triangles": 76
+        },
+        {
+          "name": "underfloor_venturi__edge_vortex_slot_vane_right_1__MAT_ALUMINUM_CNC",
+          "subpart": "edge_vortex_slot_vane_right_1",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "underfloor_venturi__edge_vortex_slot_vane_right_2__MAT_ALUMINUM_CNC",
+          "subpart": "edge_vortex_slot_vane_right_2",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "underfloor_venturi__edge_vortex_slot_vane_right_3__MAT_ALUMINUM_CNC",
+          "subpart": "edge_vortex_slot_vane_right_3",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "underfloor_venturi__edge_vortex_slot_vane_right_4__MAT_ALUMINUM_CNC",
+          "subpart": "edge_vortex_slot_vane_right_4",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "underfloor_venturi__edge_vortex_slot_vane_right_5__MAT_ALUMINUM_CNC",
+          "subpart": "edge_vortex_slot_vane_right_5",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "underfloor_venturi__rear_floor_tension_stay_right__MAT_TITANIUM_BRUSHED",
+          "subpart": "rear_floor_tension_stay_right",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 44
+        }
+      ],
+      "bbox_min": [
+        -0.811,
+        -1.28,
+        0.042
+      ],
+      "bbox_max": [
+        0.811,
+        1.88,
+        0.3404
+      ]
+    },
+    "plank_skid": {
+      "id": "plank_skid",
+      "category": "chassis",
+      "name_en": "Permaglass Legality Plank & Titanium Skid Blocks",
+      "name_ru": "Контрольная планка и титановые скид-блоки",
+      "explode_vec": [
+        0.0,
+        0.0,
+        -0.82
+      ],
+      "removable_cover": false,
+      "material_spec": "Jabroc / Permaglass Composite + Ti-6Al-4V Skids",
+      "weight_kg": 4.2,
+      "operating_temp_c": 340,
+      "aero_load_n": 0,
+      "fia_reg": "Art. 3.5.9 Plank & Skid Wear (Max 1.0mm)",
+      "desc_en": "10mm FIA legality plank with precision-machined inspection holes and flush titanium skid inserts that shower sparks under high-speed ground compression.",
+      "desc_ru": "10-миллиметровая контрольная планка FIA с заподлицо утопленными титановыми пластинами, высекающими снопы искр на высоких скоростях.",
+      "subpart_count": 12,
+      "triangles": 1804,
+      "vertices": 948,
+      "subparts": [
+        {
+          "name": "plank_skid__fia_permaglass_legality_plank__MAT_PERMAGLASS_PLANK",
+          "subpart": "fia_permaglass_legality_plank",
+          "mat_tag": "MAT_PERMAGLASS_PLANK",
+          "triangles": 356
+        },
+        {
+          "name": "plank_skid__fia_inspection_aperture_01__MAT_CARBON_MATTE",
+          "subpart": "fia_inspection_aperture_01",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 92
+        },
+        {
+          "name": "plank_skid__fia_inspection_aperture_02__MAT_CARBON_MATTE",
+          "subpart": "fia_inspection_aperture_02",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 92
+        },
+        {
+          "name": "plank_skid__fia_inspection_aperture_03__MAT_CARBON_MATTE",
+          "subpart": "fia_inspection_aperture_03",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 92
+        },
+        {
+          "name": "plank_skid__fia_inspection_aperture_04__MAT_CARBON_MATTE",
+          "subpart": "fia_inspection_aperture_04",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 92
+        },
+        {
+          "name": "plank_skid__skid_block_01_front_nose__MAT_TITANIUM_BRUSHED",
+          "subpart": "skid_block_01_front_nose",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 108
+        },
+        {
+          "name": "plank_skid__skid_block_02_front_mid__MAT_TITANIUM_BRUSHED",
+          "subpart": "skid_block_02_front_mid",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 108
+        },
+        {
+          "name": "plank_skid__skid_block_03_mid_left__MAT_TITANIUM_BRUSHED",
+          "subpart": "skid_block_03_mid_left",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 108
+        },
+        {
+          "name": "plank_skid__skid_block_04_mid_right__MAT_TITANIUM_BRUSHED",
+          "subpart": "skid_block_04_mid_right",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 108
+        },
+        {
+          "name": "plank_skid__skid_block_05_rear_center__MAT_TITANIUM_BRUSHED",
+          "subpart": "skid_block_05_rear_center",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 108
+        },
+        {
+          "name": "plank_skid__skid_block_06_rear_tail__MAT_TITANIUM_BRUSHED",
+          "subpart": "skid_block_06_rear_tail",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 108
+        },
+        {
+          "name": "plank_skid__skid_block_countersunk_bolts__MAT_ALUMINUM_CNC",
+          "subpart": "skid_block_countersunk_bolts",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 432
+        }
+      ],
+      "bbox_min": [
+        -0.1492,
+        -1.25,
+        0.0307
+      ],
+      "bbox_max": [
+        0.1492,
+        1.72,
+        0.0422
+      ]
+    },
+    "diffuser_rear": {
+      "id": "diffuser_rear",
+      "category": "aero",
+      "name_en": "Multi-Strake Rear Diffuser & Crash Cone",
+      "name_ru": "Задний диффузор и кормовой краш-бокс",
+      "explode_vec": [
+        0.0,
+        1.15,
+        -0.35
+      ],
+      "removable_cover": false,
+      "material_spec": "High-Temp Autoclave Carbon + FIA LED Rain Light",
+      "weight_kg": 8.6,
+      "operating_temp_c": 140,
+      "aero_load_n": 5200,
+      "fia_reg": "Art. 3.4.4 Rear Diffuser Expansion",
+      "desc_en": "Steeply kicked boat-tail diffuser ramp with six longitudinal vortex strakes, upper beam-wing extraction coupling, and rear impact structure with 15-LED rain beacon.",
+      "desc_ru": "Круто расширяющийся диффузор с шестью продольными килями-генераторами вихрей, сопряжённый с нижним крылом и задним фонарём безопасности.",
+      "subpart_count": 15,
+      "triangles": 4772,
+      "vertices": 2444,
+      "subparts": [
+        {
+          "name": "diffuser_rear__twin_expansion_tunnel_shell__MAT_CARBON_TWILL",
+          "subpart": "twin_expansion_tunnel_shell",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 2040
+        },
+        {
+          "name": "diffuser_rear__central_boattail_keel__MAT_CARBON_MATTE",
+          "subpart": "central_boattail_keel",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 204
+        },
+        {
+          "name": "diffuser_rear__longitudinal_vortex_strake_l1__MAT_CARBON_MATTE",
+          "subpart": "longitudinal_vortex_strake_l1",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 204
+        },
+        {
+          "name": "diffuser_rear__longitudinal_vortex_strake_l2__MAT_CARBON_MATTE",
+          "subpart": "longitudinal_vortex_strake_l2",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 204
+        },
+        {
+          "name": "diffuser_rear__longitudinal_vortex_strake_l3__MAT_CARBON_MATTE",
+          "subpart": "longitudinal_vortex_strake_l3",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 204
+        },
+        {
+          "name": "diffuser_rear__longitudinal_vortex_strake_r1__MAT_CARBON_MATTE",
+          "subpart": "longitudinal_vortex_strake_r1",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 204
+        },
+        {
+          "name": "diffuser_rear__longitudinal_vortex_strake_r2__MAT_CARBON_MATTE",
+          "subpart": "longitudinal_vortex_strake_r2",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 204
+        },
+        {
+          "name": "diffuser_rear__longitudinal_vortex_strake_r3__MAT_CARBON_MATTE",
+          "subpart": "longitudinal_vortex_strake_r3",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 204
+        },
+        {
+          "name": "diffuser_rear__stepped_upper_gurney_flap__MAT_LIVERY_CARBON_GLOSS",
+          "subpart": "stepped_upper_gurney_flap",
+          "mat_tag": "MAT_LIVERY_CARBON_GLOSS",
+          "triangles": 136
+        },
+        {
+          "name": "diffuser_rear__outer_extraction_cascade_left__MAT_LIVERY_LIME",
+          "subpart": "outer_extraction_cascade_left",
+          "mat_tag": "MAT_LIVERY_LIME",
+          "triangles": 108
+        },
+        {
+          "name": "diffuser_rear__outer_extraction_cascade_right__MAT_LIVERY_LIME",
+          "subpart": "outer_extraction_cascade_right",
+          "mat_tag": "MAT_LIVERY_LIME",
+          "triangles": 108
+        },
+        {
+          "name": "diffuser_rear__rear_honeycomb_crash_structure__MAT_CARBON_TWILL",
+          "subpart": "rear_honeycomb_crash_structure",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 196
+        },
+        {
+          "name": "diffuser_rear__titanium_rear_jacking_hook__MAT_TITANIUM_BRUSHED",
+          "subpart": "titanium_rear_jacking_hook",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 108
+        },
+        {
+          "name": "diffuser_rear__fia_rain_beacon_housing__MAT_CARBON_MATTE",
+          "subpart": "fia_rain_beacon_housing",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 108
+        },
+        {
+          "name": "diffuser_rear__fia_15led_rain_beacon__MAT_LED_EMISSIVE_RED",
+          "subpart": "fia_15led_rain_beacon",
+          "mat_tag": "MAT_LED_EMISSIVE_RED",
+          "triangles": 540
+        }
+      ],
+      "bbox_min": [
+        -0.562,
+        1.45,
+        0.0311
+      ],
+      "bbox_max": [
+        0.562,
+        2.4972,
+        0.4155
+      ]
+    },
+    "rear_wing_drs": {
+      "id": "rear_wing_drs",
+      "category": "aero",
+      "name_en": "Rear Wing, Beam Wing & Hydraulic DRS Pod",
+      "name_ru": "Заднее антикрыло, бим-крыло и привод DRS",
+      "explode_vec": [
+        0.0,
+        1.45,
+        0.65
+      ],
+      "removable_cover": false,
+      "material_spec": "Prepreg Carbon + Electro-Hydraulic DRS Actuator",
+      "weight_kg": 12.8,
+      "operating_temp_c": 52,
+      "aero_load_n": 5850,
+      "fia_reg": "Art. 3.10 Rear Wing & Adjustable Bodywork",
+      "desc_en": "Dual-element biplane beam wing, spoon-profiled mainplane, top-mounted swan-neck pylons, and 85mm-opening hydraulic Drag Reduction System (DRS) flap.",
+      "desc_ru": "Двухэлементное нижнее бим-крыло, ложкообразная главная плоскость на верхних пилонах «лебединая шея» и гидравлический закрылок системы DRS.",
+      "subpart_count": 31,
+      "triangles": 4556,
+      "vertices": 2340,
+      "subparts": [
+        {
+          "name": "rear_wing_drs__biplane_beam_wing_lower__MAT_CARBON_TWILL",
+          "subpart": "biplane_beam_wing_lower",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 176
+        },
+        {
+          "name": "rear_wing_drs__biplane_beam_wing_upper__MAT_CARBON_TWILL",
+          "subpart": "biplane_beam_wing_upper",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 176
+        },
+        {
+          "name": "rear_wing_drs__swan_neck_pylon_left__MAT_LIVERY_CARBON_GLOSS",
+          "subpart": "swan_neck_pylon_left",
+          "mat_tag": "MAT_LIVERY_CARBON_GLOSS",
+          "triangles": 280
+        },
+        {
+          "name": "rear_wing_drs__swan_neck_titanium_clevis_left__MAT_TITANIUM_BRUSHED",
+          "subpart": "swan_neck_titanium_clevis_left",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 108
+        },
+        {
+          "name": "rear_wing_drs__swan_neck_pylon_right__MAT_LIVERY_CARBON_GLOSS",
+          "subpart": "swan_neck_pylon_right",
+          "mat_tag": "MAT_LIVERY_CARBON_GLOSS",
+          "triangles": 280
+        },
+        {
+          "name": "rear_wing_drs__swan_neck_titanium_clevis_right__MAT_TITANIUM_BRUSHED",
+          "subpart": "swan_neck_titanium_clevis_right",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 108
+        },
+        {
+          "name": "rear_wing_drs__spoon_mainplane__MAT_CARBON_TWILL",
+          "subpart": "spoon_mainplane",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 304
+        },
+        {
+          "name": "rear_wing_drs__drs_flap_movable__MAT_LIVERY_WHITE",
+          "subpart": "drs_flap_movable",
+          "mat_tag": "MAT_LIVERY_WHITE",
+          "triangles": 304
+        },
+        {
+          "name": "rear_wing_drs__drs_trailing_gurney_lime__MAT_LIVERY_LIME",
+          "subpart": "drs_trailing_gurney_lime",
+          "mat_tag": "MAT_LIVERY_LIME",
+          "triangles": 116
+        },
+        {
+          "name": "rear_wing_drs__drs_hydraulic_torpedo_pod__MAT_LIVERY_CARBON_GLOSS",
+          "subpart": "drs_hydraulic_torpedo_pod",
+          "mat_tag": "MAT_LIVERY_CARBON_GLOSS",
+          "triangles": 212
+        },
+        {
+          "name": "rear_wing_drs__drs_titanium_linkage_rod__MAT_TITANIUM_BRUSHED",
+          "subpart": "drs_titanium_linkage_rod",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 44
+        },
+        {
+          "name": "rear_wing_drs__sculpted_rear_endplate_left__MAT_CARBON_TWILL",
+          "subpart": "sculpted_rear_endplate_left",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 300
+        },
+        {
+          "name": "rear_wing_drs__endplate_livery_chevron_left__MAT_LIVERY_ORANGE",
+          "subpart": "endplate_livery_chevron_left",
+          "mat_tag": "MAT_LIVERY_ORANGE",
+          "triangles": 108
+        },
+        {
+          "name": "rear_wing_drs__endplate_upwash_louver_left_1__MAT_LIVERY_LIME",
+          "subpart": "endplate_upwash_louver_left_1",
+          "mat_tag": "MAT_LIVERY_LIME",
+          "triangles": 108
+        },
+        {
+          "name": "rear_wing_drs__endplate_upwash_louver_left_2__MAT_CARBON_MATTE",
+          "subpart": "endplate_upwash_louver_left_2",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 108
+        },
+        {
+          "name": "rear_wing_drs__endplate_upwash_louver_left_3__MAT_CARBON_MATTE",
+          "subpart": "endplate_upwash_louver_left_3",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 108
+        },
+        {
+          "name": "rear_wing_drs__endplate_upwash_louver_left_4__MAT_CARBON_MATTE",
+          "subpart": "endplate_upwash_louver_left_4",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 108
+        },
+        {
+          "name": "rear_wing_drs__endplate_te_vortex_fringe_left_1__MAT_LIVERY_CARBON_GLOSS",
+          "subpart": "endplate_te_vortex_fringe_left_1",
+          "mat_tag": "MAT_LIVERY_CARBON_GLOSS",
+          "triangles": 108
+        },
+        {
+          "name": "rear_wing_drs__endplate_te_vortex_fringe_left_2__MAT_LIVERY_CARBON_GLOSS",
+          "subpart": "endplate_te_vortex_fringe_left_2",
+          "mat_tag": "MAT_LIVERY_CARBON_GLOSS",
+          "triangles": 108
+        },
+        {
+          "name": "rear_wing_drs__endplate_te_vortex_fringe_left_3__MAT_LIVERY_CARBON_GLOSS",
+          "subpart": "endplate_te_vortex_fringe_left_3",
+          "mat_tag": "MAT_LIVERY_CARBON_GLOSS",
+          "triangles": 108
+        },
+        {
+          "name": "rear_wing_drs__drs_hinge_pivot_pin_left__MAT_TITANIUM_BRUSHED",
+          "subpart": "drs_hinge_pivot_pin_left",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 60
+        },
+        {
+          "name": "rear_wing_drs__sculpted_rear_endplate_right__MAT_CARBON_TWILL",
+          "subpart": "sculpted_rear_endplate_right",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 300
+        },
+        {
+          "name": "rear_wing_drs__endplate_livery_chevron_right__MAT_LIVERY_ORANGE",
+          "subpart": "endplate_livery_chevron_right",
+          "mat_tag": "MAT_LIVERY_ORANGE",
+          "triangles": 108
+        },
+        {
+          "name": "rear_wing_drs__endplate_upwash_louver_right_1__MAT_LIVERY_LIME",
+          "subpart": "endplate_upwash_louver_right_1",
+          "mat_tag": "MAT_LIVERY_LIME",
+          "triangles": 108
+        },
+        {
+          "name": "rear_wing_drs__endplate_upwash_louver_right_2__MAT_CARBON_MATTE",
+          "subpart": "endplate_upwash_louver_right_2",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 108
+        },
+        {
+          "name": "rear_wing_drs__endplate_upwash_louver_right_3__MAT_CARBON_MATTE",
+          "subpart": "endplate_upwash_louver_right_3",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 108
+        },
+        {
+          "name": "rear_wing_drs__endplate_upwash_louver_right_4__MAT_CARBON_MATTE",
+          "subpart": "endplate_upwash_louver_right_4",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 108
+        },
+        {
+          "name": "rear_wing_drs__endplate_te_vortex_fringe_right_1__MAT_LIVERY_CARBON_GLOSS",
+          "subpart": "endplate_te_vortex_fringe_right_1",
+          "mat_tag": "MAT_LIVERY_CARBON_GLOSS",
+          "triangles": 108
+        },
+        {
+          "name": "rear_wing_drs__endplate_te_vortex_fringe_right_2__MAT_LIVERY_CARBON_GLOSS",
+          "subpart": "endplate_te_vortex_fringe_right_2",
+          "mat_tag": "MAT_LIVERY_CARBON_GLOSS",
+          "triangles": 108
+        },
+        {
+          "name": "rear_wing_drs__endplate_te_vortex_fringe_right_3__MAT_LIVERY_CARBON_GLOSS",
+          "subpart": "endplate_te_vortex_fringe_right_3",
+          "mat_tag": "MAT_LIVERY_CARBON_GLOSS",
+          "triangles": 108
+        },
+        {
+          "name": "rear_wing_drs__drs_hinge_pivot_pin_right__MAT_TITANIUM_BRUSHED",
+          "subpart": "drs_hinge_pivot_pin_right",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 60
+        }
+      ],
+      "bbox_min": [
+        -0.527,
+        1.9207,
+        0.34
+      ],
+      "bbox_max": [
+        0.527,
+        2.64,
+        0.92
+      ]
+    },
+    "power_unit_v6": {
+      "id": "power_unit_v6",
+      "category": "powertrain",
+      "name_en": "1.6L 90° V6 Internal Combustion Engine (ICE)",
+      "name_ru": "Двигатель 1.6 л V6 90° (15 000 об/мин)",
+      "explode_vec": [
+        0.0,
+        0.15,
+        0.72
+      ],
+      "removable_cover": false,
+      "material_spec": "Sand-Cast AlSi7Mg Block / DLC Coated Valvetrain / Carbon Plenum",
+      "weight_kg": 102.0,
+      "operating_temp_c": 112,
+      "aero_load_n": 0,
+      "fia_reg": "Art. 5.1 Stressed Member Power Unit",
+      "desc_en": "Fully stressed 1600cc 90-degree V6 engine with pneumatic valve springs, 500-bar direct fuel injection, carbon airbox plenum, and six variable-length intake trumpets.",
+      "desc_ru": "Несущий 1,6-литровый блок V6 с развалом 90°, пневмоприводом клапанов, прямым впрыском 500 бар, карбоновым ресивером и 6 изменяемыми дудками впуска.",
+      "subpart_count": 77,
+      "triangles": 14260,
+      "vertices": 7270,
+      "subparts": [
+        {
+          "name": "power_unit_v6__dry_sump_oil_pan__MAT_ALUMINUM_CNC",
+          "subpart": "dry_sump_oil_pan",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 428
+        },
+        {
+          "name": "power_unit_v6__dry_sump_rib_1__MAT_ALUMINUM_CNC",
+          "subpart": "dry_sump_rib_1",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "power_unit_v6__dry_sump_rib_2__MAT_ALUMINUM_CNC",
+          "subpart": "dry_sump_rib_2",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "power_unit_v6__dry_sump_rib_3__MAT_ALUMINUM_CNC",
+          "subpart": "dry_sump_rib_3",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "power_unit_v6__dry_sump_rib_4__MAT_ALUMINUM_CNC",
+          "subpart": "dry_sump_rib_4",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "power_unit_v6__dry_sump_rib_5__MAT_ALUMINUM_CNC",
+          "subpart": "dry_sump_rib_5",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "power_unit_v6__dry_sump_rib_6__MAT_ALUMINUM_CNC",
+          "subpart": "dry_sump_rib_6",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "power_unit_v6__dry_sump_rib_7__MAT_ALUMINUM_CNC",
+          "subpart": "dry_sump_rib_7",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "power_unit_v6__dry_sump_scavenging_pump_rh__MAT_ALUMINUM_CNC",
+          "subpart": "dry_sump_scavenging_pump_rh",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 236
+        },
+        {
+          "name": "power_unit_v6__scavenging_stage_manifold_1__MAT_ANODIZED_BLUE",
+          "subpart": "scavenging_stage_manifold_1",
+          "mat_tag": "MAT_ANODIZED_BLUE",
+          "triangles": 108
+        },
+        {
+          "name": "power_unit_v6__scavenging_stage_manifold_2__MAT_ANODIZED_BLUE",
+          "subpart": "scavenging_stage_manifold_2",
+          "mat_tag": "MAT_ANODIZED_BLUE",
+          "triangles": 108
+        },
+        {
+          "name": "power_unit_v6__scavenging_stage_manifold_3__MAT_ANODIZED_BLUE",
+          "subpart": "scavenging_stage_manifold_3",
+          "mat_tag": "MAT_ANODIZED_BLUE",
+          "triangles": 108
+        },
+        {
+          "name": "power_unit_v6__scavenging_stage_manifold_4__MAT_ANODIZED_BLUE",
+          "subpart": "scavenging_stage_manifold_4",
+          "mat_tag": "MAT_ANODIZED_BLUE",
+          "triangles": 108
+        },
+        {
+          "name": "power_unit_v6__v6_stressed_crankcase__MAT_ALUMINUM_CNC",
+          "subpart": "v6_stressed_crankcase",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 380
+        },
+        {
+          "name": "power_unit_v6__front_timing_gear_chest__MAT_ALUMINUM_CNC",
+          "subpart": "front_timing_gear_chest",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "power_unit_v6__rear_bellhousing_adapter_plate__MAT_TITANIUM_BRUSHED",
+          "subpart": "rear_bellhousing_adapter_plate",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 108
+        },
+        {
+          "name": "power_unit_v6__cylinder_bank_block_lh__MAT_ALUMINUM_CNC",
+          "subpart": "cylinder_bank_block_lh",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "power_unit_v6__bank_cnc_web_rib_lh_1__MAT_ALUMINUM_CNC",
+          "subpart": "bank_cnc_web_rib_lh_1",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "power_unit_v6__bank_cnc_web_rib_lh_2__MAT_ALUMINUM_CNC",
+          "subpart": "bank_cnc_web_rib_lh_2",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "power_unit_v6__bank_cnc_web_rib_lh_3__MAT_ALUMINUM_CNC",
+          "subpart": "bank_cnc_web_rib_lh_3",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "power_unit_v6__bank_cnc_web_rib_lh_4__MAT_ALUMINUM_CNC",
+          "subpart": "bank_cnc_web_rib_lh_4",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "power_unit_v6__bank_cnc_web_rib_lh_5__MAT_ALUMINUM_CNC",
+          "subpart": "bank_cnc_web_rib_lh_5",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "power_unit_v6__bank_cnc_web_rib_lh_6__MAT_ALUMINUM_CNC",
+          "subpart": "bank_cnc_web_rib_lh_6",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "power_unit_v6__bank_cnc_web_rib_lh_7__MAT_ALUMINUM_CNC",
+          "subpart": "bank_cnc_web_rib_lh_7",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "power_unit_v6__cylinder_head_casting_lh__MAT_ALUMINUM_CNC",
+          "subpart": "cylinder_head_casting_lh",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "power_unit_v6__carbon_cam_cover_lh__MAT_CARBON_TWILL",
+          "subpart": "carbon_cam_cover_lh",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 108
+        },
+        {
+          "name": "power_unit_v6__higgsfield_cam_badge_lh__MAT_LIVERY_LIME",
+          "subpart": "higgsfield_cam_badge_lh",
+          "mat_tag": "MAT_LIVERY_LIME",
+          "triangles": 108
+        },
+        {
+          "name": "power_unit_v6__fuel_rail_500bar_lh__MAT_TITANIUM_BRUSHED",
+          "subpart": "fuel_rail_500bar_lh",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 212
+        },
+        {
+          "name": "power_unit_v6__ignition_coil_pack_lh_1__MAT_ANODIZED_RED",
+          "subpart": "ignition_coil_pack_lh_1",
+          "mat_tag": "MAT_ANODIZED_RED",
+          "triangles": 188
+        },
+        {
+          "name": "power_unit_v6__piezo_injector_500bar_lh_1__MAT_TITANIUM_BRUSHED",
+          "subpart": "piezo_injector_500bar_lh_1",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 52
+        },
+        {
+          "name": "power_unit_v6__ignition_coil_pack_lh_2__MAT_ANODIZED_RED",
+          "subpart": "ignition_coil_pack_lh_2",
+          "mat_tag": "MAT_ANODIZED_RED",
+          "triangles": 188
+        },
+        {
+          "name": "power_unit_v6__piezo_injector_500bar_lh_2__MAT_TITANIUM_BRUSHED",
+          "subpart": "piezo_injector_500bar_lh_2",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 52
+        },
+        {
+          "name": "power_unit_v6__ignition_coil_pack_lh_3__MAT_ANODIZED_RED",
+          "subpart": "ignition_coil_pack_lh_3",
+          "mat_tag": "MAT_ANODIZED_RED",
+          "triangles": 188
+        },
+        {
+          "name": "power_unit_v6__piezo_injector_500bar_lh_3__MAT_TITANIUM_BRUSHED",
+          "subpart": "piezo_injector_500bar_lh_3",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 52
+        },
+        {
+          "name": "power_unit_v6__cylinder_bank_block_rh__MAT_ALUMINUM_CNC",
+          "subpart": "cylinder_bank_block_rh",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "power_unit_v6__bank_cnc_web_rib_rh_1__MAT_ALUMINUM_CNC",
+          "subpart": "bank_cnc_web_rib_rh_1",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "power_unit_v6__bank_cnc_web_rib_rh_2__MAT_ALUMINUM_CNC",
+          "subpart": "bank_cnc_web_rib_rh_2",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "power_unit_v6__bank_cnc_web_rib_rh_3__MAT_ALUMINUM_CNC",
+          "subpart": "bank_cnc_web_rib_rh_3",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "power_unit_v6__bank_cnc_web_rib_rh_4__MAT_ALUMINUM_CNC",
+          "subpart": "bank_cnc_web_rib_rh_4",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "power_unit_v6__bank_cnc_web_rib_rh_5__MAT_ALUMINUM_CNC",
+          "subpart": "bank_cnc_web_rib_rh_5",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "power_unit_v6__bank_cnc_web_rib_rh_6__MAT_ALUMINUM_CNC",
+          "subpart": "bank_cnc_web_rib_rh_6",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "power_unit_v6__bank_cnc_web_rib_rh_7__MAT_ALUMINUM_CNC",
+          "subpart": "bank_cnc_web_rib_rh_7",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "power_unit_v6__cylinder_head_casting_rh__MAT_ALUMINUM_CNC",
+          "subpart": "cylinder_head_casting_rh",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "power_unit_v6__carbon_cam_cover_rh__MAT_CARBON_TWILL",
+          "subpart": "carbon_cam_cover_rh",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 108
+        },
+        {
+          "name": "power_unit_v6__higgsfield_cam_badge_rh__MAT_LIVERY_LIME",
+          "subpart": "higgsfield_cam_badge_rh",
+          "mat_tag": "MAT_LIVERY_LIME",
+          "triangles": 108
+        },
+        {
+          "name": "power_unit_v6__fuel_rail_500bar_rh__MAT_TITANIUM_BRUSHED",
+          "subpart": "fuel_rail_500bar_rh",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 212
+        },
+        {
+          "name": "power_unit_v6__ignition_coil_pack_rh_1__MAT_ANODIZED_RED",
+          "subpart": "ignition_coil_pack_rh_1",
+          "mat_tag": "MAT_ANODIZED_RED",
+          "triangles": 188
+        },
+        {
+          "name": "power_unit_v6__piezo_injector_500bar_rh_1__MAT_TITANIUM_BRUSHED",
+          "subpart": "piezo_injector_500bar_rh_1",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 52
+        },
+        {
+          "name": "power_unit_v6__ignition_coil_pack_rh_2__MAT_ANODIZED_RED",
+          "subpart": "ignition_coil_pack_rh_2",
+          "mat_tag": "MAT_ANODIZED_RED",
+          "triangles": 188
+        },
+        {
+          "name": "power_unit_v6__piezo_injector_500bar_rh_2__MAT_TITANIUM_BRUSHED",
+          "subpart": "piezo_injector_500bar_rh_2",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 52
+        },
+        {
+          "name": "power_unit_v6__ignition_coil_pack_rh_3__MAT_ANODIZED_RED",
+          "subpart": "ignition_coil_pack_rh_3",
+          "mat_tag": "MAT_ANODIZED_RED",
+          "triangles": 188
+        },
+        {
+          "name": "power_unit_v6__piezo_injector_500bar_rh_3__MAT_TITANIUM_BRUSHED",
+          "subpart": "piezo_injector_500bar_rh_3",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 52
+        },
+        {
+          "name": "power_unit_v6__high_pressure_fuel_pump_500bar__MAT_TITANIUM_BRUSHED",
+          "subpart": "high_pressure_fuel_pump_500bar",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 236
+        },
+        {
+          "name": "power_unit_v6__carbon_airbox_plenum_chamber__MAT_CARBON_TWILL",
+          "subpart": "carbon_airbox_plenum_chamber",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 1232
+        },
+        {
+          "name": "power_unit_v6__roll_hoop_intake_snorkel_duct__MAT_CARBON_TWILL",
+          "subpart": "roll_hoop_intake_snorkel_duct",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 1824
+        },
+        {
+          "name": "power_unit_v6__variable_intake_trumpet_lh_1__MAT_GOLD_FOIL",
+          "subpart": "variable_intake_trumpet_lh_1",
+          "mat_tag": "MAT_GOLD_FOIL",
+          "triangles": 352
+        },
+        {
+          "name": "power_unit_v6__trumpet_hydraulic_actuator_lh_1__MAT_TITANIUM_BRUSHED",
+          "subpart": "trumpet_hydraulic_actuator_lh_1",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 52
+        },
+        {
+          "name": "power_unit_v6__variable_intake_trumpet_lh_2__MAT_GOLD_FOIL",
+          "subpart": "variable_intake_trumpet_lh_2",
+          "mat_tag": "MAT_GOLD_FOIL",
+          "triangles": 352
+        },
+        {
+          "name": "power_unit_v6__trumpet_hydraulic_actuator_lh_2__MAT_TITANIUM_BRUSHED",
+          "subpart": "trumpet_hydraulic_actuator_lh_2",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 52
+        },
+        {
+          "name": "power_unit_v6__variable_intake_trumpet_lh_3__MAT_GOLD_FOIL",
+          "subpart": "variable_intake_trumpet_lh_3",
+          "mat_tag": "MAT_GOLD_FOIL",
+          "triangles": 352
+        },
+        {
+          "name": "power_unit_v6__trumpet_hydraulic_actuator_lh_3__MAT_TITANIUM_BRUSHED",
+          "subpart": "trumpet_hydraulic_actuator_lh_3",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 52
+        },
+        {
+          "name": "power_unit_v6__variable_intake_trumpet_rh_1__MAT_GOLD_FOIL",
+          "subpart": "variable_intake_trumpet_rh_1",
+          "mat_tag": "MAT_GOLD_FOIL",
+          "triangles": 352
+        },
+        {
+          "name": "power_unit_v6__trumpet_hydraulic_actuator_rh_1__MAT_TITANIUM_BRUSHED",
+          "subpart": "trumpet_hydraulic_actuator_rh_1",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 52
+        },
+        {
+          "name": "power_unit_v6__variable_intake_trumpet_rh_2__MAT_GOLD_FOIL",
+          "subpart": "variable_intake_trumpet_rh_2",
+          "mat_tag": "MAT_GOLD_FOIL",
+          "triangles": 352
+        },
+        {
+          "name": "power_unit_v6__trumpet_hydraulic_actuator_rh_2__MAT_TITANIUM_BRUSHED",
+          "subpart": "trumpet_hydraulic_actuator_rh_2",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 52
+        },
+        {
+          "name": "power_unit_v6__variable_intake_trumpet_rh_3__MAT_GOLD_FOIL",
+          "subpart": "variable_intake_trumpet_rh_3",
+          "mat_tag": "MAT_GOLD_FOIL",
+          "triangles": 352
+        },
+        {
+          "name": "power_unit_v6__trumpet_hydraulic_actuator_rh_3__MAT_TITANIUM_BRUSHED",
+          "subpart": "trumpet_hydraulic_actuator_rh_3",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 52
+        },
+        {
+          "name": "power_unit_v6__chassis_mount_titanium_stud_upper_lh__MAT_TITANIUM_BRUSHED",
+          "subpart": "chassis_mount_titanium_stud_upper_lh",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 212
+        },
+        {
+          "name": "power_unit_v6__chassis_mount_collar_nut_upper_lh__MAT_GOLD_FOIL",
+          "subpart": "chassis_mount_collar_nut_upper_lh",
+          "mat_tag": "MAT_GOLD_FOIL",
+          "triangles": 140
+        },
+        {
+          "name": "power_unit_v6__chassis_mount_titanium_stud_upper_rh__MAT_TITANIUM_BRUSHED",
+          "subpart": "chassis_mount_titanium_stud_upper_rh",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 212
+        },
+        {
+          "name": "power_unit_v6__chassis_mount_collar_nut_upper_rh__MAT_GOLD_FOIL",
+          "subpart": "chassis_mount_collar_nut_upper_rh",
+          "mat_tag": "MAT_GOLD_FOIL",
+          "triangles": 140
+        },
+        {
+          "name": "power_unit_v6__chassis_mount_titanium_stud_lower_lh__MAT_TITANIUM_BRUSHED",
+          "subpart": "chassis_mount_titanium_stud_lower_lh",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 212
+        },
+        {
+          "name": "power_unit_v6__chassis_mount_collar_nut_lower_lh__MAT_GOLD_FOIL",
+          "subpart": "chassis_mount_collar_nut_lower_lh",
+          "mat_tag": "MAT_GOLD_FOIL",
+          "triangles": 140
+        },
+        {
+          "name": "power_unit_v6__chassis_mount_titanium_stud_lower_rh__MAT_TITANIUM_BRUSHED",
+          "subpart": "chassis_mount_titanium_stud_lower_rh",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 212
+        },
+        {
+          "name": "power_unit_v6__chassis_mount_collar_nut_lower_rh__MAT_GOLD_FOIL",
+          "subpart": "chassis_mount_collar_nut_lower_rh",
+          "mat_tag": "MAT_GOLD_FOIL",
+          "triangles": 140
+        },
+        {
+          "name": "power_unit_v6__pneumatic_valve_nitrogen_bottle__MAT_CARBON_TWILL",
+          "subpart": "pneumatic_valve_nitrogen_bottle",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 260
+        },
+        {
+          "name": "power_unit_v6__pneumatic_nitrogen_regulator_head__MAT_ANODIZED_BLUE",
+          "subpart": "pneumatic_nitrogen_regulator_head",
+          "mat_tag": "MAT_ANODIZED_BLUE",
+          "triangles": 188
+        }
+      ],
+      "bbox_min": [
+        -0.3225,
+        0.1137,
+        0.1025
+      ],
+      "bbox_max": [
+        0.3225,
+        0.904,
+        0.8902
+      ]
+    },
+    "turbo_mguh": {
+      "id": "turbo_mguh",
+      "category": "powertrain",
+      "name_en": "Split-Axle Turbocharger & MGU-H Generator",
+      "name_ru": "Разнесённый турбокомпрессор и генератор MGU-H",
+      "explode_vec": [
+        0.0,
+        0.45,
+        0.98
+      ],
+      "removable_cover": false,
+      "material_spec": "MarM-247 Superalloy Turbine / Billet Compressor / Carbon Shaft",
+      "weight_kg": 19.5,
+      "operating_temp_c": 680,
+      "aero_load_n": 0,
+      "fia_reg": "Art. 5.2 Pressure Charging & MGU-H",
+      "desc_en": "125,000 RPM split-architecture turbocharger with front-mounted compressor, rear exhaust turbine, and nest-mounted Motor Generator Unit - Heat (MGU-H) inside the V-valley.",
+      "desc_ru": "Турбонагнетатель на 125 000 об/мин с компрессором на переднем торце блока, горячей улиткой сзади и мотор-генератором MGU-H в развале цилиндров.",
+      "subpart_count": 25,
+      "triangles": 10844,
+      "vertices": 5522,
+      "subparts": [
+        {
+          "name": "turbo_mguh__front_billet_compressor_volute__MAT_ALUMINUM_CNC",
+          "subpart": "front_billet_compressor_volute",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 1316
+        },
+        {
+          "name": "turbo_mguh__compressor_inlet_bellmouth_shroud__MAT_ALUMINUM_CNC",
+          "subpart": "compressor_inlet_bellmouth_shroud",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 288
+        },
+        {
+          "name": "turbo_mguh__compressor_titanium_impeller_wheel__MAT_TITANIUM_BRUSHED",
+          "subpart": "compressor_titanium_impeller_wheel",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 268
+        },
+        {
+          "name": "turbo_mguh__compressor_carbon_inlet_duct_lh__MAT_CARBON_TWILL",
+          "subpart": "compressor_carbon_inlet_duct_lh",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 648
+        },
+        {
+          "name": "turbo_mguh__compressor_carbon_inlet_duct_rh__MAT_CARBON_TWILL",
+          "subpart": "compressor_carbon_inlet_duct_rh",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 648
+        },
+        {
+          "name": "turbo_mguh__mguh_central_carbon_stator_sleeve__MAT_CARBON_TWILL",
+          "subpart": "mguh_central_carbon_stator_sleeve",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 332
+        },
+        {
+          "name": "turbo_mguh__mguh_gold_thermal_foil_band_1__MAT_GOLD_FOIL",
+          "subpart": "mguh_gold_thermal_foil_band_1",
+          "mat_tag": "MAT_GOLD_FOIL",
+          "triangles": 108
+        },
+        {
+          "name": "turbo_mguh__mguh_gold_thermal_foil_band_2__MAT_GOLD_FOIL",
+          "subpart": "mguh_gold_thermal_foil_band_2",
+          "mat_tag": "MAT_GOLD_FOIL",
+          "triangles": 108
+        },
+        {
+          "name": "turbo_mguh__mguh_gold_thermal_foil_band_3__MAT_GOLD_FOIL",
+          "subpart": "mguh_gold_thermal_foil_band_3",
+          "mat_tag": "MAT_GOLD_FOIL",
+          "triangles": 108
+        },
+        {
+          "name": "turbo_mguh__mguh_front_cnc_bearing_housing__MAT_ALUMINUM_CNC",
+          "subpart": "mguh_front_cnc_bearing_housing",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 284
+        },
+        {
+          "name": "turbo_mguh__mguh_rear_cnc_bearing_housing__MAT_ALUMINUM_CNC",
+          "subpart": "mguh_rear_cnc_bearing_housing",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 284
+        },
+        {
+          "name": "turbo_mguh__split_turbo_125krpm_shaft_tube__MAT_TITANIUM_BRUSHED",
+          "subpart": "split_turbo_125krpm_shaft_tube",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 76
+        },
+        {
+          "name": "turbo_mguh__mguh_3phase_hv_orange_cable_1__MAT_HV_ORANGE",
+          "subpart": "mguh_3phase_hv_orange_cable_1",
+          "mat_tag": "MAT_HV_ORANGE",
+          "triangles": 452
+        },
+        {
+          "name": "turbo_mguh__mguh_3phase_hv_orange_cable_2__MAT_HV_ORANGE",
+          "subpart": "mguh_3phase_hv_orange_cable_2",
+          "mat_tag": "MAT_HV_ORANGE",
+          "triangles": 452
+        },
+        {
+          "name": "turbo_mguh__mguh_3phase_hv_orange_cable_3__MAT_HV_ORANGE",
+          "subpart": "mguh_3phase_hv_orange_cable_3",
+          "mat_tag": "MAT_HV_ORANGE",
+          "triangles": 452
+        },
+        {
+          "name": "turbo_mguh__rear_marm247_exhaust_turbine_volute__MAT_INCONEL_EXHAUST",
+          "subpart": "rear_marm247_exhaust_turbine_volute",
+          "mat_tag": "MAT_INCONEL_EXHAUST",
+          "triangles": 1316
+        },
+        {
+          "name": "turbo_mguh__turbine_thermal_heat_shield_blanket__MAT_GOLD_FOIL",
+          "subpart": "turbine_thermal_heat_shield_blanket",
+          "mat_tag": "MAT_GOLD_FOIL",
+          "triangles": 128
+        },
+        {
+          "name": "turbo_mguh__turbine_vband_titanium_clamp_1__MAT_TITANIUM_BRUSHED",
+          "subpart": "turbine_vband_titanium_clamp_1",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 192
+        },
+        {
+          "name": "turbo_mguh__turbine_vband_titanium_clamp_2__MAT_TITANIUM_BRUSHED",
+          "subpart": "turbine_vband_titanium_clamp_2",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 192
+        },
+        {
+          "name": "turbo_mguh__charge_air_hot_duct_lh__MAT_CARBON_TWILL",
+          "subpart": "charge_air_hot_duct_lh",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 680
+        },
+        {
+          "name": "turbo_mguh__charge_air_cold_plenum_return_lh__MAT_CARBON_TWILL",
+          "subpart": "charge_air_cold_plenum_return_lh",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 680
+        },
+        {
+          "name": "turbo_mguh__wiggins_charge_clamp_lh__MAT_ANODIZED_BLUE",
+          "subpart": "wiggins_charge_clamp_lh",
+          "mat_tag": "MAT_ANODIZED_BLUE",
+          "triangles": 236
+        },
+        {
+          "name": "turbo_mguh__charge_air_hot_duct_rh__MAT_CARBON_TWILL",
+          "subpart": "charge_air_hot_duct_rh",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 680
+        },
+        {
+          "name": "turbo_mguh__charge_air_cold_plenum_return_rh__MAT_CARBON_TWILL",
+          "subpart": "charge_air_cold_plenum_return_rh",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 680
+        },
+        {
+          "name": "turbo_mguh__wiggins_charge_clamp_rh__MAT_ANODIZED_BLUE",
+          "subpart": "wiggins_charge_clamp_rh",
+          "mat_tag": "MAT_ANODIZED_BLUE",
+          "triangles": 236
+        }
+      ],
+      "bbox_min": [
+        -0.3842,
+        0.1558,
+        0.2541
+      ],
+      "bbox_max": [
+        0.3842,
+        1.01,
+        0.6872
+      ]
+    },
+    "exhaust_inconel": {
+      "id": "exhaust_inconel",
+      "category": "powertrain",
+      "name_en": "Hydroformed Inconel 625 6-into-1 Exhaust & Wastegates",
+      "name_ru": "Выпускной коллектор из инконеля 6-в-1 и вестгейты",
+      "explode_vec": [
+        0.0,
+        0.85,
+        0.78
+      ],
+      "removable_cover": false,
+      "material_spec": "0.7mm Hydroformed Inconel 625 + Ceramic Thermal Barrier",
+      "weight_kg": 9.8,
+      "operating_temp_c": 940,
+      "aero_load_n": 0,
+      "fia_reg": "Art. 5.8 Exhaust System & Tailpipe",
+      "desc_en": "Thin-wall TIG-welded Inconel 625 equal-length spaghetti manifolds glowing cherry-orange under load, merging into a central turbine collector and twin wastegate pipes.",
+      "desc_ru": "Тонкостенные равнодлинные коллекторы «спагетти» из жаропрочного сплава Inconel 625 с аргонодуговыми швами, центральной трубой и двойным выхлопом вестгейтов.",
+      "subpart_count": 29,
+      "triangles": 24344,
+      "vertices": 13108,
+      "subparts": [
+        {
+          "name": "exhaust_inconel__inconel_primary_header_lh_cyl1__MAT_INCONEL_EXHAUST",
+          "subpart": "inconel_primary_header_lh_cyl1",
+          "mat_tag": "MAT_INCONEL_EXHAUST",
+          "triangles": 1328
+        },
+        {
+          "name": "exhaust_inconel__tig_weld_collars_lh_cyl1__MAT_TITANIUM_BRUSHED",
+          "subpart": "tig_weld_collars_lh_cyl1",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 756
+        },
+        {
+          "name": "exhaust_inconel__exhaust_port_flange_lh_cyl1__MAT_TITANIUM_BRUSHED",
+          "subpart": "exhaust_port_flange_lh_cyl1",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 188
+        },
+        {
+          "name": "exhaust_inconel__inconel_primary_header_lh_cyl2__MAT_INCONEL_EXHAUST",
+          "subpart": "inconel_primary_header_lh_cyl2",
+          "mat_tag": "MAT_INCONEL_EXHAUST",
+          "triangles": 1328
+        },
+        {
+          "name": "exhaust_inconel__tig_weld_collars_lh_cyl2__MAT_TITANIUM_BRUSHED",
+          "subpart": "tig_weld_collars_lh_cyl2",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 756
+        },
+        {
+          "name": "exhaust_inconel__exhaust_port_flange_lh_cyl2__MAT_TITANIUM_BRUSHED",
+          "subpart": "exhaust_port_flange_lh_cyl2",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 188
+        },
+        {
+          "name": "exhaust_inconel__inconel_primary_header_lh_cyl3__MAT_INCONEL_EXHAUST",
+          "subpart": "inconel_primary_header_lh_cyl3",
+          "mat_tag": "MAT_INCONEL_EXHAUST",
+          "triangles": 1328
+        },
+        {
+          "name": "exhaust_inconel__tig_weld_collars_lh_cyl3__MAT_TITANIUM_BRUSHED",
+          "subpart": "tig_weld_collars_lh_cyl3",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 756
+        },
+        {
+          "name": "exhaust_inconel__exhaust_port_flange_lh_cyl3__MAT_TITANIUM_BRUSHED",
+          "subpart": "exhaust_port_flange_lh_cyl3",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 188
+        },
+        {
+          "name": "exhaust_inconel__inconel_3into1_collector_lh__MAT_INCONEL_EXHAUST",
+          "subpart": "inconel_3into1_collector_lh",
+          "mat_tag": "MAT_INCONEL_EXHAUST",
+          "triangles": 756
+        },
+        {
+          "name": "exhaust_inconel__inconel_primary_header_rh_cyl1__MAT_INCONEL_EXHAUST",
+          "subpart": "inconel_primary_header_rh_cyl1",
+          "mat_tag": "MAT_INCONEL_EXHAUST",
+          "triangles": 1328
+        },
+        {
+          "name": "exhaust_inconel__tig_weld_collars_rh_cyl1__MAT_TITANIUM_BRUSHED",
+          "subpart": "tig_weld_collars_rh_cyl1",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 756
+        },
+        {
+          "name": "exhaust_inconel__exhaust_port_flange_rh_cyl1__MAT_TITANIUM_BRUSHED",
+          "subpart": "exhaust_port_flange_rh_cyl1",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 188
+        },
+        {
+          "name": "exhaust_inconel__inconel_primary_header_rh_cyl2__MAT_INCONEL_EXHAUST",
+          "subpart": "inconel_primary_header_rh_cyl2",
+          "mat_tag": "MAT_INCONEL_EXHAUST",
+          "triangles": 1328
+        },
+        {
+          "name": "exhaust_inconel__tig_weld_collars_rh_cyl2__MAT_TITANIUM_BRUSHED",
+          "subpart": "tig_weld_collars_rh_cyl2",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 756
+        },
+        {
+          "name": "exhaust_inconel__exhaust_port_flange_rh_cyl2__MAT_TITANIUM_BRUSHED",
+          "subpart": "exhaust_port_flange_rh_cyl2",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 188
+        },
+        {
+          "name": "exhaust_inconel__inconel_primary_header_rh_cyl3__MAT_INCONEL_EXHAUST",
+          "subpart": "inconel_primary_header_rh_cyl3",
+          "mat_tag": "MAT_INCONEL_EXHAUST",
+          "triangles": 1328
+        },
+        {
+          "name": "exhaust_inconel__tig_weld_collars_rh_cyl3__MAT_TITANIUM_BRUSHED",
+          "subpart": "tig_weld_collars_rh_cyl3",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 756
+        },
+        {
+          "name": "exhaust_inconel__exhaust_port_flange_rh_cyl3__MAT_TITANIUM_BRUSHED",
+          "subpart": "exhaust_port_flange_rh_cyl3",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 188
+        },
+        {
+          "name": "exhaust_inconel__inconel_3into1_collector_rh__MAT_INCONEL_EXHAUST",
+          "subpart": "inconel_3into1_collector_rh",
+          "mat_tag": "MAT_INCONEL_EXHAUST",
+          "triangles": 756
+        },
+        {
+          "name": "exhaust_inconel__central_inconel_main_tailpipe__MAT_INCONEL_EXHAUST",
+          "subpart": "central_inconel_main_tailpipe",
+          "mat_tag": "MAT_INCONEL_EXHAUST",
+          "triangles": 3248
+        },
+        {
+          "name": "exhaust_inconel__main_tailpipe_tig_weld_seams__MAT_TITANIUM_BRUSHED",
+          "subpart": "main_tailpipe_tig_weld_seams",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 864
+        },
+        {
+          "name": "exhaust_inconel__exhaust_tailpipe_titanium_support_ring__MAT_TITANIUM_BRUSHED",
+          "subpart": "exhaust_tailpipe_titanium_support_ring",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 192
+        },
+        {
+          "name": "exhaust_inconel__wastegate_exhaust_pipe_lh__MAT_INCONEL_EXHAUST",
+          "subpart": "wastegate_exhaust_pipe_lh",
+          "mat_tag": "MAT_INCONEL_EXHAUST",
+          "triangles": 2000
+        },
+        {
+          "name": "exhaust_inconel__wastegate_valve_body_lh__MAT_TITANIUM_BRUSHED",
+          "subpart": "wastegate_valve_body_lh",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 212
+        },
+        {
+          "name": "exhaust_inconel__wastegate_pneumatic_canister_lh__MAT_ANODIZED_RED",
+          "subpart": "wastegate_pneumatic_canister_lh",
+          "mat_tag": "MAT_ANODIZED_RED",
+          "triangles": 236
+        },
+        {
+          "name": "exhaust_inconel__wastegate_exhaust_pipe_rh__MAT_INCONEL_EXHAUST",
+          "subpart": "wastegate_exhaust_pipe_rh",
+          "mat_tag": "MAT_INCONEL_EXHAUST",
+          "triangles": 2000
+        },
+        {
+          "name": "exhaust_inconel__wastegate_valve_body_rh__MAT_TITANIUM_BRUSHED",
+          "subpart": "wastegate_valve_body_rh",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 212
+        },
+        {
+          "name": "exhaust_inconel__wastegate_pneumatic_canister_rh__MAT_ANODIZED_RED",
+          "subpart": "wastegate_pneumatic_canister_rh",
+          "mat_tag": "MAT_ANODIZED_RED",
+          "triangles": 236
+        }
+      ],
+      "bbox_min": [
+        -0.377,
+        0.306,
+        0.2706
+      ],
+      "bbox_max": [
+        0.377,
+        2.2617,
+        0.5387
+      ]
+    },
+    "energy_store_ers": {
+      "id": "energy_store_ers",
+      "category": "powertrain",
+      "name_en": "800V Lithium-Silicon Energy Store & MGU-K",
+      "name_ru": "Батарея ERS 800 В, инвертор и мотор-генератор MGU-K",
+      "explode_vec": [
+        0.0,
+        -0.05,
+        -0.38
+      ],
+      "removable_cover": false,
+      "material_spec": "Carbon-Kevlar Armored Cell Pack / Gold Foil / HV Orange Cables",
+      "weight_kg": 27.0,
+      "operating_temp_c": 58,
+      "aero_load_n": 0,
+      "fia_reg": "Art. 5.12 Energy Recovery System (4 MJ/lap)",
+      "desc_en": "Floor-cavity mounted 800V battery pack clad in gold Kapton heat shielding, SiC power electronics inverter, and 120 kW (163 hp) crankshaft-coupled MGU-K motor.",
+      "desc_ru": "Защищённый блок аккумуляторов 800 В в золотой теплоизоляции под топливным баком, карбид-кремниевый инвертор и мотор-генератор MGU-K на 120 кВт.",
+      "subpart_count": 26,
+      "triangles": 4616,
+      "vertices": 2360,
+      "subparts": [
+        {
+          "name": "energy_store_ers__ers_battery_carbon_armored_tray__MAT_CARBON_TWILL",
+          "subpart": "ers_battery_carbon_armored_tray",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 108
+        },
+        {
+          "name": "energy_store_ers__ers_gold_kapton_battery_enclosure__MAT_GOLD_FOIL",
+          "subpart": "ers_gold_kapton_battery_enclosure",
+          "mat_tag": "MAT_GOLD_FOIL",
+          "triangles": 284
+        },
+        {
+          "name": "energy_store_ers__ers_carbon_retention_strap_1__MAT_CARBON_TWILL",
+          "subpart": "ers_carbon_retention_strap_1",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 108
+        },
+        {
+          "name": "energy_store_ers__ers_carbon_retention_strap_2__MAT_CARBON_TWILL",
+          "subpart": "ers_carbon_retention_strap_2",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 108
+        },
+        {
+          "name": "energy_store_ers__ers_carbon_retention_strap_3__MAT_CARBON_TWILL",
+          "subpart": "ers_carbon_retention_strap_3",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 108
+        },
+        {
+          "name": "energy_store_ers__sic_power_electronics_inverter_housing__MAT_ALUMINUM_CNC",
+          "subpart": "sic_power_electronics_inverter_housing",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "energy_store_ers__sic_inverter_cooling_fin_1__MAT_ALUMINUM_CNC",
+          "subpart": "sic_inverter_cooling_fin_1",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 12
+        },
+        {
+          "name": "energy_store_ers__sic_inverter_cooling_fin_2__MAT_ALUMINUM_CNC",
+          "subpart": "sic_inverter_cooling_fin_2",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 12
+        },
+        {
+          "name": "energy_store_ers__sic_inverter_cooling_fin_3__MAT_ALUMINUM_CNC",
+          "subpart": "sic_inverter_cooling_fin_3",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 12
+        },
+        {
+          "name": "energy_store_ers__sic_inverter_cooling_fin_4__MAT_ALUMINUM_CNC",
+          "subpart": "sic_inverter_cooling_fin_4",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 12
+        },
+        {
+          "name": "energy_store_ers__sic_inverter_cooling_fin_5__MAT_ALUMINUM_CNC",
+          "subpart": "sic_inverter_cooling_fin_5",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 12
+        },
+        {
+          "name": "energy_store_ers__sic_inverter_cooling_fin_6__MAT_ALUMINUM_CNC",
+          "subpart": "sic_inverter_cooling_fin_6",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 12
+        },
+        {
+          "name": "energy_store_ers__sic_inverter_cooling_fin_7__MAT_ALUMINUM_CNC",
+          "subpart": "sic_inverter_cooling_fin_7",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 12
+        },
+        {
+          "name": "energy_store_ers__sic_inverter_cooling_fin_8__MAT_ALUMINUM_CNC",
+          "subpart": "sic_inverter_cooling_fin_8",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 12
+        },
+        {
+          "name": "energy_store_ers__ers_800v_high_voltage_warning_plate__MAT_LIVERY_ORANGE",
+          "subpart": "ers_800v_high_voltage_warning_plate",
+          "mat_tag": "MAT_LIVERY_ORANGE",
+          "triangles": 108
+        },
+        {
+          "name": "energy_store_ers__ers_autosport_connector_1__MAT_ANODIZED_RED",
+          "subpart": "ers_autosport_connector_1",
+          "mat_tag": "MAT_ANODIZED_RED",
+          "triangles": 188
+        },
+        {
+          "name": "energy_store_ers__ers_autosport_connector_2__MAT_ANODIZED_BLUE",
+          "subpart": "ers_autosport_connector_2",
+          "mat_tag": "MAT_ANODIZED_BLUE",
+          "triangles": 188
+        },
+        {
+          "name": "energy_store_ers__ers_autosport_connector_3__MAT_ANODIZED_RED",
+          "subpart": "ers_autosport_connector_3",
+          "mat_tag": "MAT_ANODIZED_RED",
+          "triangles": 188
+        },
+        {
+          "name": "energy_store_ers__ers_autosport_connector_4__MAT_ANODIZED_BLUE",
+          "subpart": "ers_autosport_connector_4",
+          "mat_tag": "MAT_ANODIZED_BLUE",
+          "triangles": 188
+        },
+        {
+          "name": "energy_store_ers__mguk_120kw_motor_stator_housing__MAT_CARBON_TWILL",
+          "subpart": "mguk_120kw_motor_stator_housing",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 308
+        },
+        {
+          "name": "energy_store_ers__mguk_cnc_water_cooling_jacket__MAT_ALUMINUM_CNC",
+          "subpart": "mguk_cnc_water_cooling_jacket",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 308
+        },
+        {
+          "name": "energy_store_ers__mguk_crankshaft_gear_transfer_case__MAT_TITANIUM_BRUSHED",
+          "subpart": "mguk_crankshaft_gear_transfer_case",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 108
+        },
+        {
+          "name": "energy_store_ers__hv_harness_battery_to_mguk_phase_a__MAT_HV_ORANGE",
+          "subpart": "hv_harness_battery_to_mguk_phase_a",
+          "mat_tag": "MAT_HV_ORANGE",
+          "triangles": 528
+        },
+        {
+          "name": "energy_store_ers__hv_harness_battery_to_mguk_phase_b__MAT_HV_ORANGE",
+          "subpart": "hv_harness_battery_to_mguk_phase_b",
+          "mat_tag": "MAT_HV_ORANGE",
+          "triangles": 528
+        },
+        {
+          "name": "energy_store_ers__hv_harness_inverter_to_mguh_bus__MAT_HV_ORANGE",
+          "subpart": "hv_harness_inverter_to_mguh_bus",
+          "mat_tag": "MAT_HV_ORANGE",
+          "triangles": 528
+        },
+        {
+          "name": "energy_store_ers__hv_harness_ers_main_dc_bus__MAT_HV_ORANGE",
+          "subpart": "hv_harness_ers_main_dc_bus",
+          "mat_tag": "MAT_HV_ORANGE",
+          "triangles": 528
+        }
+      ],
+      "bbox_min": [
+        -0.2415,
+        -0.105,
+        0.06
+      ],
+      "bbox_max": [
+        0.175,
+        0.49,
+        0.43
+      ]
+    },
+    "gearbox_cassette": {
+      "id": "gearbox_cassette",
+      "category": "powertrain",
+      "name_en": "8-Speed Seamless Carbon-Titanium Gearbox",
+      "name_ru": "8-ступенчатая бесшовная карбон-титановая КПП",
+      "explode_vec": [
+        0.0,
+        0.95,
+        0.15
+      ],
+      "removable_cover": false,
+      "material_spec": "Structural Carbon Maincase + 3D-Printed Titanium Bulkheads",
+      "weight_kg": 41.0,
+      "operating_temp_c": 105,
+      "aero_load_n": 0,
+      "fia_reg": "Art. 9.6 Transmission & Seamless Shift",
+      "desc_en": "Load-bearing carbon gearbox casing housing a removable titanium 8-speed seamless-shift cassette, electro-hydraulic differential, and rear suspension inboard rockers.",
+      "desc_ru": "Несущий карбоновый картер с титановой кассетой на 8 бесшовных передач, электрогидравлическим дифференциалом и внутренними торсионами задней подвески.",
+      "subpart_count": 37,
+      "triangles": 8952,
+      "vertices": 4546,
+      "subparts": [
+        {
+          "name": "gearbox_cassette__carbon_gearbox_structural_maincase__MAT_CARBON_TWILL",
+          "subpart": "carbon_gearbox_structural_maincase",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 1008
+        },
+        {
+          "name": "gearbox_cassette__gearbox_gold_foil_exhaust_trough__MAT_GOLD_FOIL",
+          "subpart": "gearbox_gold_foil_exhaust_trough",
+          "mat_tag": "MAT_GOLD_FOIL",
+          "triangles": 316
+        },
+        {
+          "name": "gearbox_cassette__gearbox_fea_diagonal_rib_lh_1__MAT_CARBON_TWILL",
+          "subpart": "gearbox_fea_diagonal_rib_lh_1",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 108
+        },
+        {
+          "name": "gearbox_cassette__gearbox_fea_diagonal_rib_lh_2__MAT_CARBON_TWILL",
+          "subpart": "gearbox_fea_diagonal_rib_lh_2",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 108
+        },
+        {
+          "name": "gearbox_cassette__gearbox_fea_diagonal_rib_lh_3__MAT_CARBON_TWILL",
+          "subpart": "gearbox_fea_diagonal_rib_lh_3",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 108
+        },
+        {
+          "name": "gearbox_cassette__gearbox_fea_diagonal_rib_lh_4__MAT_CARBON_TWILL",
+          "subpart": "gearbox_fea_diagonal_rib_lh_4",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 108
+        },
+        {
+          "name": "gearbox_cassette__gearbox_fea_diagonal_rib_lh_5__MAT_CARBON_TWILL",
+          "subpart": "gearbox_fea_diagonal_rib_lh_5",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 108
+        },
+        {
+          "name": "gearbox_cassette__gearbox_fea_diagonal_rib_rh_1__MAT_CARBON_TWILL",
+          "subpart": "gearbox_fea_diagonal_rib_rh_1",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 108
+        },
+        {
+          "name": "gearbox_cassette__gearbox_fea_diagonal_rib_rh_2__MAT_CARBON_TWILL",
+          "subpart": "gearbox_fea_diagonal_rib_rh_2",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 108
+        },
+        {
+          "name": "gearbox_cassette__gearbox_fea_diagonal_rib_rh_3__MAT_CARBON_TWILL",
+          "subpart": "gearbox_fea_diagonal_rib_rh_3",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 108
+        },
+        {
+          "name": "gearbox_cassette__gearbox_fea_diagonal_rib_rh_4__MAT_CARBON_TWILL",
+          "subpart": "gearbox_fea_diagonal_rib_rh_4",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 108
+        },
+        {
+          "name": "gearbox_cassette__gearbox_fea_diagonal_rib_rh_5__MAT_CARBON_TWILL",
+          "subpart": "gearbox_fea_diagonal_rib_rh_5",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 108
+        },
+        {
+          "name": "gearbox_cassette__titanium_3dprinted_8speed_cassette__MAT_TITANIUM_BRUSHED",
+          "subpart": "titanium_3dprinted_8speed_cassette",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 284
+        },
+        {
+          "name": "gearbox_cassette__titanium_rear_cassette_bulkhead__MAT_TITANIUM_BRUSHED",
+          "subpart": "titanium_rear_cassette_bulkhead",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 108
+        },
+        {
+          "name": "gearbox_cassette__electro_hydraulic_differential_housing__MAT_TITANIUM_BRUSHED",
+          "subpart": "electro_hydraulic_differential_housing",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 308
+        },
+        {
+          "name": "gearbox_cassette__differential_tripod_output_cup_lh__MAT_ALUMINUM_CNC",
+          "subpart": "differential_tripod_output_cup_lh",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 176
+        },
+        {
+          "name": "gearbox_cassette__differential_tripod_output_cup_rh__MAT_ALUMINUM_CNC",
+          "subpart": "differential_tripod_output_cup_rh",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 176
+        },
+        {
+          "name": "gearbox_cassette__titanium_suspension_clevis_lh_upper_front__MAT_TITANIUM_BRUSHED",
+          "subpart": "titanium_suspension_clevis_lh_upper_front",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 108
+        },
+        {
+          "name": "gearbox_cassette__titanium_suspension_clevis_lh_upper_rear__MAT_TITANIUM_BRUSHED",
+          "subpart": "titanium_suspension_clevis_lh_upper_rear",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 108
+        },
+        {
+          "name": "gearbox_cassette__titanium_suspension_clevis_lh_lower_front__MAT_TITANIUM_BRUSHED",
+          "subpart": "titanium_suspension_clevis_lh_lower_front",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 108
+        },
+        {
+          "name": "gearbox_cassette__titanium_suspension_clevis_lh_lower_rear__MAT_TITANIUM_BRUSHED",
+          "subpart": "titanium_suspension_clevis_lh_lower_rear",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 108
+        },
+        {
+          "name": "gearbox_cassette__titanium_suspension_clevis_rh_upper_front__MAT_TITANIUM_BRUSHED",
+          "subpart": "titanium_suspension_clevis_rh_upper_front",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 108
+        },
+        {
+          "name": "gearbox_cassette__titanium_suspension_clevis_rh_upper_rear__MAT_TITANIUM_BRUSHED",
+          "subpart": "titanium_suspension_clevis_rh_upper_rear",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 108
+        },
+        {
+          "name": "gearbox_cassette__titanium_suspension_clevis_rh_lower_front__MAT_TITANIUM_BRUSHED",
+          "subpart": "titanium_suspension_clevis_rh_lower_front",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 108
+        },
+        {
+          "name": "gearbox_cassette__titanium_suspension_clevis_rh_lower_rear__MAT_TITANIUM_BRUSHED",
+          "subpart": "titanium_suspension_clevis_rh_lower_rear",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 108
+        },
+        {
+          "name": "gearbox_cassette__seamless_shift_hydraulic_manifold_block__MAT_ALUMINUM_CNC",
+          "subpart": "seamless_shift_hydraulic_manifold_block",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 108
+        },
+        {
+          "name": "gearbox_cassette__seamless_shift_moog_solenoid_1__MAT_ANODIZED_RED",
+          "subpart": "seamless_shift_moog_solenoid_1",
+          "mat_tag": "MAT_ANODIZED_RED",
+          "triangles": 188
+        },
+        {
+          "name": "gearbox_cassette__seamless_shift_moog_solenoid_2__MAT_ANODIZED_BLUE",
+          "subpart": "seamless_shift_moog_solenoid_2",
+          "mat_tag": "MAT_ANODIZED_BLUE",
+          "triangles": 188
+        },
+        {
+          "name": "gearbox_cassette__seamless_shift_moog_solenoid_3__MAT_ANODIZED_RED",
+          "subpart": "seamless_shift_moog_solenoid_3",
+          "mat_tag": "MAT_ANODIZED_RED",
+          "triangles": 188
+        },
+        {
+          "name": "gearbox_cassette__seamless_shift_moog_solenoid_4__MAT_ANODIZED_BLUE",
+          "subpart": "seamless_shift_moog_solenoid_4",
+          "mat_tag": "MAT_ANODIZED_BLUE",
+          "triangles": 188
+        },
+        {
+          "name": "gearbox_cassette__rear_inboard_rotary_torsion_bar_lh__MAT_TITANIUM_BRUSHED",
+          "subpart": "rear_inboard_rotary_torsion_bar_lh",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 212
+        },
+        {
+          "name": "gearbox_cassette__rear_billet_titanium_bellcrank_rocker_lh__MAT_TITANIUM_BRUSHED",
+          "subpart": "rear_billet_titanium_bellcrank_rocker_lh",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 108
+        },
+        {
+          "name": "gearbox_cassette__rear_inboard_rotary_torsion_bar_rh__MAT_TITANIUM_BRUSHED",
+          "subpart": "rear_inboard_rotary_torsion_bar_rh",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 212
+        },
+        {
+          "name": "gearbox_cassette__rear_billet_titanium_bellcrank_rocker_rh__MAT_TITANIUM_BRUSHED",
+          "subpart": "rear_billet_titanium_bellcrank_rocker_rh",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 108
+        },
+        {
+          "name": "gearbox_cassette__rear_heave_damper_chrome_shaft__MAT_CHROME_POLISHED",
+          "subpart": "rear_heave_damper_chrome_shaft",
+          "mat_tag": "MAT_CHROME_POLISHED",
+          "triangles": 68
+        },
+        {
+          "name": "gearbox_cassette__rear_heave_damper_cnc_canister__MAT_ALUMINUM_CNC",
+          "subpart": "rear_heave_damper_cnc_canister",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 236
+        },
+        {
+          "name": "gearbox_cassette__rear_heave_helical_spring_coil__MAT_LIVERY_ORANGE",
+          "subpart": "rear_heave_helical_spring_coil",
+          "mat_tag": "MAT_LIVERY_ORANGE",
+          "triangles": 2828
+        }
+      ],
+      "bbox_min": [
+        -0.225,
+        0.9,
+        0.1271
+      ],
+      "bbox_max": [
+        0.225,
+        1.988,
+        0.445
+      ]
+    },
+    "suspension_fl": {
+      "id": "suspension_fl",
+      "category": "suspension",
+      "name_en": "Front-Left Double-Wishbone Pushrod Suspension",
+      "name_ru": "Передняя левая двухрычажная подвеска push-rod",
+      "explode_vec": [
+        -0.65,
+        -0.15,
+        0.22
+      ],
+      "removable_cover": false,
+      "material_spec": "Aero-Fairing Carbon Wishbones + Titanium Flexures",
+      "weight_kg": 6.4,
+      "operating_temp_c": 44,
+      "aero_load_n": 380,
+      "fia_reg": "Art. 10.3 Front Suspension Members",
+      "desc_en": "Anti-dive geometry carbon upper and lower wishbones with airfoil cross-sections, diagonal pushrod, steering track rod, and inboard torsion-bar rocker assembly.",
+      "desc_ru": "Карбоновые верхний и нижний рычаги аэродинамического сечения с геометрией анти-клевка, толкатель push-rod, рулевая тяга и внутренний рокер с торсионом.",
+      "subpart_count": 11,
+      "triangles": 7212,
+      "vertices": 3672,
+      "subparts": [
+        {
+          "name": "suspension_fl__upper_wishbone_fwd_arm__MAT_CARBON_TWILL",
+          "subpart": "upper_wishbone_fwd_arm",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 516
+        },
+        {
+          "name": "suspension_fl__upper_wishbone_aft_arm__MAT_CARBON_TWILL",
+          "subpart": "upper_wishbone_aft_arm",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 608
+        },
+        {
+          "name": "suspension_fl__upper_wishbone_ti_flexures__MAT_TITANIUM_BRUSHED",
+          "subpart": "upper_wishbone_ti_flexures",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 752
+        },
+        {
+          "name": "suspension_fl__lower_wishbone_fwd_arm__MAT_CARBON_TWILL",
+          "subpart": "lower_wishbone_fwd_arm",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 516
+        },
+        {
+          "name": "suspension_fl__lower_wishbone_aft_arm__MAT_CARBON_TWILL",
+          "subpart": "lower_wishbone_aft_arm",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 608
+        },
+        {
+          "name": "suspension_fl__lower_wishbone_ti_flexures__MAT_TITANIUM_BRUSHED",
+          "subpart": "lower_wishbone_ti_flexures",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 752
+        },
+        {
+          "name": "suspension_fl__steering_track_rod__MAT_CARBON_TWILL",
+          "subpart": "steering_track_rod",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 392
+        },
+        {
+          "name": "suspension_fl__steering_heim_joints__MAT_TITANIUM_BRUSHED",
+          "subpart": "steering_heim_joints",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 800
+        },
+        {
+          "name": "suspension_fl__diagonal_carbon_pushrod__MAT_CARBON_TWILL",
+          "subpart": "diagonal_carbon_pushrod",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 464
+        },
+        {
+          "name": "suspension_fl__inboard_bellcrank_rocker_torsion__MAT_TITANIUM_BRUSHED",
+          "subpart": "inboard_bellcrank_rocker_torsion",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 1144
+        },
+        {
+          "name": "suspension_fl__inboard_multimatic_damper__MAT_ALUMINUM_CNC",
+          "subpart": "inboard_multimatic_damper",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 660
+        }
+      ],
+      "bbox_min": [
+        -0.709,
+        -2.0169,
+        0.201
+      ],
+      "bbox_max": [
+        -0.068,
+        -1.4143,
+        0.5818
+      ]
+    },
+    "suspension_fr": {
+      "id": "suspension_fr",
+      "category": "suspension",
+      "name_en": "Front-Right Double-Wishbone Pushrod Suspension",
+      "name_ru": "Передняя правая двухрычажная подвеска push-rod",
+      "explode_vec": [
+        0.65,
+        -0.15,
+        0.22
+      ],
+      "removable_cover": false,
+      "material_spec": "Aero-Fairing Carbon Wishbones + Titanium Flexures",
+      "weight_kg": 6.4,
+      "operating_temp_c": 44,
+      "aero_load_n": 380,
+      "fia_reg": "Art. 10.3 Front Suspension Members",
+      "desc_en": "Right-hand multi-link front suspension assembly with zero-play titanium blade flexures and integrated wheel-tether cables.",
+      "desc_ru": "Правая передняя многорычажная подвеска с титановыми упругими шарнирами-флексурами без люфтов и двойными удерживающими тросами из зайлона.",
+      "subpart_count": 11,
+      "triangles": 7212,
+      "vertices": 3672,
+      "subparts": [
+        {
+          "name": "suspension_fr__upper_wishbone_fwd_arm__MAT_CARBON_TWILL",
+          "subpart": "upper_wishbone_fwd_arm",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 516
+        },
+        {
+          "name": "suspension_fr__upper_wishbone_aft_arm__MAT_CARBON_TWILL",
+          "subpart": "upper_wishbone_aft_arm",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 608
+        },
+        {
+          "name": "suspension_fr__upper_wishbone_ti_flexures__MAT_TITANIUM_BRUSHED",
+          "subpart": "upper_wishbone_ti_flexures",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 752
+        },
+        {
+          "name": "suspension_fr__lower_wishbone_fwd_arm__MAT_CARBON_TWILL",
+          "subpart": "lower_wishbone_fwd_arm",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 516
+        },
+        {
+          "name": "suspension_fr__lower_wishbone_aft_arm__MAT_CARBON_TWILL",
+          "subpart": "lower_wishbone_aft_arm",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 608
+        },
+        {
+          "name": "suspension_fr__lower_wishbone_ti_flexures__MAT_TITANIUM_BRUSHED",
+          "subpart": "lower_wishbone_ti_flexures",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 752
+        },
+        {
+          "name": "suspension_fr__steering_track_rod__MAT_CARBON_TWILL",
+          "subpart": "steering_track_rod",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 392
+        },
+        {
+          "name": "suspension_fr__steering_heim_joints__MAT_TITANIUM_BRUSHED",
+          "subpart": "steering_heim_joints",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 800
+        },
+        {
+          "name": "suspension_fr__diagonal_carbon_pushrod__MAT_CARBON_TWILL",
+          "subpart": "diagonal_carbon_pushrod",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 464
+        },
+        {
+          "name": "suspension_fr__inboard_bellcrank_rocker_torsion__MAT_TITANIUM_BRUSHED",
+          "subpart": "inboard_bellcrank_rocker_torsion",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 1144
+        },
+        {
+          "name": "suspension_fr__inboard_multimatic_damper__MAT_ALUMINUM_CNC",
+          "subpart": "inboard_multimatic_damper",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 660
+        }
+      ],
+      "bbox_min": [
+        0.068,
+        -2.0169,
+        0.201
+      ],
+      "bbox_max": [
+        0.709,
+        -1.4143,
+        0.5818
+      ]
+    },
+    "suspension_rl": {
+      "id": "suspension_rl",
+      "category": "suspension",
+      "name_en": "Rear-Left Pullrod Suspension & Carbon Driveshaft",
+      "name_ru": "Задняя левая подвеска pull-rod и приводной вал",
+      "explode_vec": [
+        -0.65,
+        0.25,
+        0.22
+      ],
+      "removable_cover": false,
+      "material_spec": "Carbon Wishbones + Maraging Steel Tripod CV Joint",
+      "weight_kg": 7.8,
+      "operating_temp_c": 85,
+      "aero_load_n": 420,
+      "fia_reg": "Art. 10.4 Rear Suspension & Driveshafts",
+      "desc_en": "Swept-back rear suspension wishbones shaping diffuser upwash, low-CG pullrod actuator, toe link, and hollow maraging-steel driveshaft inside a carbon fairing.",
+      "desc_ru": "Стреловидные рычаги задней подвески, тяга pull-rod для снижения центра тяжести и полый приводной вал из мартенситностареющей стали в карбоновом кожухе.",
+      "subpart_count": 10,
+      "triangles": 7700,
+      "vertices": 3908,
+      "subparts": [
+        {
+          "name": "suspension_rl__upper_wishbone_fwd_arm__MAT_CARBON_TWILL",
+          "subpart": "upper_wishbone_fwd_arm",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 596
+        },
+        {
+          "name": "suspension_rl__upper_wishbone_aft_arm__MAT_CARBON_TWILL",
+          "subpart": "upper_wishbone_aft_arm",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 528
+        },
+        {
+          "name": "suspension_rl__upper_wishbone_ti_flexures__MAT_TITANIUM_BRUSHED",
+          "subpart": "upper_wishbone_ti_flexures",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 644
+        },
+        {
+          "name": "suspension_rl__lower_wishbone_arms__MAT_CARBON_TWILL",
+          "subpart": "lower_wishbone_arms",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 1112
+        },
+        {
+          "name": "suspension_rl__lower_wishbone_ti_mounts__MAT_TITANIUM_BRUSHED",
+          "subpart": "lower_wishbone_ti_mounts",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 428
+        },
+        {
+          "name": "suspension_rl__diagonal_carbon_pullrod__MAT_CARBON_TWILL",
+          "subpart": "diagonal_carbon_pullrod",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 464
+        },
+        {
+          "name": "suspension_rl__pullrod_inboard_rocker__MAT_TITANIUM_BRUSHED",
+          "subpart": "pullrod_inboard_rocker",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 696
+        },
+        {
+          "name": "suspension_rl__rear_toe_link__MAT_CARBON_TWILL",
+          "subpart": "rear_toe_link",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 392
+        },
+        {
+          "name": "suspension_rl__driveshaft_and_cv_boots__MAT_CARBON_MATTE",
+          "subpart": "driveshaft_and_cv_boots",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 1004
+        },
+        {
+          "name": "suspension_rl__driveshaft_tripod_flanges__MAT_TITANIUM_BRUSHED",
+          "subpart": "driveshaft_tripod_flanges",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 1836
+        }
+      ],
+      "bbox_min": [
+        -0.665,
+        1.4195,
+        0.1618
+      ],
+      "bbox_max": [
+        -0.1113,
+        1.9589,
+        0.499
+      ]
+    },
+    "suspension_rr": {
+      "id": "suspension_rr",
+      "category": "suspension",
+      "name_en": "Rear-Right Pullrod Suspension & Carbon Driveshaft",
+      "name_ru": "Задняя правая подвеска pull-rod и приводной вал",
+      "explode_vec": [
+        0.65,
+        0.25,
+        0.22
+      ],
+      "removable_cover": false,
+      "material_spec": "Carbon Wishbones + Maraging Steel Tripod CV Joint",
+      "weight_kg": 7.8,
+      "operating_temp_c": 85,
+      "aero_load_n": 420,
+      "fia_reg": "Art. 10.4 Rear Suspension & Driveshafts",
+      "desc_en": "Right-hand rear pullrod suspension and constant-velocity driveshaft assembly anchored directly to the carbon gearbox maincase.",
+      "desc_ru": "Правая задняя подвеска pull-rod с трипоидным ШРУСом, закреплённая непосредственно на силовых приливах карбонового картера КПП.",
+      "subpart_count": 10,
+      "triangles": 7700,
+      "vertices": 3908,
+      "subparts": [
+        {
+          "name": "suspension_rr__upper_wishbone_fwd_arm__MAT_CARBON_TWILL",
+          "subpart": "upper_wishbone_fwd_arm",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 596
+        },
+        {
+          "name": "suspension_rr__upper_wishbone_aft_arm__MAT_CARBON_TWILL",
+          "subpart": "upper_wishbone_aft_arm",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 528
+        },
+        {
+          "name": "suspension_rr__upper_wishbone_ti_flexures__MAT_TITANIUM_BRUSHED",
+          "subpart": "upper_wishbone_ti_flexures",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 644
+        },
+        {
+          "name": "suspension_rr__lower_wishbone_arms__MAT_CARBON_TWILL",
+          "subpart": "lower_wishbone_arms",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 1112
+        },
+        {
+          "name": "suspension_rr__lower_wishbone_ti_mounts__MAT_TITANIUM_BRUSHED",
+          "subpart": "lower_wishbone_ti_mounts",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 428
+        },
+        {
+          "name": "suspension_rr__diagonal_carbon_pullrod__MAT_CARBON_TWILL",
+          "subpart": "diagonal_carbon_pullrod",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 464
+        },
+        {
+          "name": "suspension_rr__pullrod_inboard_rocker__MAT_TITANIUM_BRUSHED",
+          "subpart": "pullrod_inboard_rocker",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 696
+        },
+        {
+          "name": "suspension_rr__rear_toe_link__MAT_CARBON_TWILL",
+          "subpart": "rear_toe_link",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 392
+        },
+        {
+          "name": "suspension_rr__driveshaft_and_cv_boots__MAT_CARBON_MATTE",
+          "subpart": "driveshaft_and_cv_boots",
+          "mat_tag": "MAT_CARBON_MATTE",
+          "triangles": 1004
+        },
+        {
+          "name": "suspension_rr__driveshaft_tripod_flanges__MAT_TITANIUM_BRUSHED",
+          "subpart": "driveshaft_tripod_flanges",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 1836
+        }
+      ],
+      "bbox_min": [
+        0.1113,
+        1.4195,
+        0.1618
+      ],
+      "bbox_max": [
+        0.665,
+        1.9589,
+        0.499
+      ]
+    },
+    "brakes_fl": {
+      "id": "brakes_fl",
+      "category": "suspension",
+      "name_en": "Front-Left Carbon-Ceramic Brake & Upright",
+      "name_ru": "Передний левый карбон-керамический тормоз и кулак",
+      "explode_vec": [
+        -0.98,
+        -0.1,
+        0.05
+      ],
+      "removable_cover": false,
+      "material_spec": "Brembo CCR-Ultra 328mm Disc + Al-Li 6-Piston Caliper",
+      "weight_kg": 5.2,
+      "operating_temp_c": 920,
+      "aero_load_n": 240,
+      "fia_reg": "Art. 11.4 Brake Discs (1,250 Cooling Holes)",
+      "desc_en": "328x32mm cross-drilled carbon-carbon rotor with 1,250 radial cooling channels, topology-optimized 6-piston monoblock caliper with titanium pistons, and carbon cooling scoop.",
+      "desc_ru": "Перфорированный карбон-керамический диск 328×32 мм с 1250 радиальными каналами охлаждения, 6-поршневой моноблочный суппорт и карбоновый воздухозаборник.",
+      "subpart_count": 9,
+      "triangles": 11060,
+      "vertices": 6060,
+      "subparts": [
+        {
+          "name": "brakes_fl__titanium_upright__MAT_TITANIUM_BRUSHED",
+          "subpart": "titanium_upright",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 1988
+        },
+        {
+          "name": "brakes_fl__ceramic_hub_spindle__MAT_TITANIUM_BRUSHED",
+          "subpart": "ceramic_hub_spindle",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 1080
+        },
+        {
+          "name": "brakes_fl__brake_cooling_scoop__MAT_CARBON_TWILL",
+          "subpart": "brake_cooling_scoop",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 648
+        },
+        {
+          "name": "brakes_fl__windowed_carbon_brake_drum__MAT_CARBON_TWILL",
+          "subpart": "windowed_carbon_brake_drum",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 564
+        },
+        {
+          "name": "brakes_fl__cross_drilled_carbon_rotor__MAT_BRAKE_DISC",
+          "subpart": "cross_drilled_carbon_rotor",
+          "mat_tag": "MAT_BRAKE_DISC",
+          "triangles": 3888
+        },
+        {
+          "name": "brakes_fl__rotor_titanium_mounting_bell__MAT_TITANIUM_BRUSHED",
+          "subpart": "rotor_titanium_mounting_bell",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 1200
+        },
+        {
+          "name": "brakes_fl__monoblock_6piston_caliper__MAT_CALIPER_ANODIZED",
+          "subpart": "monoblock_6piston_caliper",
+          "mat_tag": "MAT_CALIPER_ANODIZED",
+          "triangles": 780
+        },
+        {
+          "name": "brakes_fl__caliper_ti_pistons_and_pipes__MAT_TITANIUM_BRUSHED",
+          "subpart": "caliper_ti_pistons_and_pipes",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 524
+        },
+        {
+          "name": "brakes_fl__brake_pad_pins_and_ir_sensor__MAT_ALUMINUM_CNC",
+          "subpart": "brake_pad_pins_and_ir_sensor",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 388
+        }
+      ],
+      "bbox_min": [
+        -0.845,
+        -2.0066,
+        0.1586
+      ],
+      "bbox_max": [
+        -0.6275,
+        -1.593,
+        0.5668
+      ]
+    },
+    "brakes_fr": {
+      "id": "brakes_fr",
+      "category": "suspension",
+      "name_en": "Front-Right Carbon-Ceramic Brake & Upright",
+      "name_ru": "Передний правый карбон-керамический тормоз и кулак",
+      "explode_vec": [
+        0.98,
+        -0.1,
+        0.05
+      ],
+      "removable_cover": false,
+      "material_spec": "Brembo CCR-Ultra 328mm Disc + Al-Li 6-Piston Caliper",
+      "weight_kg": 5.2,
+      "operating_temp_c": 920,
+      "aero_load_n": 240,
+      "fia_reg": "Art. 11.4 Brake Discs (1,250 Cooling Holes)",
+      "desc_en": "Front-right upright, ceramic wheel bearing hub, carbon brake drum shroud, and high-thermal-capacity carbon rotor capable of 5.5G peak deceleration.",
+      "desc_ru": "Правый поворотный кулак из титана, керамический ступичный узел, карбоновый барабан и тормозной ротор, обеспечивающий замедление до 5,5 G.",
+      "subpart_count": 9,
+      "triangles": 11060,
+      "vertices": 6060,
+      "subparts": [
+        {
+          "name": "brakes_fr__titanium_upright__MAT_TITANIUM_BRUSHED",
+          "subpart": "titanium_upright",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 1988
+        },
+        {
+          "name": "brakes_fr__ceramic_hub_spindle__MAT_TITANIUM_BRUSHED",
+          "subpart": "ceramic_hub_spindle",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 1080
+        },
+        {
+          "name": "brakes_fr__brake_cooling_scoop__MAT_CARBON_TWILL",
+          "subpart": "brake_cooling_scoop",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 648
+        },
+        {
+          "name": "brakes_fr__windowed_carbon_brake_drum__MAT_CARBON_TWILL",
+          "subpart": "windowed_carbon_brake_drum",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 564
+        },
+        {
+          "name": "brakes_fr__cross_drilled_carbon_rotor__MAT_BRAKE_DISC",
+          "subpart": "cross_drilled_carbon_rotor",
+          "mat_tag": "MAT_BRAKE_DISC",
+          "triangles": 3888
+        },
+        {
+          "name": "brakes_fr__rotor_titanium_mounting_bell__MAT_TITANIUM_BRUSHED",
+          "subpart": "rotor_titanium_mounting_bell",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 1200
+        },
+        {
+          "name": "brakes_fr__monoblock_6piston_caliper__MAT_CALIPER_ANODIZED",
+          "subpart": "monoblock_6piston_caliper",
+          "mat_tag": "MAT_CALIPER_ANODIZED",
+          "triangles": 780
+        },
+        {
+          "name": "brakes_fr__caliper_ti_pistons_and_pipes__MAT_TITANIUM_BRUSHED",
+          "subpart": "caliper_ti_pistons_and_pipes",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 524
+        },
+        {
+          "name": "brakes_fr__brake_pad_pins_and_ir_sensor__MAT_ALUMINUM_CNC",
+          "subpart": "brake_pad_pins_and_ir_sensor",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 388
+        }
+      ],
+      "bbox_min": [
+        0.6275,
+        -2.0066,
+        0.1586
+      ],
+      "bbox_max": [
+        0.845,
+        -1.593,
+        0.5668
+      ]
+    },
+    "brakes_rl": {
+      "id": "brakes_rl",
+      "category": "suspension",
+      "name_en": "Rear-Left Brake-by-Wire Assembly & Upright",
+      "name_ru": "Задний левый тормозной узел Brake-by-Wire",
+      "explode_vec": [
+        -0.98,
+        0.1,
+        0.05
+      ],
+      "removable_cover": false,
+      "material_spec": "280mm Carbon Disc + Electro-Hydraulic BBW Caliper",
+      "weight_kg": 4.6,
+      "operating_temp_c": 780,
+      "aero_load_n": 210,
+      "fia_reg": "Art. 11.6 Rear Brake Control System",
+      "desc_en": "Rear-left carbon brake assembly blending friction braking torque seamlessly with 120 kW MGU-K regenerative harvesting.",
+      "desc_ru": "Левый задний тормозной механизм с электронным распределением усилия Brake-by-Wire, синхронизированный с рекуперацией энергии MGU-K.",
+      "subpart_count": 9,
+      "triangles": 11108,
+      "vertices": 6092,
+      "subparts": [
+        {
+          "name": "brakes_rl__titanium_upright__MAT_TITANIUM_BRUSHED",
+          "subpart": "titanium_upright",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 1988
+        },
+        {
+          "name": "brakes_rl__ceramic_hub_spindle__MAT_TITANIUM_BRUSHED",
+          "subpart": "ceramic_hub_spindle",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 1080
+        },
+        {
+          "name": "brakes_rl__brake_cooling_scoop__MAT_CARBON_TWILL",
+          "subpart": "brake_cooling_scoop",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 648
+        },
+        {
+          "name": "brakes_rl__windowed_carbon_brake_drum__MAT_CARBON_TWILL",
+          "subpart": "windowed_carbon_brake_drum",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 612
+        },
+        {
+          "name": "brakes_rl__cross_drilled_carbon_rotor__MAT_BRAKE_DISC",
+          "subpart": "cross_drilled_carbon_rotor",
+          "mat_tag": "MAT_BRAKE_DISC",
+          "triangles": 3888
+        },
+        {
+          "name": "brakes_rl__rotor_titanium_mounting_bell__MAT_TITANIUM_BRUSHED",
+          "subpart": "rotor_titanium_mounting_bell",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 1200
+        },
+        {
+          "name": "brakes_rl__monoblock_6piston_caliper__MAT_CALIPER_ANODIZED",
+          "subpart": "monoblock_6piston_caliper",
+          "mat_tag": "MAT_CALIPER_ANODIZED",
+          "triangles": 780
+        },
+        {
+          "name": "brakes_rl__caliper_ti_pistons_and_pipes__MAT_TITANIUM_BRUSHED",
+          "subpart": "caliper_ti_pistons_and_pipes",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 524
+        },
+        {
+          "name": "brakes_rl__brake_pad_pins_and_ir_sensor__MAT_ALUMINUM_CNC",
+          "subpart": "brake_pad_pins_and_ir_sensor",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 388
+        }
+      ],
+      "bbox_min": [
+        -0.805,
+        1.6054,
+        0.1825
+      ],
+      "bbox_max": [
+        -0.5875,
+        2.0068,
+        0.5548
+      ]
+    },
+    "brakes_rr": {
+      "id": "brakes_rr",
+      "category": "suspension",
+      "name_en": "Rear-Right Brake-by-Wire Assembly & Upright",
+      "name_ru": "Задний правый тормозной узел Brake-by-Wire",
+      "explode_vec": [
+        0.98,
+        0.1,
+        0.05
+      ],
+      "removable_cover": false,
+      "material_spec": "280mm Carbon Disc + Electro-Hydraulic BBW Caliper",
+      "weight_kg": 4.6,
+      "operating_temp_c": 780,
+      "aero_load_n": 210,
+      "fia_reg": "Art. 11.6 Rear Brake Control System",
+      "desc_en": "Rear-right titanium upright, carbon drum, wake-controlling winglets, and cross-drilled carbon rotor.",
+      "desc_ru": "Правый задний кулак с каскадом винглетов контроля спутной струи колеса, карбоновым защитным кожухом и перфорированным ротором.",
+      "subpart_count": 9,
+      "triangles": 11108,
+      "vertices": 6092,
+      "subparts": [
+        {
+          "name": "brakes_rr__titanium_upright__MAT_TITANIUM_BRUSHED",
+          "subpart": "titanium_upright",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 1988
+        },
+        {
+          "name": "brakes_rr__ceramic_hub_spindle__MAT_TITANIUM_BRUSHED",
+          "subpart": "ceramic_hub_spindle",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 1080
+        },
+        {
+          "name": "brakes_rr__brake_cooling_scoop__MAT_CARBON_TWILL",
+          "subpart": "brake_cooling_scoop",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 648
+        },
+        {
+          "name": "brakes_rr__windowed_carbon_brake_drum__MAT_CARBON_TWILL",
+          "subpart": "windowed_carbon_brake_drum",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 612
+        },
+        {
+          "name": "brakes_rr__cross_drilled_carbon_rotor__MAT_BRAKE_DISC",
+          "subpart": "cross_drilled_carbon_rotor",
+          "mat_tag": "MAT_BRAKE_DISC",
+          "triangles": 3888
+        },
+        {
+          "name": "brakes_rr__rotor_titanium_mounting_bell__MAT_TITANIUM_BRUSHED",
+          "subpart": "rotor_titanium_mounting_bell",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 1200
+        },
+        {
+          "name": "brakes_rr__monoblock_6piston_caliper__MAT_CALIPER_ANODIZED",
+          "subpart": "monoblock_6piston_caliper",
+          "mat_tag": "MAT_CALIPER_ANODIZED",
+          "triangles": 780
+        },
+        {
+          "name": "brakes_rr__caliper_ti_pistons_and_pipes__MAT_TITANIUM_BRUSHED",
+          "subpart": "caliper_ti_pistons_and_pipes",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 524
+        },
+        {
+          "name": "brakes_rr__brake_pad_pins_and_ir_sensor__MAT_ALUMINUM_CNC",
+          "subpart": "brake_pad_pins_and_ir_sensor",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 388
+        }
+      ],
+      "bbox_min": [
+        0.5875,
+        1.6054,
+        0.1825
+      ],
+      "bbox_max": [
+        0.805,
+        2.0068,
+        0.5548
+      ]
+    },
+    "wheel_fl": {
+      "id": "wheel_fl",
+      "category": "wheels",
+      "name_en": "Front-Left 18\" BBS Magnesium Rim & Pirelli P Zero",
+      "name_ru": "Переднее левое 18\" колесо BBS и шина Pirelli P Zero",
+      "explode_vec": [
+        -1.55,
+        -0.12,
+        0.0
+      ],
+      "removable_cover": false,
+      "material_spec": "Forged AZ80 Magnesium Rim + Pirelli C5 Compound + Aero Cover",
+      "weight_kg": 18.2,
+      "operating_temp_c": 102,
+      "aero_load_n": 890,
+      "fia_reg": "Art. 10.8 18-Inch Wheel & Tire Assembly",
+      "desc_en": "305/720-R18 front slick tire on a forged BBS magnesium wheel with stationary-look carbon aero cover, tire deflector fin, and anodized dual-stage center-lock nut.",
+      "desc_ru": "Передний слик 305/720-R18 на кованом магниевом диске BBS с карбоновым колпаком, верхним дефлектором спутной струи и центральной гайкой с двойным замком.",
+      "subpart_count": 9,
+      "triangles": 15596,
+      "vertices": 8608,
+      "subparts": [
+        {
+          "name": "wheel_fl__tire_tread__MAT_TIRE_TREAD",
+          "subpart": "tire_tread",
+          "mat_tag": "MAT_TIRE_TREAD",
+          "triangles": 1536
+        },
+        {
+          "name": "wheel_fl__tire_sidewall__MAT_TIRE_SIDEWALL",
+          "subpart": "tire_sidewall",
+          "mat_tag": "MAT_TIRE_SIDEWALL",
+          "triangles": 2560
+        },
+        {
+          "name": "wheel_fl__bbs_forged_magnesium_rim__MAT_ALUMINUM_CNC",
+          "subpart": "bbs_forged_magnesium_rim",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 2840
+        },
+        {
+          "name": "wheel_fl__rim_tpms_sensor_and_knurling__MAT_TITANIUM_BRUSHED",
+          "subpart": "rim_tpms_sensor_and_knurling",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 2840
+        },
+        {
+          "name": "wheel_fl__outer_carbon_wheel_aero_cover__MAT_CARBON_TWILL",
+          "subpart": "outer_carbon_wheel_aero_cover",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 848
+        },
+        {
+          "name": "wheel_fl__wheel_aero_cover_lime_ring__MAT_LIVERY_LIME",
+          "subpart": "wheel_aero_cover_lime_ring",
+          "mat_tag": "MAT_LIVERY_LIME",
+          "triangles": 512
+        },
+        {
+          "name": "wheel_fl__fia_wheel_wake_deflector_fin__MAT_CARBON_TWILL",
+          "subpart": "fia_wheel_wake_deflector_fin",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 3024
+        },
+        {
+          "name": "wheel_fl__center_lock_spline_nut__MAT_ANODIZED_RED",
+          "subpart": "center_lock_spline_nut",
+          "mat_tag": "MAT_ANODIZED_RED",
+          "triangles": 936
+        },
+        {
+          "name": "wheel_fl__center_lock_safety_pawl__MAT_TITANIUM_BRUSHED",
+          "subpart": "center_lock_safety_pawl",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 500
+        }
+      ],
+      "bbox_min": [
+        -0.9727,
+        -2.16,
+        0.0095
+      ],
+      "bbox_max": [
+        -0.6505,
+        -1.44,
+        0.7579
+      ]
+    },
+    "wheel_fr": {
+      "id": "wheel_fr",
+      "category": "wheels",
+      "name_en": "Front-Right 18\" BBS Magnesium Rim & Pirelli P Zero",
+      "name_ru": "Переднее правое 18\" колесо BBS и шина Pirelli P Zero",
+      "explode_vec": [
+        1.55,
+        -0.12,
+        0.0
+      ],
+      "removable_cover": false,
+      "material_spec": "Forged AZ80 Magnesium Rim + Pirelli C5 Compound + Aero Cover",
+      "weight_kg": 18.2,
+      "operating_temp_c": 102,
+      "aero_load_n": 890,
+      "fia_reg": "Art. 10.8 18-Inch Wheel & Tire Assembly",
+      "desc_en": "Front-right 305mm-wide Pirelli P Zero slick tire with vulcanized sidewall markings, infrared carcass temp sensor, and quick-release center lock.",
+      "desc_ru": "Правое переднее колесо шириной 305 мм с вулканизированной маркировкой боковины Pirelli, ИК-датчиком температуры каркаса и центральной гайкой.",
+      "subpart_count": 9,
+      "triangles": 15596,
+      "vertices": 8608,
+      "subparts": [
+        {
+          "name": "wheel_fr__tire_tread__MAT_TIRE_TREAD",
+          "subpart": "tire_tread",
+          "mat_tag": "MAT_TIRE_TREAD",
+          "triangles": 1536
+        },
+        {
+          "name": "wheel_fr__tire_sidewall__MAT_TIRE_SIDEWALL",
+          "subpart": "tire_sidewall",
+          "mat_tag": "MAT_TIRE_SIDEWALL",
+          "triangles": 2560
+        },
+        {
+          "name": "wheel_fr__bbs_forged_magnesium_rim__MAT_ALUMINUM_CNC",
+          "subpart": "bbs_forged_magnesium_rim",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 2840
+        },
+        {
+          "name": "wheel_fr__rim_tpms_sensor_and_knurling__MAT_TITANIUM_BRUSHED",
+          "subpart": "rim_tpms_sensor_and_knurling",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 2840
+        },
+        {
+          "name": "wheel_fr__outer_carbon_wheel_aero_cover__MAT_CARBON_TWILL",
+          "subpart": "outer_carbon_wheel_aero_cover",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 848
+        },
+        {
+          "name": "wheel_fr__wheel_aero_cover_lime_ring__MAT_LIVERY_LIME",
+          "subpart": "wheel_aero_cover_lime_ring",
+          "mat_tag": "MAT_LIVERY_LIME",
+          "triangles": 512
+        },
+        {
+          "name": "wheel_fr__fia_wheel_wake_deflector_fin__MAT_CARBON_TWILL",
+          "subpart": "fia_wheel_wake_deflector_fin",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 3024
+        },
+        {
+          "name": "wheel_fr__center_lock_spline_nut__MAT_ANODIZED_BLUE",
+          "subpart": "center_lock_spline_nut",
+          "mat_tag": "MAT_ANODIZED_BLUE",
+          "triangles": 936
+        },
+        {
+          "name": "wheel_fr__center_lock_safety_pawl__MAT_TITANIUM_BRUSHED",
+          "subpart": "center_lock_safety_pawl",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 500
+        }
+      ],
+      "bbox_min": [
+        0.6505,
+        -2.16,
+        0.0095
+      ],
+      "bbox_max": [
+        0.9727,
+        -1.44,
+        0.7579
+      ]
+    },
+    "wheel_rl": {
+      "id": "wheel_rl",
+      "category": "wheels",
+      "name_en": "Rear-Left 18\" Drive Wheel & 405mm Pirelli Slick",
+      "name_ru": "Заднее левое ведущее колесо (ширина 405 мм)",
+      "explode_vec": [
+        -1.55,
+        0.12,
+        0.0
+      ],
+      "removable_cover": false,
+      "material_spec": "Forged Magnesium 18x16.9\" Rim + 405/720-R18 Slick",
+      "weight_kg": 21.0,
+      "operating_temp_c": 108,
+      "aero_load_n": 1120,
+      "fia_reg": "Art. 10.8 Rear Drive Wheel Assembly",
+      "desc_en": "Massive 405/720-R18 rear drive wheel transmitting over 1,000 combined horsepower to the asphalt with knurled inner bead seats to prevent rim slip.",
+      "desc_ru": "Широкое ведущее колесо 405/720-R18 с насечкой посадочного борта против проворота шины, передающее более 1000 л.с. суммарной мощности гибрида.",
+      "subpart_count": 9,
+      "triangles": 15596,
+      "vertices": 8608,
+      "subparts": [
+        {
+          "name": "wheel_rl__tire_tread__MAT_TIRE_TREAD",
+          "subpart": "tire_tread",
+          "mat_tag": "MAT_TIRE_TREAD",
+          "triangles": 1536
+        },
+        {
+          "name": "wheel_rl__tire_sidewall__MAT_TIRE_SIDEWALL",
+          "subpart": "tire_sidewall",
+          "mat_tag": "MAT_TIRE_SIDEWALL",
+          "triangles": 2560
+        },
+        {
+          "name": "wheel_rl__bbs_forged_magnesium_rim__MAT_ALUMINUM_CNC",
+          "subpart": "bbs_forged_magnesium_rim",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 2840
+        },
+        {
+          "name": "wheel_rl__rim_tpms_sensor_and_knurling__MAT_TITANIUM_BRUSHED",
+          "subpart": "rim_tpms_sensor_and_knurling",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 2840
+        },
+        {
+          "name": "wheel_rl__outer_carbon_wheel_aero_cover__MAT_CARBON_TWILL",
+          "subpart": "outer_carbon_wheel_aero_cover",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 848
+        },
+        {
+          "name": "wheel_rl__wheel_aero_cover_lime_ring__MAT_LIVERY_LIME",
+          "subpart": "wheel_aero_cover_lime_ring",
+          "mat_tag": "MAT_LIVERY_LIME",
+          "triangles": 512
+        },
+        {
+          "name": "wheel_rl__fia_wheel_wake_deflector_fin__MAT_CARBON_TWILL",
+          "subpart": "fia_wheel_wake_deflector_fin",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 3024
+        },
+        {
+          "name": "wheel_rl__center_lock_spline_nut__MAT_ANODIZED_RED",
+          "subpart": "center_lock_spline_nut",
+          "mat_tag": "MAT_ANODIZED_RED",
+          "triangles": 936
+        },
+        {
+          "name": "wheel_rl__center_lock_safety_pawl__MAT_TITANIUM_BRUSHED",
+          "subpart": "center_lock_safety_pawl",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 500
+        }
+      ],
+      "bbox_min": [
+        -0.9972,
+        1.44,
+        0.0095
+      ],
+      "bbox_max": [
+        -0.5805,
+        2.16,
+        0.7359
+      ]
+    },
+    "wheel_rr": {
+      "id": "wheel_rr",
+      "category": "wheels",
+      "name_en": "Rear-Right 18\" Drive Wheel & 405mm Pirelli Slick",
+      "name_ru": "Заднее правое ведущее колесо (ширина 405 мм)",
+      "explode_vec": [
+        1.55,
+        0.12,
+        0.0
+      ],
+      "removable_cover": false,
+      "material_spec": "Forged Magnesium 18x16.9\" Rim + 405/720-R18 Slick",
+      "weight_kg": 21.0,
+      "operating_temp_c": 108,
+      "aero_load_n": 1120,
+      "fia_reg": "Art. 10.8 Rear Drive Wheel Assembly",
+      "desc_en": "Rear-right 405mm Pirelli P Zero tire and forged BBS magnesium rim with integrated wheel-speed and TPMS telemetry transponder.",
+      "desc_ru": "Правое заднее ведущее колесо 405/720-R18 на кованом магниевом диске BBS с транспондером давления и угловой скорости вращения.",
+      "subpart_count": 9,
+      "triangles": 15596,
+      "vertices": 8608,
+      "subparts": [
+        {
+          "name": "wheel_rr__tire_tread__MAT_TIRE_TREAD",
+          "subpart": "tire_tread",
+          "mat_tag": "MAT_TIRE_TREAD",
+          "triangles": 1536
+        },
+        {
+          "name": "wheel_rr__tire_sidewall__MAT_TIRE_SIDEWALL",
+          "subpart": "tire_sidewall",
+          "mat_tag": "MAT_TIRE_SIDEWALL",
+          "triangles": 2560
+        },
+        {
+          "name": "wheel_rr__bbs_forged_magnesium_rim__MAT_ALUMINUM_CNC",
+          "subpart": "bbs_forged_magnesium_rim",
+          "mat_tag": "MAT_ALUMINUM_CNC",
+          "triangles": 2840
+        },
+        {
+          "name": "wheel_rr__rim_tpms_sensor_and_knurling__MAT_TITANIUM_BRUSHED",
+          "subpart": "rim_tpms_sensor_and_knurling",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 2840
+        },
+        {
+          "name": "wheel_rr__outer_carbon_wheel_aero_cover__MAT_CARBON_TWILL",
+          "subpart": "outer_carbon_wheel_aero_cover",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 848
+        },
+        {
+          "name": "wheel_rr__wheel_aero_cover_lime_ring__MAT_LIVERY_LIME",
+          "subpart": "wheel_aero_cover_lime_ring",
+          "mat_tag": "MAT_LIVERY_LIME",
+          "triangles": 512
+        },
+        {
+          "name": "wheel_rr__fia_wheel_wake_deflector_fin__MAT_CARBON_TWILL",
+          "subpart": "fia_wheel_wake_deflector_fin",
+          "mat_tag": "MAT_CARBON_TWILL",
+          "triangles": 3024
+        },
+        {
+          "name": "wheel_rr__center_lock_spline_nut__MAT_ANODIZED_BLUE",
+          "subpart": "center_lock_spline_nut",
+          "mat_tag": "MAT_ANODIZED_BLUE",
+          "triangles": 936
+        },
+        {
+          "name": "wheel_rr__center_lock_safety_pawl__MAT_TITANIUM_BRUSHED",
+          "subpart": "center_lock_safety_pawl",
+          "mat_tag": "MAT_TITANIUM_BRUSHED",
+          "triangles": 500
+        }
+      ],
+      "bbox_min": [
+        0.5805,
+        1.44,
+        0.0095
+      ],
+      "bbox_max": [
+        0.9972,
+        2.16,
+        0.7359
+      ]
+    }
+  }
+}
